@@ -81,4 +81,17 @@ export function applyTheme(theme: Theme) {
     (theme === "system" &&
       window.matchMedia("(prefers-color-scheme: dark)").matches);
   document.documentElement.classList.toggle("dark", dark);
+  syncThemeColor();
+}
+
+/**
+ * The theme-color metas follow the system scheme, but the app theme can be
+ * set independently; the PWA status bar reads the meta, so keep it in sync.
+ */
+export function syncThemeColor() {
+  const dark = document.documentElement.classList.contains("dark");
+  const color = dark ? "#1a1c20" : "#f4f1e5";
+  document
+    .querySelectorAll('meta[name="theme-color"]')
+    .forEach((m) => m.setAttribute("content", color));
 }

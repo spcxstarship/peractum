@@ -180,7 +180,8 @@ function PickerBody({
             }
           }}
           placeholder="Quaerere… (e.g. “gen 4”, “ps 23”)"
-          className="w-full rounded-md border bg-muted/50 px-3 py-2 text-sm outline-none placeholder:text-muted-foreground/70 focus:ring-2 focus:ring-ring/40"
+          // 16px minimum on touch — iOS zooms the page when focusing smaller inputs.
+          className="w-full rounded-md border bg-muted/50 px-3 py-2 text-base outline-none placeholder:text-muted-foreground/70 focus:ring-2 focus:ring-ring/40 md:text-sm"
           enterKeyHint="go"
           autoFocus={autoFocusSearch}
         />
