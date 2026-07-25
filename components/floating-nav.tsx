@@ -34,7 +34,7 @@ export function FloatingNav({ children }: { children: React.ReactNode }) {
   return (
     <div
       className={cn(
-        "pointer-events-none fixed inset-x-0 bottom-5 z-10",
+        "pointer-events-none fixed inset-x-0 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-10",
         visible ? "opacity-100" : "translate-y-4 opacity-0"
       )}
       style={{

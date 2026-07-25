@@ -18,6 +18,12 @@ export function ServiceWorker() {
         return;
       }
       if (reloading) return;
+      // Rate-limit so a misbehaving update can never reload-loop.
+      try {
+        const last = Number(sessionStorage.getItem("peractum:swReload"));
+        if (Date.now() - last < 60_000) return;
+        sessionStorage.setItem("peractum:swReload", String(Date.now()));
+      } catch {}
       reloading = true;
       window.location.reload();
     };
