@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#f4f1e5"/>
+  <rect x="26" y="26" width="460" height="460" fill="none" stroke="#2b291f" stroke-opacity="0.28" stroke-width="3"/>
+  <text x="256" y="316" font-family="Georgia, 'Times New Roman', serif" font-size="248" fill="#2b291f" text-anchor="middle">PA</text>
+  <rect x="212" y="372" width="88" height="7" fill="#1c5430"/>
+</svg>

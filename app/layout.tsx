@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, EB_Garamond } from "next/font/google";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { ServiceWorker } from "@/components/service-worker";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,6 +54,18 @@ export const metadata: Metadata = {
     description:
       "The complete Latin Bible and the Rosary prayers with English under every phrase. Free and open source.",
   },
+  appleWebApp: {
+    capable: true,
+    title: SITE_NAME,
+    statusBarStyle: "default",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f4f1e5" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a1c20" },
+  ],
 };
 
 // Applies stored theme and font size before first paint to avoid flashes.
@@ -80,7 +93,10 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <ServiceWorker />
+      </body>
     </html>
   );
 }
