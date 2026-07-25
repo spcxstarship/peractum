@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { adjacentChapter, type BookMeta } from "@/lib/bible";
 import { FloatingNav } from "@/components/floating-nav";
+import { SwipeNav } from "@/components/swipe-nav";
 
 interface PagerProps {
   book: BookMeta;
@@ -13,8 +14,13 @@ export function Pager({ book, chapter }: PagerProps) {
   const next = adjacentChapter(book.slug, chapter, 1);
 
   return (
-    <FloatingNav>
-      <div>
+    <>
+      <SwipeNav
+        prevHref={prev ? `/${prev.book.slug}/${prev.chapter}` : undefined}
+        nextHref={next ? `/${next.book.slug}/${next.chapter}` : undefined}
+      />
+      <FloatingNav>
+        <div>
           {prev && (
             <Link
               href={`/${prev.book.slug}/${prev.chapter}`}
@@ -40,6 +46,7 @@ export function Pager({ book, chapter }: PagerProps) {
             </Link>
           )}
         </div>
-    </FloatingNav>
+      </FloatingNav>
+    </>
   );
 }
