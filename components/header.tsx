@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Eclipse, Maximize2, Menu, Minimize2 } from "lucide-react";
 import type { BookMeta } from "@/lib/bible";
-import { applyTheme } from "@/lib/storage";
+import { applyTheme, syncThemeColor } from "@/lib/storage";
 import { cn } from "@/lib/utils";
 import { Picker } from "@/components/picker";
 import {
@@ -224,6 +224,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
+    syncThemeColor();
   }, []);
 
   function toggle() {

@@ -74,6 +74,8 @@ try {
   var t = localStorage.getItem("peractum:theme");
   var dark = t === "dark" || ((!t || t === "system") && matchMedia("(prefers-color-scheme: dark)").matches);
   if (dark) document.documentElement.classList.add("dark");
+  var tc = document.querySelectorAll('meta[name="theme-color"]');
+  for (var i = 0; i < tc.length; i++) tc[i].setAttribute("content", dark ? "#1a1c20" : "#f4f1e5");
   var fs = localStorage.getItem("peractum:fs");
   if (fs) document.documentElement.setAttribute("data-fs", fs);
 } catch (e) {}
