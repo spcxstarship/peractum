@@ -91,7 +91,10 @@ export function applyTheme(theme: Theme) {
 export function syncThemeColor() {
   const dark = document.documentElement.classList.contains("dark");
   const color = dark ? "#1a1c20" : "#f4f1e5";
+  // Mutate the parse-time meta in place: iOS Safari ignores both inserted
+  // metas and media-qualified ones for runtime status-bar updates.
   document
     .querySelectorAll('meta[name="theme-color"]')
     .forEach((m) => m.setAttribute("content", color));
+  document.documentElement.style.backgroundColor = color;
 }

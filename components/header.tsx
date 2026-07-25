@@ -31,7 +31,7 @@ export function Header({ book, chapter, allOpen, onToggleAll }: HeaderProps) {
     <>
       <TopBar active="biblia" />
 
-      <div className="sticky top-0 z-10 border-b bg-background/90 pt-[env(safe-area-inset-top)] backdrop-blur">
+      <div className="sticky top-0 z-10 border-b bg-background pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex max-w-3xl items-center gap-2 px-5 py-2.5">
           <MobileMenu active="biblia" />
           <button

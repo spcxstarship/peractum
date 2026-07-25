@@ -15,7 +15,7 @@ export default function OrationesPage() {
     <>
       <TopBar active="orationes" />
 
-      <div className="sticky top-0 z-10 border-b bg-background/90 pt-[env(safe-area-inset-top)] backdrop-blur">
+      <div className="sticky top-0 z-10 border-b bg-background pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex max-w-3xl items-center gap-2 px-5 py-2.5">
           <MobileMenu active="orationes" />
           <h1 className="px-1 font-latin text-lg font-semibold">Orationes</h1>
