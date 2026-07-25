@@ -23,6 +23,10 @@ interface PickerProps {
   mode: "books" | "chapters";
 }
 
+interface PickerBodyProps extends PickerProps {
+  autoFocusSearch: boolean;
+}
+
 function normalize(s: string): string {
   return s
     .toLowerCase()
@@ -57,13 +61,24 @@ function matchBooks(query: string): BookMeta[] {
 
 export function Picker(props: PickerProps) {
   const [isDesktop, setIsDesktop] = useState(true);
+  const [finePointer, setFinePointer] = useState(false);
 
   useEffect(() => {
-    const mq = window.matchMedia("(min-width: 768px)");
-    const update = () => setIsDesktop(mq.matches);
+    const mqDesktop = window.matchMedia("(min-width: 768px)");
+    // Touch devices (phone/tablet, incl. installed PWA) must not auto-focus
+    // the search input, or the keyboard pops open over the picker.
+    const mqFine = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const update = () => {
+      setIsDesktop(mqDesktop.matches);
+      setFinePointer(mqFine.matches);
+    };
     update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
+    mqDesktop.addEventListener("change", update);
+    mqFine.addEventListener("change", update);
+    return () => {
+      mqDesktop.removeEventListener("change", update);
+      mqFine.removeEventListener("change", update);
+    };
   }, []);
 
   if (isDesktop) {
@@ -75,7 +90,7 @@ export function Picker(props: PickerProps) {
               Libri Bibliæ
             </DialogTitle>
           </DialogHeader>
-          <PickerBody {...props} />
+          <PickerBody {...props} autoFocusSearch={finePointer} />
         </DialogContent>
       </Dialog>
     );
@@ -83,13 +98,13 @@ export function Picker(props: PickerProps) {
 
   return (
     <Drawer open={props.open} onOpenChange={props.onOpenChange}>
-      <DrawerContent className="max-h-[85dvh]">
+      <DrawerContent className="h-dvh max-h-dvh rounded-none! border-t-0! pt-[env(safe-area-inset-top)]">
         <DrawerHeader className="border-b py-3">
           <DrawerTitle className="font-latin text-base font-semibold">
             Libri Bibliæ
           </DrawerTitle>
         </DrawerHeader>
-        <PickerBody {...props} />
+        <PickerBody {...props} autoFocusSearch={false} />
       </DrawerContent>
     </Drawer>
   );
@@ -101,7 +116,8 @@ function PickerBody({
   currentBook,
   currentChapter,
   mode,
-}: PickerProps) {
+  autoFocusSearch,
+}: PickerBodyProps) {
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [expanded, setExpanded] = useState<string | null>(
@@ -118,13 +134,15 @@ function PickerBody({
     setRead(getReadChapters());
   }, [open, mode, currentBook]);
 
-  // Scroll the current/expanded book into view when the sheet opens.
+  // Scroll the current chapter (or book) into view when the sheet opens.
   useEffect(() => {
     if (!open) return;
     const id = requestAnimationFrame(() => {
-      listRef.current
-        ?.querySelector("[data-current=true]")
-        ?.scrollIntoView({ block: "center" });
+      const list = listRef.current;
+      const target =
+        list?.querySelector("[data-now=true]") ??
+        list?.querySelector("[data-current=true]");
+      target?.scrollIntoView({ block: "center" });
     });
     return () => cancelAnimationFrame(id);
   }, [open]);
@@ -163,7 +181,8 @@ function PickerBody({
           }}
           placeholder="Quaerere… (e.g. “gen 4”, “ps 23”)"
           className="w-full rounded-md border bg-muted/50 px-3 py-2 text-sm outline-none placeholder:text-muted-foreground/70 focus:ring-2 focus:ring-ring/40"
-          autoFocus
+          enterKeyHint="go"
+          autoFocus={autoFocusSearch}
         />
         {reference && (
           <button
@@ -175,7 +194,10 @@ function PickerBody({
         )}
       </div>
 
-      <div ref={listRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-2 py-1 md:max-h-[60vh]">
+      <div
+        ref={listRef}
+        className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-2 pt-1 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:max-h-[60vh] md:pb-1"
+      >
         {groups.map((group) => {
           const books = matches.filter((b) => b.group === group);
           if (books.length === 0) return null;
@@ -190,11 +212,21 @@ function PickerBody({
                 const isExpanded = expanded === book.slug;
                 const isCurrent = book.slug === currentBook;
                 return (
-                  <div key={book.slug} data-current={isCurrent}>
+                  <div key={book.slug} data-current={isCurrent} data-book={book.slug}>
                     <button
-                      onClick={() => setExpanded(isExpanded ? null : book.slug)}
+                      onClick={() => {
+                        const next = isExpanded ? null : book.slug;
+                        setExpanded(next);
+                        if (next) {
+                          requestAnimationFrame(() => {
+                            listRef.current
+                              ?.querySelector(`[data-book="${next}"]`)
+                              ?.scrollIntoView({ block: "nearest" });
+                          });
+                        }
+                      }}
                       className={cn(
-                        "flex w-full items-baseline gap-2 rounded-md px-2 py-2 text-left hover:bg-muted",
+                        "flex w-full items-baseline gap-2 rounded-md px-2 py-2.5 text-left hover:bg-muted md:py-2",
                         isExpanded && "text-brand"
                       )}
                     >
@@ -213,8 +245,8 @@ function PickerBody({
                       </span>
                     </button>
                     {isExpanded && (
-                      <div className="mb-2 max-h-36 overflow-y-auto overscroll-contain rounded-md px-2 py-1">
-                        <div className="grid grid-cols-8 gap-1.5 sm:grid-cols-10">
+                      <div className="mb-2 rounded-md px-2 py-1">
+                        <div className="grid grid-cols-6 gap-2 md:grid-cols-10 md:gap-1.5">
                           {book.chapters.map((_, i) => {
                             const ch = i + 1;
                             const isNow = isCurrent && ch === currentChapter;
@@ -222,9 +254,10 @@ function PickerBody({
                             return (
                               <button
                                 key={ch}
+                                data-now={isNow}
                                 onClick={() => go(book.slug, ch)}
                                 className={cn(
-                                  "rounded-md border py-1.5 text-center text-xs tabular-nums hover:bg-muted",
+                                  "rounded-md border py-2.5 text-center text-[0.8rem] tabular-nums hover:bg-muted md:py-1.5 md:text-xs",
                                   isNow &&
                                     "border-brand bg-brand font-bold text-primary-foreground hover:bg-brand",
                                   !isNow && isRead && "bg-muted text-muted-foreground"
