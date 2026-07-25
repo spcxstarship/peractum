@@ -1,0 +1,10 @@
+// Cloudflare Workers deployment config: serves the Next.js static export
+// from out/ as static assets (no Worker code).
+{
+  "name": "peractum",
+  "compatibility_date": "2026-07-25",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
