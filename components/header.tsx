@@ -31,7 +31,7 @@ export function Header({ book, chapter, allOpen, onToggleAll }: HeaderProps) {
     <>
       <TopBar active="biblia" />
 
-      <div className="sticky top-0 z-10 border-b bg-background/90 backdrop-blur">
+      <div className="sticky top-0 z-10 border-b bg-background/90 pt-[env(safe-area-inset-top)] backdrop-blur">
         <div className="mx-auto flex max-w-3xl items-center gap-2 px-5 py-2.5">
           <MobileMenu active="biblia" />
           <button
@@ -61,7 +61,7 @@ export function Header({ book, chapter, allOpen, onToggleAll }: HeaderProps) {
 
 export function TopBar({ active }: { active: Section }) {
   return (
-    <div className="hidden border-b sm:block">
+    <div className="hidden border-b pt-[env(safe-area-inset-top)] sm:block">
       <div className="mx-auto flex max-w-3xl items-center gap-6 px-5 py-3">
         <Link href="/" className="leading-tight">
           <span className="block text-sm font-bold tracking-[0.08em]">
@@ -125,7 +125,7 @@ export function MobileMenu({ active }: { active: Section }) {
       >
         <Menu className="size-4" />
       </SheetTrigger>
-      <SheetContent side="left" className="w-64">
+      <SheetContent side="left" className="w-64 pt-[env(safe-area-inset-top)]">
         <SheetHeader className="pb-0">
           <SheetTitle className="leading-tight">
             <span className="block text-sm font-bold tracking-[0.08em]">

@@ -57,11 +57,16 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: SITE_NAME,
-    statusBarStyle: "default",
+    // Transparent status bar: the app paints under it (viewport-fit=cover +
+    // safe-area padding), so it always matches the in-app theme. iOS ignores
+    // theme-color metas in standalone mode and would otherwise use the
+    // manifest color or system scheme, mismatching the toggled theme.
+    statusBarStyle: "black-translucent",
   },
 };
 
 export const viewport: Viewport = {
+  viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#f4f1e5" },
     { media: "(prefers-color-scheme: dark)", color: "#1a1c20" },
