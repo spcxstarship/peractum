@@ -86,6 +86,12 @@ try {
   for (var i = 0; i < tc.length; i++) tc[i].setAttribute("content", dark ? "#1a1c20" : "#f4f1e5");
   var fs = localStorage.getItem("peractum:fs");
   if (fs) document.documentElement.setAttribute("data-fs", fs);
+  // Installed web app: keep history at a single entry so iOS has no
+  // previous/next page to peel in as a card on slow horizontal swipes.
+  // The gesture itself cannot be disabled; an empty stack makes it inert.
+  if (navigator.standalone || matchMedia("(display-mode: standalone)").matches) {
+    history.pushState = history.replaceState.bind(history);
+  }
 } catch (e) {}
 `;
 
