@@ -65,12 +65,13 @@ export const metadata: Metadata = {
   },
 };
 
+// Single meta without a media query: iOS Safari only honors runtime
+// theme-color changes as in-place content mutations on a parse-time meta
+// that has no media attribute. The boot script stamps the right color
+// before first paint, so the static light default never flashes.
 export const viewport: Viewport = {
   viewportFit: "cover",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f4f1e5" },
-    { media: "(prefers-color-scheme: dark)", color: "#1a1c20" },
-  ],
+  themeColor: "#f4f1e5",
 };
 
 // Applies stored theme and font size before first paint to avoid flashes.
