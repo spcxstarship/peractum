@@ -14,8 +14,11 @@ const EDGE = 32;
 const AXIS_SLOP = 12;
 // A flick must travel at least this far...
 const MIN_DISTANCE = 70;
-// ...and release at least this fast (px/ms), unless it went FAR_FRACTION of the screen.
-const MIN_VELOCITY = 0.4;
+// ...and average at least this speed (px/ms) over the whole gesture, unless it
+// went FAR_FRACTION of the screen. Whole-gesture speed is used because WebKit
+// delivers coalesced touchmoves in bursts whose per-move timestamps are
+// unreliable; start-to-end time is honest.
+const MIN_VELOCITY = 0.3;
 const FAR_FRACTION = 0.45;
 
 /**
@@ -33,9 +36,7 @@ export function SwipeNav({ prevHref, nextHref }: SwipeNavProps) {
     let tracking = false;
     let startX = 0;
     let startY = 0;
-    let lastX = 0;
-    let lastT = 0;
-    let velocity = 0;
+    let startT = 0;
 
     function onTouchStart(e: TouchEvent) {
       tracking = false;
@@ -46,10 +47,9 @@ export function SwipeNav({ prevHref, nextHref }: SwipeNavProps) {
       // Radix disables body pointer events while a sheet/drawer is open.
       if (document.body.style.pointerEvents === "none") return;
       tracking = true;
-      startX = lastX = t.clientX;
+      startX = t.clientX;
       startY = t.clientY;
-      lastT = e.timeStamp;
-      velocity = 0;
+      startT = e.timeStamp;
     }
 
     function onTouchMove(e: TouchEvent) {
@@ -63,15 +63,7 @@ export function SwipeNav({ prevHref, nextHref }: SwipeNavProps) {
       const dy = t.clientY - startY;
       if (Math.abs(dy) > AXIS_SLOP && Math.abs(dy) > Math.abs(dx)) {
         tracking = false;
-        return;
       }
-      const dt = e.timeStamp - lastT;
-      if (dt > 0) {
-        // Smoothed so the release speed dominates over the gesture average.
-        velocity = velocity * 0.6 + ((t.clientX - lastX) / dt) * 0.4;
-      }
-      lastX = t.clientX;
-      lastT = e.timeStamp;
     }
 
     function onTouchEnd(e: TouchEvent) {
@@ -80,10 +72,11 @@ export function SwipeNav({ prevHref, nextHref }: SwipeNavProps) {
       const sel = window.getSelection();
       if (sel && !sel.isCollapsed) return;
       const dx = e.changedTouches[0].clientX - startX;
+      const duration = e.timeStamp - startT;
       const fast =
         Math.abs(dx) >= MIN_DISTANCE &&
-        Math.abs(velocity) >= MIN_VELOCITY &&
-        Math.sign(velocity) === Math.sign(dx);
+        duration > 0 &&
+        Math.abs(dx) / duration >= MIN_VELOCITY;
       const far = Math.abs(dx) >= window.innerWidth * FAR_FRACTION;
       if (!fast && !far) return;
       const href = dx < 0 ? nextHref : prevHref;
