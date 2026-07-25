@@ -77,6 +77,8 @@ export const viewport: Viewport = {
 const bootScript = `
 try {
   var t = localStorage.getItem("peractum:theme");
+  var q = location.search.match(/[?&]theme=(dark|light)/);
+  if (q) t = q[1];
   var dark = t === "dark" || ((!t || t === "system") && matchMedia("(prefers-color-scheme: dark)").matches);
   if (dark) document.documentElement.classList.add("dark");
   var tc = document.querySelectorAll('meta[name="theme-color"]');
