@@ -22,6 +22,10 @@ self.addEventListener("install", (event) => {
   );
 });
 
+// Activation must stay fast: fetch events from claimed pages are queued
+// until it finishes, so awaiting the full precache here would blank every
+// page until the whole site downloaded. The fill runs from the pages'
+// "fill" message instead, which also resumes interrupted fills.
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
@@ -32,7 +36,6 @@ self.addEventListener("activate", (event) => {
           .map((n) => caches.delete(n))
       );
       await self.clients.claim();
-      await fillPrecache();
     })()
   );
 });
