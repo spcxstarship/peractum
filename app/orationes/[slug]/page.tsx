@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { adjacentPrayer, getPrayer, PRAYERS } from "@/lib/prayers";
 import { FloatingNav } from "@/components/floating-nav";
 import { PrayerView } from "@/components/prayer-view";
+import { SwipeNav } from "@/components/swipe-nav";
 
 interface Params {
   slug: string;
@@ -45,6 +46,10 @@ export default async function PrayerPage({
   return (
     <>
       <PrayerView prayer={prayer} />
+      <SwipeNav
+        prevHref={prev ? `/orationes/${prev.slug}` : undefined}
+        nextHref={next ? `/orationes/${next.slug}` : undefined}
+      />
       <FloatingNav>
         <div>
             {prev && (
