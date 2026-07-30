@@ -139,6 +139,20 @@ export function Reader({ verses, expanded, mode, gloss, dict }: ReaderProps) {
     setTable(data);
   }
 
+  /** Open/close a dictionary reading's generated declension table. */
+  function toggleDictTable(t: GlossTable) {
+    if (table === t) {
+      setTable(null);
+      return;
+    }
+    const c = containerRef.current;
+    if (pop && c && pop.left + POP_EXPANDED_WIDTH + 8 > c.clientWidth) {
+      setPop({ ...pop, left: Math.max(8, c.clientWidth - POP_EXPANDED_WIDTH - 8) });
+    }
+    if (pop) setGender(genderOf(t, matchKeys(pop.word, "")));
+    setTable(t);
+  }
+
   /** Where the card sits: under the word, or above it near the fold. */
   function place(btn: HTMLElement) {
     const c = containerRef.current;
@@ -359,7 +373,8 @@ export function Reader({ verses, expanded, mode, gloss, dict }: ReaderProps) {
             (() => {
               const [first, ...rest] = pop.entries;
               const reading = (e: DictEntry, i: number) => {
-                const [sense, ...moreSenses] = e.d.split(";");
+                const [sense, ...rawSenses] = e.d.split(";");
+                const moreSenses = rawSenses.filter((s) => s.trim());
                 return (
                   <div key={i} className="mt-2 border-t pt-2">
                     <p className="font-sans text-sm font-semibold">
@@ -389,6 +404,29 @@ export function Reader({ verses, expanded, mode, gloss, dict }: ReaderProps) {
                       <p className="mt-0.5 font-sans text-xs text-muted-foreground/80">
                         {e.p.join("; ")}
                       </p>
+                    )}
+                    {e.t && (
+                      <button
+                        type="button"
+                        data-word
+                        onClick={(ev) => {
+                          ev.stopPropagation();
+                          toggleDictTable(e.t!);
+                        }}
+                        className="mt-1.5 flex w-full items-center justify-between gap-2 rounded-xs text-left outline-none focus-visible:ring-2 focus-visible:ring-ring/50 active:bg-brand/10"
+                      >
+                        <span className="font-sans text-xs font-semibold text-brand">
+                          Declensions
+                        </span>
+                        <span
+                          className={cn(
+                            "inline-block font-sans text-sm leading-none text-brand transition-transform duration-200",
+                            table === e.t && "rotate-90"
+                          )}
+                        >
+                          &#8250;
+                        </span>
+                      </button>
                     )}
                   </div>
                 );
@@ -745,8 +783,20 @@ function matchKeys(word: string, parse: string): string[] {
   return bare === base ? [base] : [base, bare];
 }
 
+/** Spelling-blind comparison: the dictionary tables are generated in
+ * classical orthography while the text is Clementine (æ/œ/j). */
+function normLatin(w: string): string {
+  return w
+    .toLowerCase()
+    .replace(/æ/g, "ae")
+    .replace(/œ/g, "oe")
+    .replace(/j/g, "i")
+    .replace(/ë/g, "e")
+    .replace(/ï/g, "i");
+}
+
 function hit(cell: GlossCell, keys: string[]): boolean {
-  return !!cell && keys.includes(cell[0].toLowerCase());
+  return !!cell && keys.some((k) => normLatin(k) === normLatin(cell[0]));
 }
 
 /** The gender chip to open on: the first whose paradigm holds the word. */

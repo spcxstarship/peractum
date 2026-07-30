@@ -109,6 +109,9 @@ export interface DictEntry {
   d: string;
   p?: string[];
   src?: "curated";
+  /** Declension table generated from Whitaker's stem + endings data
+   * (nouns and adjectives), in the same shape the curated tables use. */
+  t?: GlossTable;
 }
 
 export interface DictChapter {

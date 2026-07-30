@@ -299,6 +299,177 @@ def run_words(queries):
     return blocks
 
 
+
+# ---------- declension tables from Words' own stem + endings data ----------
+#
+# INFLECTS.LAT is the endings table Words recognizes forms WITH; DICTLINE.GEN
+# carries each lemma's stems and its declension/variant codes (the variant is
+# where i-stems and the other third-declension facts live). Running them
+# forward instead of backward yields the full paradigm at the analyzer's own
+# accuracy. Nouns and adjectives only: a verb's conjugation is mood-by-mood
+# and stays a curated-tier feature for now.
+
+TABLE_CASES = ["Nom", "Gen", "Dat", "Acc", "Abl"]
+CASE_CODE = {"Nom": "NOM", "Gen": "GEN", "Dat": "DAT", "Acc": "ACC",
+             "Abl": "ABL"}
+INFLECT_FREQ = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "X": 1}
+
+
+def load_inflects():
+    """(pos, decl, var, case, num, gender[, degree]) -> [(rank, stem#, ending)]."""
+    rows = collections.defaultdict(list)
+    for line in open(os.path.join(ROOT, ".cache/whitakers/INFLECTS.LAT")):
+        line = line.split("--")[0].rstrip()
+        t = line.split()
+        if not t or t[0] not in ("N", "ADJ"):
+            continue
+        if t[0] == "N":
+            pos, decl, var, case, num, gend = t[0], t[1], t[2], t[3], t[4], t[5]
+            rest = t[6:]
+            key_extra = ()
+        else:
+            pos, decl, var, case, num, gend, deg = \
+                t[0], t[1], t[2], t[3], t[4], t[5], t[6]
+            if deg != "POS":
+                continue
+            rest = t[7:]
+            key_extra = ()
+        stem_no, size = int(rest[0]), int(rest[1])
+        ending = rest[2] if size > 0 else ""
+        age, fr = rest[-2], rest[-1]
+        if age not in ("X", "A", "B"):
+            continue
+        rank = (INFLECT_FREQ.get(fr, 9), 0 if var != "0" else 1)
+        rows[(pos, decl, var, case, num, gend)].append((rank, stem_no, ending))
+    return rows
+
+
+def load_dictline(inflects):
+    """Headword index: (pos, nominative headword, decl[, gender]) -> entries.
+
+    The headword is GENERATED (stem + nominative ending) because DICTLINE
+    stores bare stems: superbia is filed under 'superbi'."""
+    idx = collections.defaultdict(list)
+    for line in open(os.path.join(ROOT, ".cache/whitakers/DICTLINE.GEN"),
+                     errors="replace"):
+        stems = [line[i:i + 19].strip() for i in (0, 19, 38, 57)]
+        t = line[76:].split()
+        if not t:
+            continue
+        if t[0] == "N" and len(t) >= 4:
+            decl, var, gend = t[1], t[2], t[3]
+            got = pick_ending(inflects, "N", decl, var, "NOM", "S", gend)
+            if got is None:
+                continue
+            _, stem_no, ending = got
+            stem = stems[stem_no - 1]
+            if not stem or stem == "zzz":
+                continue
+            head = (stem + ending).lower()
+            idx[("N", head, decl, gend)].append((decl, var, gend, stems))
+        elif t[0] == "ADJ" and len(t) >= 4 and t[3] in ("POS", "X"):
+            decl, var = t[1], t[2]
+            got = pick_ending(inflects, "ADJ", decl, var, "NOM", "S", "M")
+            if got is None:
+                continue
+            _, stem_no, ending = got
+            stem = stems[stem_no - 1]
+            if not stem or stem == "zzz":
+                continue
+            head = (stem + ending).lower()
+            idx[("ADJ", head, decl)].append((decl, var, "", stems))
+    return idx
+
+
+def pick_ending(inflects, pos, decl, var, case, num, gend):
+    """Best ending for one paradigm slot, wildcarding variant and gender."""
+    cands = []
+    for v in (var, "0"):
+        for g in (gend, "C", "X"):
+            cands += inflects.get((pos, decl, v, case, num, g), [])
+    if not cands:
+        return None
+    return min(cands)
+
+
+def slot_form(inflects, pos, decl, var, gend, stems, case, num):
+    got = pick_ending(inflects, pos, decl, var, CASE_CODE[case], num, gend)
+    if got is None:
+        return None
+    _, stem_no, ending = got
+    stem = stems[stem_no - 1]
+    if not stem or stem == "zzz":
+        return None
+    return stem + ending
+
+
+def ligature(w):
+    """Classical -> the app's Clementine display (ligatures only; the j/i
+    difference is left alone rather than guessed)."""
+    return w.replace("ae", "æ").replace("oe", "œ")
+
+
+GENDER_WORD = {"masculine": "M", "feminine": "F", "neuter": "N", "common": "C"}
+ROMAN_DECL = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5"}
+
+
+def noun_table(entry, dictline, inflects, nfreq):
+    """A GlossTable-shaped declension for a noun candidate, or None."""
+    head = normalize(entry["l"].split(",")[0].lower())
+    gw = next((g for g in GENDER_WORD if g in entry["c"]), None)
+    rn = next((ROMAN_DECL[r]
+               for r in sorted(ROMAN_DECL, key=len, reverse=True)
+               if f"{r} declension" in entry["c"]), None)
+    if not head or not gw or not rn:
+        return None
+    hits = dictline.get(("N", head, rn, GENDER_WORD[gw]), [])
+    if not hits:
+        for g2 in ("C", "M", "F", "N", "X"):
+            hits = dictline.get(("N", head, rn, g2), [])
+            if hits:
+                break
+    variants = {(h[0], h[1]) for h in hits}
+    if len(variants) != 1:
+        return None                      # unknown or ambiguous paradigm
+    decl, var, _, stems = hits[0]
+    rows = []
+    for case in TABLE_CASES:
+        cells = []
+        for num in ("S", "P"):
+            f = slot_form(inflects, "N", decl, var, GENDER_WORD[gw], stems,
+                          case, num)
+            cells.append([ligature(f), nfreq.get(f, 0)] if f else None)
+        if cells[0] is None and cells[1] is None:
+            return None
+        rows.append([case, cells[0], cells[1]])
+    return {"l": entry["l"], "c": entry["c"], "rows": rows}
+
+
+def adj_table(entry, dictline, inflects, nfreq):
+    """A gender-chipped declension for an adjective candidate, or None."""
+    head = normalize(entry["l"].split(",")[0].lower())
+    hits = []
+    for decl in ("1", "2", "3"):
+        hits += dictline.get(("ADJ", head, decl), [])
+    variants = {(h[0], h[1]) for h in hits}
+    if len(variants) != 1:
+        return None
+    decl, var, _, stems = hits[0]
+    chips = []
+    for chip, g in (("masc", "M"), ("fem", "F"), ("neut", "N")):
+        rows = []
+        for case in TABLE_CASES:
+            cells = []
+            for num in ("S", "P"):
+                f = slot_form(inflects, "ADJ", decl, var, g, stems, case, num)
+                cells.append([ligature(f), nfreq.get(f, 0)] if f else None)
+            rows.append([case, cells[0], cells[1]])
+        if all(r[1] is None and r[2] is None for r in rows):
+            return None
+        chips.append([chip, rows])
+    return {"l": entry["l"], "c": entry["c"], "g": chips}
+
+
 # ---------- corpus + overlays ----------
 
 def kind_of_class(c):
@@ -355,6 +526,24 @@ def main():
     reg = json.load(open(os.path.join(ROOT, "docs/gloss/lemmas.json"))) \
         if with_curated else {"forms": {}, "lemmas": {}}
 
+    inflects = load_inflects()
+    dictline = load_dictline(inflects)
+    nfreq = collections.defaultdict(int)
+    for k, v in freq.items():
+        nfreq[normalize(k)] += v
+    table_cache = {}
+
+    def table_for(entry):
+        ck = (entry["k"], entry["l"], entry["c"])
+        if ck not in table_cache:
+            if entry["k"] == "noun":
+                table_cache[ck] = noun_table(entry, dictline, inflects, nfreq)
+            elif entry["k"] == "adjective":
+                table_cache[ck] = adj_table(entry, dictline, inflects, nfreq)
+            else:
+                table_cache[ck] = None
+        return table_cache[ck]
+
     shards = [dict() for _ in range(SHARDS)]
     known = unknown = 0
     for f, block in zip(forms, blocks):
@@ -391,6 +580,10 @@ def main():
         if not entries:
             unknown += 1
             continue
+        for e in entries:
+            t = table_for(e)
+            if t:
+                e["t"] = t
         known += 1
         shards[shard_of(f)][f] = {"n": freq[f], "e": entries}
 
