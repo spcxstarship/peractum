@@ -416,7 +416,7 @@ export function Reader({ verses, expanded, mode, gloss, dict }: ReaderProps) {
                         className="mt-1.5 flex w-full items-center justify-between gap-2 rounded-xs text-left outline-none focus-visible:ring-2 focus-visible:ring-ring/50 active:bg-brand/10"
                       >
                         <span className="font-sans text-xs font-semibold text-brand">
-                          Declensions
+                          {e.k === "verb" ? "Conjugations" : "Declensions"}
                         </span>
                         <span
                           className={cn(

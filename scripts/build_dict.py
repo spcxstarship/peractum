@@ -470,6 +470,165 @@ def adj_table(entry, dictline, inflects, nfreq):
     return {"l": entry["l"], "c": entry["c"], "g": chips}
 
 
+
+# ---------- verb conjugation blocks ----------
+#
+# Finite blocks come straight from stems + INFLECTS rows (the perfect system
+# is conjugation-blind: V 0 0 rows; even esse is generated, its compounds
+# included). The one hand-written piece is the auxiliary of the periphrastic
+# perfect passive — factus SUM/ES/EST — which is syntax, not an ending.
+
+TENSE_WORD = [("future perfect", "FUTP"), ("pluperfect", "PLUP"),
+              ("imperfect", "IMPF"), ("perfect", "PERF"),
+              ("present", "PRES"), ("future", "FUT")]
+AUX = {
+    ("PERF", "IND"): ["sum", "es", "est", "sumus", "estis", "sunt"],
+    ("PLUP", "IND"): ["eram", "eras", "erat", "eramus", "eratis", "erant"],
+    ("FUTP", "IND"): ["ero", "eris", "erit", "erimus", "eritis", "erunt"],
+    ("PERF", "SUB"): ["sim", "sis", "sit", "simus", "sitis", "sint"],
+    ("PLUP", "SUB"): ["essem", "esses", "esset", "essemus", "essetis",
+                      "essent"],
+}
+TENSE_LABEL = {"PRES": "present", "IMPF": "imperfect", "FUT": "future",
+               "PERF": "perfect", "PLUP": "pluperfect",
+               "FUTP": "future perfect"}
+
+
+def load_inflects_v():
+    """(conj, var, tense, voice, mood, person, num) -> [(rank, stem#, end)]."""
+    rows = collections.defaultdict(list)
+    for line in open(os.path.join(ROOT, ".cache/whitakers/INFLECTS.LAT")):
+        line = line.split("--")[0].rstrip()
+        t = line.split()
+        if not t or t[0] != "V" or len(t) < 10:
+            continue
+        conj, var, tense, voice, mood, pers, num = t[1:8]
+        if mood not in ("IND", "SUB"):
+            continue
+        rest = t[8:]
+        stem_no, size = int(rest[0]), int(rest[1])
+        ending = rest[2] if size > 0 else ""
+        age, fr = rest[-2], rest[-1]
+        if age not in ("X", "A", "B"):
+            continue
+        rank = (INFLECT_FREQ.get(fr, 9), 0 if var != "0" else 1,
+                0 if conj != "0" else 1)
+        rows[(conj, var, tense, voice, mood, pers, num)].append(
+            (rank, stem_no, ending))
+    return rows
+
+
+def load_dictline_v(inflects_v):
+    """('V', generated first principal part) -> [(conj, var, kind, stems)]."""
+    idx = collections.defaultdict(list)
+    for line in open(os.path.join(ROOT, ".cache/whitakers/DICTLINE.GEN"),
+                     errors="replace"):
+        stems = [line[i:i + 19].strip() for i in (0, 19, 38, 57)]
+        stems = ["" if s in (".", "zzz") else s for s in stems]
+        t = line[76:].split()
+        if not t or t[0] != "V" or len(t) < 4:
+            continue
+        conj, var, kind = t[1], t[2], t[3]
+        dep = kind in ("DEP", "SEMIDEP")
+        voice = "PASSIVE" if dep else "ACTIVE"
+        got = pick_v(inflects_v, conj, var, "PRES", voice, "IND", "1", "S")
+        if got is None:
+            continue
+        _, stem_no, ending = got
+        if not stems[stem_no - 1] and stem_no != 2:
+            continue
+        head = (stems[stem_no - 1] + ending).lower()
+        if not head:
+            continue
+        idx[("V", head)].append((conj, var, kind, stems))
+    # esse itself lives in Words' UNIQUES file, not DICTLINE; one synthetic
+    # entry gives est/erat/fuit their table like every other verb
+    idx[("V", "sum")] = [("5", "1", "TO_BEING", ["s", "", "fu", "fut"])]
+    return idx
+
+
+def pick_v(rows, conj, var, tense, voice, mood, pers, num):
+    cands = []
+    for c in (conj, "0"):
+        for v in (var, "0"):
+            cands += rows.get((c, v, tense, voice, mood, pers, num), [])
+    return min(cands) if cands else None
+
+
+def parse_to_block(p):
+    """'imperfect subjunctive, third plural' -> (tense, voice, mood) or the
+    periphrastic marker for a perfect participle."""
+    if "perfect participle" in p:
+        return ("PERF", "PASSIVE", "IND")
+    if any(w in p for w in ("infinitive", "imperative", "participle",
+                            "supine", "gerund")):
+        return None
+    tense = next((code for word, code in TENSE_WORD if word in p), None)
+    if tense is None:
+        return None
+    return (tense, "PASSIVE" if "passive" in p else "ACTIVE",
+            "SUB" if "subjunctive" in p else "IND")
+
+
+def verb_table(entry, dictline_v, inflects_v, nfreq, bigram):
+    """One conjugation block for a verb candidate: the block of its own
+    parse, matching the curated card's behavior."""
+    head = normalize(entry["l"].split(",")[0].lower())
+    hits = dictline_v.get(("V", head), [])
+    variants = {(h[0], h[1], h[2]) for h in hits}
+    if len(variants) != 1:
+        return None
+    conj, var, kind, stems = hits[0]
+    dep = kind in ("DEP", "SEMIDEP")
+    block = next((b for b in map(parse_to_block, entry.get("p", [])) if b),
+                 None)
+    if block is None:
+        return None
+    tense, voice, mood = block
+    # a deponent's forms are passive throughout, whatever the parse says
+    # (Words leaves the voice column blank on deponent analyses)
+    if dep:
+        voice = "PASSIVE"
+    label = ("indicative" if mood == "IND" else "subjunctive") + " · " +         TENSE_LABEL[tense] +         (" passive" if voice == "PASSIVE" and not dep else "")
+    if voice == "PASSIVE" and tense in ("PERF", "PLUP", "FUTP"):
+        # periphrastic: participle (stem 4) + the auxiliary, gender-chipped
+        if not stems[3] or (tense, mood) not in AUX:
+            return None
+        aux = AUX[(tense, mood)]
+        chips = []
+        for chip, sg_e, pl_e in (("masc", "us", "i"), ("fem", "a", "ae"),
+                                 ("neut", "um", "a")):
+            rows = []
+            for i, lab in enumerate(("1st", "2nd", "3rd")):
+                sg = f"{stems[3]}{sg_e} {aux[i]}"
+                pl = f"{stems[3]}{pl_e} {aux[i + 3]}"
+                rows.append([lab,
+                             [ligature(sg), bigram.get(sg, 0)],
+                             [ligature(pl), bigram.get(pl, 0)]])
+            chips.append([chip, rows])
+        return {"l": entry["l"], "c": label, "g": chips}
+    rows = []
+    for i, lab in enumerate(("1st", "2nd", "3rd")):
+        cells = []
+        for num in ("S", "P"):
+            got = pick_v(inflects_v, conj, var, tense, voice, mood,
+                         str(i + 1), num)
+            if got is None:
+                cells.append(None)
+                continue
+            _, stem_no, ending = got
+            stem = stems[stem_no - 1]
+            if not stem and stem_no != 2:
+                cells.append(None)
+                continue
+            f = stem + ending
+            cells.append([ligature(f), nfreq.get(f, 0)])
+        rows.append([lab, cells[0], cells[1]])
+    if all(r[1] is None and r[2] is None for r in rows):
+        return None
+    return {"l": entry["l"], "c": label, "rows": rows}
+
+
 # ---------- corpus + overlays ----------
 
 def kind_of_class(c):
@@ -494,7 +653,10 @@ def kind_of_class(c):
 
 
 def corpus_freq():
+    """Per-spelling counts, plus adjacent-pair counts for the two-word
+    periphrastic cells (factum est)."""
     freq = collections.Counter()
+    bigram = collections.Counter()
     base = os.path.join(ROOT, "public/bible")
     for slug in os.listdir(base):
         p = os.path.join(base, slug)
@@ -506,17 +668,18 @@ def corpus_freq():
             d = json.load(open(os.path.join(p, f)))
             for v in d["verses"]:
                 for latin, _ in v["pairs"]:
-                    for w in latin.split():
-                        k = form_key(w)
-                        if k:
-                            freq[k] += 1
-    return freq
+                    words = [form_key(w) for w in latin.split()]
+                    words = [w for w in words if w]
+                    freq.update(words)
+                    for a, b in zip(words, words[1:]):
+                        bigram[normalize(a) + " " + normalize(b)] += 1
+    return freq, bigram
 
 
 def main():
     with_curated = "--with-curated" in sys.argv
 
-    freq = corpus_freq()
+    freq, bigram = corpus_freq()
     forms = sorted(freq)
     print(f"{len(forms):,} distinct forms over {sum(freq.values()):,} tokens")
 
@@ -528,18 +691,23 @@ def main():
 
     inflects = load_inflects()
     dictline = load_dictline(inflects)
+    inflects_v = load_inflects_v()
+    dictline_v = load_dictline_v(inflects_v)
     nfreq = collections.defaultdict(int)
     for k, v in freq.items():
         nfreq[normalize(k)] += v
     table_cache = {}
 
     def table_for(entry):
-        ck = (entry["k"], entry["l"], entry["c"])
+        ck = (entry["k"], entry["l"], entry["c"], tuple(entry.get("p", [])))
         if ck not in table_cache:
             if entry["k"] == "noun":
                 table_cache[ck] = noun_table(entry, dictline, inflects, nfreq)
             elif entry["k"] == "adjective":
                 table_cache[ck] = adj_table(entry, dictline, inflects, nfreq)
+            elif entry["k"] == "verb":
+                table_cache[ck] = verb_table(entry, dictline_v, inflects_v,
+                                             nfreq, bigram)
             else:
                 table_cache[ck] = None
         return table_cache[ck]
