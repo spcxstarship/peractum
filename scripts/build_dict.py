@@ -202,12 +202,15 @@ def parse_block(lines):
     """
     entries, pending, senses, cur = [], [], [], None
     last_pos = ""
+    last_pron = None
 
     def finalize():
         nonlocal cur, senses
         if cur:
             cur["d"] = " ".join(senses).strip()
             cur["p"] = list(pending)
+            if cur["k"] == "pronoun" and last_pron:
+                cur["_pm"] = last_pron
             entries.append(cur)
         cur, senses = None, []
 
@@ -230,6 +233,9 @@ def parse_block(lines):
             if "abb." in cite:         # Roman abbreviation entries are noise
                 cur = None
                 continue
+            if not kind:               # citation-less pronoun dictionary
+                kind = POS_KIND.get(last_pos, "")   # lines carry no POS token
+                cls = cls or kind
             cur = {"l": cite, "k": kind, "c": cls, "_f": flags}
             continue
         m = INFL_RE.match(line)
@@ -238,6 +244,10 @@ def parse_block(lines):
                 finalize()
                 pending.clear()
             last_pos = m.group(2)
+            if m.group(2) in ("PRON", "PACK"):
+                ct = m.group(3).split()
+                if len(ct) >= 2 and ct[0].isdigit():
+                    last_pron = (ct[0], ct[1], m.group(1).split(".")[0].lower())
             p = parse_infl(m.group(2), m.group(3))
             if p and p not in pending:
                 pending.append(p)
@@ -321,9 +331,9 @@ def load_inflects():
     for line in open(os.path.join(ROOT, ".cache/whitakers/INFLECTS.LAT")):
         line = line.split("--")[0].rstrip()
         t = line.split()
-        if not t or t[0] not in ("N", "ADJ"):
+        if not t or t[0] not in ("N", "ADJ", "PRON"):
             continue
-        if t[0] == "N":
+        if t[0] in ("N", "PRON"):
             pos, decl, var, case, num, gend = t[0], t[1], t[2], t[3], t[4], t[5]
             rest = t[6:]
             key_extra = ()
@@ -469,6 +479,117 @@ def adj_table(entry, dictline, inflects, nfreq):
         chips.append([chip, rows])
     return {"l": entry["l"], "c": entry["c"], "g": chips}
 
+
+
+
+def load_dictline_p():
+    """Analyzed stem -> the PRON entries holding it (each with both stems)."""
+    idx = collections.defaultdict(list)
+    for line in open(os.path.join(ROOT, ".cache/whitakers/DICTLINE.GEN"),
+                     errors="replace"):
+        stems = [line[i:i + 19].strip() for i in (0, 19)]
+        stems = ["" if s in (".", "zzz") else s for s in stems]
+        t = line[76:].split()
+        if not t or t[0] != "PRON" or len(t) < 4:
+            continue
+        decl, var = t[1], t[2]
+        for s in set(stems):
+            if s:
+                idx[s.lower()].append((decl, var, stems))
+    return idx
+
+
+# The personals pair suppletively (ego with nos, tu with vos) — separate
+# lemmas in Words' data, one paradigm to a learner. Hand-pinned like the
+# curated tier's PERSONAL_BLOCKS.
+PERS_HAND = {
+    ("5", "1"): ("ego", [["Nom", "ego", "nos"], ["Gen", "mei", "nostri"],
+                         ["Dat", "mihi", "nobis"], ["Acc", "me", "nos"],
+                         ["Abl", "me", "nobis"]]),
+    ("5", "2"): ("tu", [["Nom", "tu", "vos"], ["Gen", "tui", "vestri"],
+                        ["Dat", "tibi", "vobis"], ["Acc", "te", "vos"],
+                        ["Abl", "te", "vobis"]]),
+    ("5", "4"): ("sui", [["Nom", None, None], ["Gen", "sui", "sui"],
+                         ["Dat", "sibi", "sibi"], ["Acc", "se", "se"],
+                         ["Abl", "se", "se"]]),
+}
+
+QUI_HAND = {
+    "masc": [["Nom", "qui", "qui"], ["Gen", "cujus", "quorum"],
+             ["Dat", "cui", "quibus"], ["Acc", "quem", "quos"],
+             ["Abl", "quo", "quibus"]],
+    "fem": [["Nom", "quæ", "quæ"], ["Gen", "cujus", "quarum"],
+            ["Dat", "cui", "quibus"], ["Acc", "quam", "quas"],
+            ["Abl", "qua", "quibus"]],
+    "neut": [["Nom", "quod", "quæ"], ["Gen", "cujus", "quorum"],
+             ["Dat", "cui", "quibus"], ["Acc", "quod", "quæ"],
+             ["Abl", "quo", "quibus"]],
+}
+
+
+def pron_table(entry, dictline_p, inflects, nfreq):
+    """A declension for a pronoun candidate, matched by its analyzed stem
+    (pronoun analyses carry no citation). Gendered classes get chips; the
+    genderless personals (ego, tu) collapse to one block."""
+    pm = entry.get("_pm")
+    if not pm:
+        return None
+    decl, var, stem = pm
+    # the personals: ego/tu/sui by class, nos/vos (both 5 3) by stem
+    pers_key = (decl, var) if (decl, var) != ("5", "3") else \
+        (("5", "1") if stem.startswith("n") else ("5", "2"))
+    if decl == "5" and pers_key in PERS_HAND:
+        cite, rows = PERS_HAND[pers_key]
+        return {"l": cite, "c": "pronoun",
+                "rows": [[c,
+                          s and [s, nfreq.get(normalize(s), 0)],
+                          p and [p, nfreq.get(normalize(p), 0)]]
+                         for c, s, p in rows]}
+    hits = [(d, v, tuple(s)) for d, v, s in dictline_p.get(stem, [])
+            if d == decl and v == var]
+    if not hits or len(set(hits)) != 1:
+        return None
+    d, v, stems = hits[0]
+    if stems[0] == "qu" and d == "1":
+        chips = [[chip, [[c, [s, nfreq.get(normalize(s), 0)],
+                          [p, nfreq.get(normalize(p), 0)]]
+                         for c, s, p in rows]]
+                 for chip, rows in QUI_HAND.items()]
+        return {"l": "qui, quæ, quod", "c": "pronoun", "g": chips}
+    def slot(case, num, g):
+        got = pick_ending(inflects, "PRON", d, v, CASE_CODE[case], num, g)
+        if got is None:              # the personals mark number X = both
+            got = pick_ending(inflects, "PRON", d, v, CASE_CODE[case], "X", g)
+        if got is None:
+            return None
+        _, stem_no, ending = got
+        s = stems[stem_no - 1] if stem_no <= len(stems) else ""
+        if not s and ending == "":
+            return None
+        f = s + ending
+        return [ligature(f), nfreq.get(normalize(f), 0)] if f else None
+    chips = []
+    for chip, g in (("masc", "M"), ("fem", "F"), ("neut", "N")):
+        rows = []
+        for case in TABLE_CASES:
+            rows.append([case, slot(case, "S", g), slot(case, "P", g)])
+        # Words has no feminine ablative row for the ille/is class (it
+        # cannot parse illa as an ablative); in these paradigms the
+        # feminine ablative is spelled like its nominative
+        if rows[4][1] is None and rows[0][1] is not None:
+            rows[4][1] = rows[0][1]
+        chips.append([chip, rows])
+    if all(r[1] is None and r[2] is None for c in chips for r in c[1]):
+        return None
+    heads = []
+    for c in chips:
+        nom = c[1][0][1]
+        if nom and nom[0] not in heads:
+            heads.append(nom[0])
+    cite = ", ".join(heads)
+    if all(c[1] == chips[0][1] for c in chips[1:]):
+        return {"l": cite, "c": "pronoun", "rows": chips[0][1]}
+    return {"l": cite, "c": "pronoun", "g": chips}
 
 
 # ---------- verb conjugation blocks ----------
@@ -693,13 +814,15 @@ def main():
     dictline = load_dictline(inflects)
     inflects_v = load_inflects_v()
     dictline_v = load_dictline_v(inflects_v)
+    dictline_p = load_dictline_p()
     nfreq = collections.defaultdict(int)
     for k, v in freq.items():
         nfreq[normalize(k)] += v
     table_cache = {}
 
     def table_for(entry):
-        ck = (entry["k"], entry["l"], entry["c"], tuple(entry.get("p", [])))
+        ck = (entry["k"], entry["l"], entry["c"], tuple(entry.get("p", [])),
+              entry.get("_pm"))
         if ck not in table_cache:
             if entry["k"] == "noun":
                 table_cache[ck] = noun_table(entry, dictline, inflects, nfreq)
@@ -708,6 +831,9 @@ def main():
             elif entry["k"] == "verb":
                 table_cache[ck] = verb_table(entry, dictline_v, inflects_v,
                                              nfreq, bigram)
+            elif entry["k"] == "pronoun":
+                table_cache[ck] = pron_table(entry, dictline_p, inflects,
+                                             nfreq)
             else:
                 table_cache[ck] = None
         return table_cache[ck]
@@ -752,6 +878,9 @@ def main():
             t = table_for(e)
             if t:
                 e["t"] = t
+                if e["k"] == "pronoun" and not e["l"] and t.get("l"):
+                    e["l"] = t["l"]     # the generated qui, quæ, quod line
+            e.pop("_pm", None)
         known += 1
         shards[shard_of(f)][f] = {"n": freq[f], "e": entries}
 
