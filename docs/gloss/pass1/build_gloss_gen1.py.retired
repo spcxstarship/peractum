@@ -1,0 +1,910 @@
+# Builds public/bible/genesis/1.gloss.json for the reading-modes prototype.
+# Every gloss is hand-authored against the CPDV rendering of the same verse;
+# parses are spelled out in plain words. Frequencies are computed from the
+# committed corpus so the popover numbers are real.
+import json, re, glob, collections
+
+ROOT = "/Users/michaelwork/Code/GitHub/peractum"
+
+def clean(tok):
+    return re.sub(r"[^\wÆæŒœëï]+$", "", re.sub(r"^[^\wÆæŒœëï]+", "", tok)).lower()
+
+# ---------- corpus frequencies ----------
+freq = collections.Counter()
+bigrams = collections.Counter()
+for f in glob.glob(f"{ROOT}/public/bible/*/*.json"):
+    if f.endswith(".gloss.json"):
+        continue
+    d = json.load(open(f))
+    for v in d["verses"]:
+        toks = [clean(t) for la, _ in v["pairs"] for t in la.split()]
+        toks = [t for t in toks if t]
+        freq.update(toks)
+        bigrams.update(zip(toks, toks[1:]))
+
+# ---------- dictionary: form -> (gloss, parse, lemma, def) ----------
+E = {
+ "a": ("from", "preposition with the ablative", "a, ab", "from, away from"),
+ "ab": ("from", "preposition with the ablative", "a, ab", "from, away from"),
+ "abyssi": ("of the abyss", "genitive singular", "abyssus, abyssi", "abyss, the deep"),
+ "ac": ("and", "conjunction", "ac", "and, and also"),
+ "ad": ("to", "preposition with the accusative", "ad", "to, toward"),
+ "afferentem": ("bearing", "accusative singular feminine, present participle", "affero, afferre, attuli, allatus", "to bring, to bear"),
+ "ait": ("he said", "perfect, third singular (defective verb)", "aio", "to say, to affirm"),
+ "anima": ("soul", "nominative singular", "anima, animæ", "soul, life, breath"),
+ "animam": ("soul", "accusative singular", "anima, animæ", "soul, life, breath"),
+ "animantibus": ("living things", "dative plural", "animans, animantis", "living creature"),
+ "animæ": ("of a soul", "genitive singular", "anima, animæ", "soul, life, breath"),
+ "annos": ("years", "accusative plural", "annus, anni", "year"),
+ "appareat": ("let appear", "present subjunctive, third singular", "appareo, apparere, apparui", "to appear"),
+ "appellavit": ("he called", "perfect, third singular", "appello, appellare, appellavi, appellatus", "to call, to name"),
+ "appellavitque": ("and he called", "perfect, third singular, with -que (and) fused on", "appello, appellare, appellavi, appellatus", "to call, to name"),
+ "aquarum": ("of the waters", "genitive plural", "aqua, aquæ", "water"),
+ "aquas": ("the waters", "accusative plural", "aqua, aquæ", "water"),
+ "aquis": ("waters", "ablative plural", "aqua, aquæ", "water"),
+ "aquæ": ("the waters", "nominative plural", "aqua, aquæ", "water"),
+ "arida": ("the dry land", "nominative singular feminine, adjective used as a noun", "aridus, arida, aridum", "dry; the dry land"),
+ "aridam": ("the dry land", "accusative singular feminine, adjective used as a noun", "aridus, arida, aridum", "dry; the dry land"),
+ "atque": ("and", "conjunction", "atque", "and, and also"),
+ "autem": ("but", "conjunction, always second in its clause", "autem", "but, moreover"),
+ "avesque": ("and the birds", "nominative plural, with -que (and) fused on", "avis, avis", "bird"),
+ "benedixitque": ("and he blessed", "perfect, third singular, with -que (and) fused on", "benedico, benedicere, benedixi, benedictus", "to bless"),
+ "bestias": ("the wild beasts", "accusative plural", "bestia, bestiæ", "beast, wild animal"),
+ "bestiis": ("the wild beasts", "dative plural", "bestia, bestiæ", "beast, wild animal"),
+ "bona": ("good", "feminine nominative singular", "bonus, bona, bonum", "good"),
+ "bonum": ("good", "nominative singular neuter", "bonus, bona, bonum", "good"),
+ "cete": ("sea creatures", "accusative plural (a Greek form)", "cetus, ceti", "whale, great sea creature"),
+ "congregationesque": ("and the gatherings", "accusative plural, with -que (and) fused on", "congregatio, congregationis", "gathering, assembly"),
+ "congregentur": ("let be gathered", "present subjunctive passive, third plural", "congrego, congregare, congregavi, congregatus", "to gather together"),
+ "creavit": ("created", "perfect, third singular", "creo, creare, creavi, creatus", "to create"),
+ "creavitque": ("and created", "perfect, third singular, with -que (and) fused on", "creo, creare, creavi, creatus", "to create"),
+ "crescite": ("increase", "imperative, plural", "cresco, crescere, crevi, cretus", "to grow, to increase"),
+ "cujus": ("whose", "genitive singular of the relative pronoun", "qui, quæ, quod", "who, which"),
+ "cuncta": ("everything", "neuter accusative plural", "cunctus, cuncta, cunctum", "all, the whole"),
+ "cunctis": ("all", "dative plural", "cunctus, cuncta, cunctum", "all, the whole"),
+ "cæli": ("of heaven", "genitive singular", "cælum, cæli", "heaven, sky"),
+ "cælo": ("heaven", "ablative singular", "cælum, cæli", "heaven, sky"),
+ "cælum": ("heaven", "accusative singular", "cælum, cæli", "heaven, sky"),
+ "dedi": ("I have given", "perfect, first singular", "do, dare, dedi, datus", "to give"),
+ "dei": ("of God", "genitive singular", "Deus, Dei", "God"),
+ "deus": ("God", "nominative singular", "Deus, Dei", "God"),
+ "dicens": ("saying", "nominative singular masculine, present participle", "dico, dicere, dixi, dictus", "to say, to speak"),
+ "diei": ("the day", "dative singular", "dies, diei", "day"),
+ "diem": ("the day", "accusative singular", "dies, diei", "day"),
+ "dies": ("day", "nominative singular", "dies, diei", "day"),
+ "dividant": ("let them divide", "present subjunctive, third plural", "divido, dividere, divisi, divisus", "to divide, to separate"),
+ "dividat": ("let it divide", "present subjunctive, third singular", "divido, dividere, divisi, divisus", "to divide, to separate"),
+ "dividerent": ("to divide", "imperfect subjunctive, third plural, expressing purpose", "divido, dividere, divisi, divisus", "to divide, to separate"),
+ "divisit": ("he divided", "perfect, third singular", "divido, dividere, divisi, divisus", "to divide, to separate"),
+ "divisitque": ("and he divided", "perfect, third singular, with -que (and) fused on", "divido, dividere, divisi, divisus", "to divide, to separate"),
+ "dixit": ("said", "perfect, third singular", "dico, dicere, dixi, dictus", "to say, to speak"),
+ "dixitque": ("and said", "perfect, third singular, with -que (and) fused on", "dico, dicere, dixi, dictus", "to say, to speak"),
+ "dominamini": ("have dominion", "imperative, plural (deponent verb)", "dominor, dominari, dominatus sum", "to rule, to have dominion"),
+ "duo": ("two", "accusative", "duo, duæ, duo", "two"),
+ "eam": ("it", "accusative feminine singular", "is, ea, id", "he, she, it"),
+ "eas": ("them", "accusative feminine plural", "is, ea, id", "he, she, it"),
+ "ecce": ("behold", "interjection", "ecce", "behold, see"),
+ "eis": ("them", "dative plural", "is, ea, id", "he, she, it"),
+ "eos": ("them", "accusative masculine plural", "is, ea, id", "he, she, it"),
+ "erant": ("were", "imperfect, third plural", "sum, esse, fui", "to be"),
+ "erat": ("was", "imperfect, third singular", "sum, esse, fui", "to be"),
+ "escam": ("food", "accusative singular", "esca, escæ", "food"),
+ "esset": ("it was", "imperfect subjunctive, third singular", "sum, esse, fui", "to be"),
+ "est": ("is", "present, third singular", "sum, esse, fui", "to be"),
+ "et": ("and", "conjunction", "et", "and, also"),
+ "etiam": ("then", "adverb", "etiam", "also, even"),
+ "faciamus": ("let us make", "present subjunctive, first plural", "facio, facere, feci, factus", "to make, to do"),
+ "faciem": ("the face", "accusative singular", "facies, faciei", "face, surface"),
+ "faciens": ("producing", "accusative singular neuter, present participle", "facio, facere, feci, factus", "to make, to do"),
+ "facientem": ("producing", "accusative singular feminine, present participle", "facio, facere, feci, factus", "to make, to do"),
+ "fecerat": ("he had made", "pluperfect, third singular", "facio, facere, feci, factus", "to make, to do"),
+ "fecit": ("made", "perfect, third singular", "facio, facere, feci, factus", "to make, to do"),
+ "fecitque": ("and made", "perfect, third singular, with -que (and) fused on", "facio, facere, feci, factus", "to make, to do"),
+ "feminam": ("female", "accusative singular", "femina, feminæ", "woman, female"),
+ "ferebatur": ("was brought", "imperfect passive, third singular", "fero, ferre, tuli, latus", "to carry, to bear"),
+ "fiant": ("let there be", "present subjunctive, third plural", "fio, fieri, factus sum", "to become, to be made"),
+ "fiat": ("let there be", "present subjunctive, third singular", "fio, fieri, factus sum", "to become, to be made"),
+ "firmamento": ("the firmament", "ablative singular", "firmamentum, firmamenti", "firmament, support"),
+ "firmamentum": ("the firmament", "accusative singular", "firmamentum, firmamenti", "firmament, support"),
+ "fructum": ("fruit", "accusative singular", "fructus, fructus", "fruit, produce"),
+ "genere": ("kind", "ablative singular", "genus, generis", "kind, type, birth"),
+ "generis": ("of kind", "genitive singular", "genus, generis", "kind, type, birth"),
+ "genus": ("kind", "accusative singular", "genus, generis", "kind, type, birth"),
+ "germinet": ("let spring forth", "present subjunctive, third singular", "germino, germinare, germinavi, germinatus", "to sprout, to spring forth"),
+ "grandia": ("great", "neuter accusative plural", "grandis, grande", "great, large"),
+ "habeant": ("they may have", "present subjunctive, third plural", "habeo, habere, habui, habitus", "to have, to hold"),
+ "habens": ("having", "accusative singular neuter, present participle", "habeo, habere, habui, habitus", "to have, to hold"),
+ "habent": ("they have", "present, third plural", "habeo, habere, habui, habitus", "to have, to hold"),
+ "herbam": ("plants", "accusative singular", "herba, herbæ", "plant, grass, herb"),
+ "his": ("those", "ablative plural feminine", "hic, hæc, hoc", "this"),
+ "hominem": ("Man", "accusative singular", "homo, hominis", "man, human being"),
+ "illis": ("them", "dative plural masculine", "ille, illa, illud", "that one; he, she, it"),
+ "illum": ("him", "accusative masculine singular", "ille, illa, illud", "that one; he, she, it"),
+ "illuminent": ("let them illuminate", "present subjunctive, third plural", "illumino, illuminare, illuminavi, illuminatus", "to light up, to illuminate"),
+ "imaginem": ("the image", "accusative singular", "imago, imaginis", "image, likeness"),
+ "in": ("in", "preposition with the ablative or accusative", "in", "in, into, on"),
+ "inanis": ("empty", "feminine nominative singular", "inanis, inane", "empty, void"),
+ "ita": ("so", "adverb", "ita", "so, thus"),
+ "jumenta": ("the cattle", "accusative plural", "jumentum, jumenti", "beast of burden, cattle"),
+ "juxta": ("according to", "preposition with the accusative", "juxta", "beside, according to"),
+ "ligna": ("the trees", "accusative plural", "lignum, ligni", "wood, tree"),
+ "lignum": ("the tree", "accusative singular", "lignum, ligni", "wood, tree"),
+ "lignumque": ("and trees", "accusative singular, with -que (and) fused on", "lignum, ligni", "wood, tree"),
+ "locum": ("place", "accusative singular", "locus, loci", "place"),
+ "luceant": ("let them shine", "present subjunctive, third plural", "luceo, lucere, luxi", "to shine"),
+ "lucem": ("the light", "accusative singular", "lux, lucis", "light"),
+ "lucerent": ("to give light", "imperfect subjunctive, third plural, expressing purpose", "luceo, lucere, luxi", "to shine"),
+ "luminare": ("light", "accusative singular", "luminare, luminaris", "light, lamp, luminary"),
+ "luminaria": ("lights", "nominative plural", "luminare, luminaris", "light, lamp, luminary"),
+ "lux": ("light", "nominative singular", "lux, lucis", "light"),
+ "magna": ("great", "neuter accusative plural", "magnus, magna, magnum", "great, large"),
+ "majus": ("greater", "comparative, neuter accusative singular", "major, majus", "greater, larger"),
+ "mane": ("morning", "indeclinable noun", "mane", "morning"),
+ "maria": ("Seas", "accusative plural", "mare, maris", "sea"),
+ "maris": ("of the sea", "genitive singular", "mare, maris", "sea"),
+ "masculum": ("male", "accusative singular", "masculus, masculi", "male"),
+ "medio": ("the midst", "ablative singular", "medium, medii", "middle, midst"),
+ "minus": ("lesser", "comparative, neuter accusative singular", "minor, minus", "lesser, smaller"),
+ "motabilem": ("able to move", "accusative singular feminine", "motabilis, motabile", "movable, able to move"),
+ "moventur": ("move", "present passive, third plural (middle sense)", "moveo, movere, movi, motus", "to move"),
+ "movetur": ("moves", "present passive, third singular (middle sense)", "moveo, movere, movi, motus", "to move"),
+ "multiplicamini": ("multiply", "imperative passive, plural (middle sense)", "multiplico, multiplicare, multiplicavi, multiplicatus", "to multiply, to increase"),
+ "multiplicentur": ("let be multiplied", "present subjunctive passive, third plural", "multiplico, multiplicare, multiplicavi, multiplicatus", "to multiply, to increase"),
+ "noctem": ("the night", "accusative singular", "nox, noctis", "night"),
+ "nocti": ("the night", "dative singular", "nox, noctis", "night"),
+ "nostram": ("our", "possessive, accusative feminine singular", "noster, nostra, nostrum", "our"),
+ "omne": ("every", "neuter accusative singular", "omnis, omne", "all, every"),
+ "omnem": ("every", "accusative singular", "omnis, omne", "all, every"),
+ "omnique": ("and every", "dative singular, with -que (and) fused on", "omnis, omne", "all, every"),
+ "piscibus": ("the fish", "dative plural", "piscis, piscis", "fish"),
+ "pomiferum": ("fruit-bearing", "accusative singular neuter", "pomifer, pomifera, pomiferum", "fruit-bearing"),
+ "posuit": ("he set", "perfect, third singular", "pono, ponere, posui, positus", "to put, to place"),
+ "principio": ("the beginning", "ablative singular", "principium, principii", "beginning, origin"),
+ "producant": ("let produce", "present subjunctive, third plural", "produco, producere, produxi, productus", "to bring forth, to produce"),
+ "producat": ("let produce", "present subjunctive, third singular", "produco, producere, produxi, productus", "to bring forth, to produce"),
+ "produxerant": ("had produced", "pluperfect, third plural", "produco, producere, produxi, productus", "to bring forth, to produce"),
+ "protulit": ("brought forth", "perfect, third singular", "profero, proferre, protuli, prolatus", "to bring forth"),
+ "præessent": ("to rule over", "imperfect subjunctive, third plural, expressing purpose", "præsum, præesse, præfui", "to be over, to rule"),
+ "præesset": ("to rule over", "imperfect subjunctive, third singular, expressing purpose", "præsum, præesse, præfui", "to be over, to rule"),
+ "præsit": ("let him rule over", "present subjunctive, third singular", "præsum, præesse, præfui", "to be over, to rule"),
+ "quam": ("which", "accusative feminine singular of the relative pronoun", "qui, quæ, quod", "who, which"),
+ "quartus": ("fourth", "ordinal, nominative singular", "quartus, quarta, quartum", "fourth"),
+ "quibus": ("which", "ablative plural of the relative pronoun", "qui, quæ, quod", "who, which"),
+ "quintus": ("fifth", "ordinal, nominative singular", "quintus, quinta, quintum", "fifth"),
+ "quod": ("that", "neuter singular, the relative used as a conjunction", "qui, quæ, quod", "who, which"),
+ "quoque": ("also", "adverb", "quoque", "also, too"),
+ "quæ": ("that", "relative pronoun: feminine singular or plural, or neuter plural", "qui, quæ, quod", "who, which"),
+ "replete": ("fill", "imperative, plural", "repleo, replere, replevi, repletus", "to fill, to fill up"),
+ "reptile": ("animals", "accusative singular", "reptile, reptilis", "creeping thing, crawling animal"),
+ "reptili": ("animal", "dative singular", "reptile, reptilis", "creeping thing, crawling animal"),
+ "reptilia": ("animals", "accusative plural", "reptile, reptilis", "creeping thing, crawling animal"),
+ "secundum": ("according to", "preposition with the accusative", "secundum", "according to, following"),
+ "secundus": ("second", "ordinal, nominative singular", "secundus, secunda, secundum", "second"),
+ "semen": ("seed", "accusative singular", "semen, seminis", "seed, offspring"),
+ "sementem": ("sowing", "accusative singular", "sementis, sementis", "sowing, seed"),
+ "semetipsis": ("themselves", "ablative plural", "semetipse", "oneself"),
+ "semetipso": ("itself", "ablative singular", "semetipse", "oneself"),
+ "sextus": ("sixth", "ordinal, nominative singular", "sextus, sexta, sextum", "sixth"),
+ "signa": ("signs", "accusative plural", "signum, signi", "sign"),
+ "similitudinem": ("likeness", "accusative singular", "similitudo, similitudinis", "likeness"),
+ "sint": ("let them be", "present subjunctive, third plural", "sum, esse, fui", "to be"),
+ "sit": ("is", "present subjunctive, third singular, in a relative clause", "sum, esse, fui", "to be"),
+ "speciem": ("species", "accusative singular", "species, speciei", "appearance, kind, species"),
+ "species": ("species", "accusative plural", "species, speciei", "appearance, kind, species"),
+ "spiritus": ("the Spirit", "nominative singular", "spiritus, spiritus", "spirit, breath"),
+ "stellas": ("the stars", "accusative plural", "stella, stellæ", "star"),
+ "suam": ("its own", "possessive, accusative feminine singular", "suus, sua, suum", "his own, her own, its own"),
+ "suas": ("their own", "possessive, accusative feminine plural", "suus, sua, suum", "his own, her own, its own"),
+ "sub": ("under", "preposition with the ablative", "sub", "under, beneath"),
+ "subjicite": ("subdue", "imperative, plural", "subjicio, subjicere, subjeci, subjectus", "to subject, to subdue"),
+ "sui": ("of their own", "possessive, genitive singular", "suus, sua, suum", "his own, her own, its own"),
+ "suo": ("its own", "possessive, ablative singular", "suus, sua, suum", "his own, her own, its own"),
+ "sunt": ("are", "present, third plural", "sum, esse, fui", "to be"),
+ "suum": ("their own", "possessive, accusative singular", "suus, sua, suum", "his own, her own, its own"),
+ "super": ("over", "preposition with the accusative", "super", "over, above, upon"),
+ "tempora": ("the seasons", "accusative plural", "tempus, temporis", "time, season"),
+ "tenebras": ("the darknesses", "accusative plural", "tenebræ, tenebrarum", "darkness (plural in form)"),
+ "tenebris": ("the darknesses", "ablative plural", "tenebræ, tenebrarum", "darkness (plural in form)"),
+ "tenebræ": ("darknesses", "nominative plural", "tenebræ, tenebrarum", "darkness (plural in form)"),
+ "terra": ("the earth", "nominative singular", "terra, terræ", "earth, land"),
+ "terram": ("the earth", "accusative singular", "terra, terræ", "earth, land"),
+ "terræ": ("of the earth", "genitive singular", "terra, terræ", "earth, land"),
+ "tertius": ("third", "ordinal, nominative singular", "tertius, tertia, tertium", "third"),
+ "universa": ("all", "neuter accusative plural", "universus, universa, universum", "all, entire"),
+ "universis": ("all", "dative plural", "universus, universa, universum", "all, entire"),
+ "universæque": ("and the entire", "dative feminine singular, with -que (and) fused on", "universus, universa, universum", "all, entire"),
+ "unum": ("one", "accusative singular masculine", "unus, una, unum", "one"),
+ "unumquodque": ("each one", "accusative singular neuter", "unusquisque, unaquæque, unumquodque", "each one, every one"),
+ "unus": ("one", "nominative singular", "unus, una, unum", "one"),
+ "ut": ("to", "conjunction with the subjunctive, expressing purpose", "ut", "so that, in order to"),
+ "vacua": ("unoccupied", "feminine nominative singular", "vacuus, vacua, vacuum", "empty, unoccupied"),
+ "valde": ("very", "adverb", "valde", "very, exceedingly"),
+ "vero": ("truly", "adverb", "vero", "truly, indeed"),
+ "vescendum": ("feeding", "gerund, accusative", "vescor, vesci", "to feed, to eat"),
+ "vespere": ("evening", "ablative singular", "vesper, vesperis", "evening"),
+ "vidit": ("saw", "perfect, third singular", "video, videre, vidi, visus", "to see"),
+ "viditque": ("and saw", "perfect, third singular, with -que (and) fused on", "video, videre, vidi, visus", "to see"),
+ "virentem": ("green", "accusative singular feminine, present participle", "vireo, virere, virui", "to be green, to flourish"),
+ "vivens": ("living", "nominative singular feminine, present participle", "vivo, vivere, vixi, victus", "to live"),
+ "viventem": ("living", "accusative singular feminine, present participle", "vivo, vivere, vixi, victus", "to live"),
+ "viventis": ("living", "genitive singular feminine, present participle", "vivo, vivere, vixi, victus", "to live"),
+ "vobis": ("for you", "dative plural, second person pronoun", "tu", "you"),
+ "vocavit": ("called", "perfect, third singular", "voco, vocare, vocavi, vocatus", "to call"),
+ "vocavitque": ("and called", "perfect, third singular, with -que (and) fused on", "voco, vocare, vocavi, vocatus", "to call"),
+ "volatile": ("flying creatures", "accusative singular neuter, adjective used as a noun", "volatilis, volatile", "flying; a flying creature"),
+ "volatilibus": ("the flying creatures", "dative plural neuter, adjective used as a noun", "volatilis, volatile", "flying; a flying creature"),
+ "volucri": ("flying thing", "dative singular", "volucris, volucris", "bird, flying creature"),
+}
+
+# periphrastic units rendered as one token with one gloss
+MERGES = {
+ ("facta", "est"): ("became", "perfect of fio: two words, one verb", "fio, fieri, factus sum", "to become, to be made"),
+ ("factum", "est"): ("it became", "perfect of fio: two words, one verb", "fio, fieri, factus sum", "to become, to be made"),
+ ("factumque", "est"): ("and it became", "perfect of fio with -que (and) fused on: two words, one verb", "fio, fieri, factus sum", "to become, to be made"),
+}
+
+# (verse, cleaned form, 1-based occurrence within the verse) -> field overrides
+OVERRIDES = {
+ (5, "diem", 1): {"g": "Day"},
+ (5, "noctem", 1): {"g": "Night"},
+ (6, "firmamentum", 1): {"p": "nominative singular"},
+ (8, "cælum", 1): {"g": "Heaven"},
+ (9, "in", 1): {"g": "into"},
+ (10, "terram", 1): {"g": "Earth"},
+ (14, "autem", 1): {"g": "then"},
+ (14, "dies", 1): {"g": "the days", "p": "accusative plural"},
+ (14, "in", 2): {"g": "as"},
+ (16, "luminaria", 1): {"p": "accusative plural"},
+ (26, "terra", 1): {"p": "ablative singular"},
+ (26, "terræ", 1): {"g": "the earth", "p": "dative singular"},
+ (29, "in", 2): {"g": "for"},
+ (29, "sint", 1): {"g": "they may be"},
+ (30, "ad", 1): {"g": "for"},
+ (30, "est", 1): {"g": "there is"},
+ (30, "terra", 1): {"p": "ablative singular"},
+ (30, "ut", 1): {"g": "so that"},
+ (31, "bona", 1): {"p": "neuter nominative plural"},
+}
+
+# Lemma-level facts: citation form (nouns gain the conventional gender letter)
+# and the spelled-out class line ("feminine · first declension").
+LEMMAS = {
+ "a, ab": ("a, ab", "preposition"),
+ "ad": ("ad", "preposition"),
+ "in": ("in", "preposition"),
+ "juxta": ("juxta", "preposition"),
+ "secundum": ("secundum", "preposition"),
+ "sub": ("sub", "preposition"),
+ "super": ("super", "preposition"),
+ "ac": ("ac", "conjunction"),
+ "atque": ("atque", "conjunction"),
+ "autem": ("autem", "conjunction"),
+ "et": ("et", "conjunction"),
+ "ut": ("ut", "conjunction"),
+ "ecce": ("ecce", "interjection"),
+ "etiam": ("etiam", "adverb"),
+ "ita": ("ita", "adverb"),
+ "quoque": ("quoque", "adverb"),
+ "valde": ("valde", "adverb"),
+ "vero": ("vero", "adverb"),
+ "mane": ("mane", "indeclinable noun"),
+ "anima, animæ": ("anima, animæ, f.", "feminine · first declension"),
+ "aqua, aquæ": ("aqua, aquæ, f.", "feminine · first declension"),
+ "bestia, bestiæ": ("bestia, bestiæ, f.", "feminine · first declension"),
+ "esca, escæ": ("esca, escæ, f.", "feminine · first declension"),
+ "femina, feminæ": ("femina, feminæ, f.", "feminine · first declension"),
+ "herba, herbæ": ("herba, herbæ, f.", "feminine · first declension"),
+ "stella, stellæ": ("stella, stellæ, f.", "feminine · first declension"),
+ "terra, terræ": ("terra, terræ, f.", "feminine · first declension"),
+ "tenebræ, tenebrarum": ("tenebræ, tenebrarum, f.", "feminine · first declension, plural only"),
+ "annus, anni": ("annus, anni, m.", "masculine · second declension"),
+ "cetus, ceti": ("cetus, ceti, m.", "masculine · second declension"),
+ "locus, loci": ("locus, loci, m.", "masculine · second declension"),
+ "masculus, masculi": ("masculus, masculi, m.", "masculine · second declension"),
+ "Deus, Dei": ("Deus, Dei, m.", "masculine · second declension"),
+ "abyssus, abyssi": ("abyssus, abyssi, f.", "feminine · second declension"),
+ "cælum, cæli": ("cælum, cæli, n.", "neuter · second declension"),
+ "firmamentum, firmamenti": ("firmamentum, firmamenti, n.", "neuter · second declension"),
+ "jumentum, jumenti": ("jumentum, jumenti, n.", "neuter · second declension"),
+ "lignum, ligni": ("lignum, ligni, n.", "neuter · second declension"),
+ "medium, medii": ("medium, medii, n.", "neuter · second declension"),
+ "principium, principii": ("principium, principii, n.", "neuter · second declension"),
+ "signum, signi": ("signum, signi, n.", "neuter · second declension"),
+ "avis, avis": ("avis, avis, f.", "feminine · third declension"),
+ "congregatio, congregationis": ("congregatio, congregationis, f.", "feminine · third declension"),
+ "homo, hominis": ("homo, hominis, m.", "masculine · third declension"),
+ "imago, imaginis": ("imago, imaginis, f.", "feminine · third declension"),
+ "lux, lucis": ("lux, lucis, f.", "feminine · third declension"),
+ "nox, noctis": ("nox, noctis, f.", "feminine · third declension"),
+ "sementis, sementis": ("sementis, sementis, f.", "feminine · third declension"),
+ "similitudo, similitudinis": ("similitudo, similitudinis, f.", "feminine · third declension"),
+ "vesper, vesperis": ("vesper, vesperis, m.", "masculine · third declension"),
+ "volucris, volucris": ("volucris, volucris, f.", "feminine · third declension"),
+ "piscis, piscis": ("piscis, piscis, m.", "masculine · third declension"),
+ "animans, animantis": ("animans, animantis", "common gender · third declension"),
+ "genus, generis": ("genus, generis, n.", "neuter · third declension"),
+ "luminare, luminaris": ("luminare, luminaris, n.", "neuter · third declension"),
+ "mare, maris": ("mare, maris, n.", "neuter · third declension"),
+ "reptile, reptilis": ("reptile, reptilis, n.", "neuter · third declension"),
+ "semen, seminis": ("semen, seminis, n.", "neuter · third declension"),
+ "tempus, temporis": ("tempus, temporis, n.", "neuter · third declension"),
+ "fructus, fructus": ("fructus, fructus, m.", "masculine · fourth declension"),
+ "spiritus, spiritus": ("spiritus, spiritus, m.", "masculine · fourth declension"),
+ "dies, diei": ("dies, diei, m.", "masculine · fifth declension"),
+ "facies, faciei": ("facies, faciei, f.", "feminine · fifth declension"),
+ "species, speciei": ("species, speciei, f.", "feminine · fifth declension"),
+ "aridus, arida, aridum": ("aridus, arida, aridum", "first- and second-declension adjective"),
+ "bonus, bona, bonum": ("bonus, bona, bonum", "first- and second-declension adjective"),
+ "cunctus, cuncta, cunctum": ("cunctus, cuncta, cunctum", "first- and second-declension adjective"),
+ "magnus, magna, magnum": ("magnus, magna, magnum", "first- and second-declension adjective"),
+ "pomifer, pomifera, pomiferum": ("pomifer, pomifera, pomiferum", "first- and second-declension adjective"),
+ "universus, universa, universum": ("universus, universa, universum", "first- and second-declension adjective"),
+ "vacuus, vacua, vacuum": ("vacuus, vacua, vacuum", "first- and second-declension adjective"),
+ "grandis, grande": ("grandis, grande", "third-declension adjective"),
+ "inanis, inane": ("inanis, inane", "third-declension adjective"),
+ "motabilis, motabile": ("motabilis, motabile", "third-declension adjective"),
+ "omnis, omne": ("omnis, omne", "third-declension adjective"),
+ "volatilis, volatile": ("volatilis, volatile", "third-declension adjective"),
+ "minor, minus": ("minor, minus", "comparative adjective"),
+ "noster, nostra, nostrum": ("noster, nostra, nostrum", "possessive adjective"),
+ "suus, sua, suum": ("suus, sua, suum", "possessive adjective"),
+ "secundus, secunda, secundum": ("secundus, secunda, secundum", "ordinal adjective"),
+ "tertius, tertia, tertium": ("tertius, tertia, tertium", "ordinal adjective"),
+ "quartus, quarta, quartum": ("quartus, quarta, quartum", "ordinal adjective"),
+ "quintus, quinta, quintum": ("quintus, quinta, quintum", "ordinal adjective"),
+ "sextus, sexta, sextum": ("sextus, sexta, sextum", "ordinal adjective"),
+ "duo, duæ, duo": ("duo, duæ, duo", "numeral adjective"),
+ "major, majus": ("major, majus", "comparative adjective"),
+ "unus, una, unum": ("unus, una, unum", "numeral adjective"),
+ "hic, hæc, hoc": ("hic, hæc, hoc", "pronoun"),
+ "ille, illa, illud": ("ille, illa, illud", "pronoun"),
+ "is, ea, id": ("is, ea, id", "pronoun"),
+ "qui, quæ, quod": ("qui, quæ, quod", "relative pronoun"),
+ "semetipse": ("semetipse", "reflexive pronoun"),
+ "unusquisque, unaquæque, unumquodque": ("unusquisque, unaquæque, unumquodque", "pronoun"),
+ "tu": ("tu", "personal pronoun"),
+ "appello, appellare, appellavi, appellatus": (None, "first conjugation"),
+ "congrego, congregare, congregavi, congregatus": (None, "first conjugation"),
+ "creo, creare, creavi, creatus": (None, "first conjugation"),
+ "germino, germinare, germinavi, germinatus": (None, "first conjugation"),
+ "illumino, illuminare, illuminavi, illuminatus": (None, "first conjugation"),
+ "multiplico, multiplicare, multiplicavi, multiplicatus": (None, "first conjugation"),
+ "voco, vocare, vocavi, vocatus": (None, "first conjugation"),
+ "do, dare, dedi, datus": (None, "first conjugation, irregular"),
+ "dominor, dominari, dominatus sum": (None, "first conjugation, deponent"),
+ "appareo, apparere, apparui": (None, "second conjugation"),
+ "habeo, habere, habui, habitus": (None, "second conjugation"),
+ "luceo, lucere, luxi": (None, "second conjugation"),
+ "moveo, movere, movi, motus": (None, "second conjugation"),
+ "repleo, replere, replevi, repletus": (None, "second conjugation"),
+ "video, videre, vidi, visus": (None, "second conjugation"),
+ "vireo, virere, virui": (None, "second conjugation"),
+ "benedico, benedicere, benedixi, benedictus": (None, "third conjugation"),
+ "cresco, crescere, crevi, cretus": (None, "third conjugation"),
+ "dico, dicere, dixi, dictus": (None, "third conjugation"),
+ "divido, dividere, divisi, divisus": (None, "third conjugation"),
+ "pono, ponere, posui, positus": (None, "third conjugation"),
+ "produco, producere, produxi, productus": (None, "third conjugation"),
+ "vivo, vivere, vixi, victus": (None, "third conjugation"),
+ "facio, facere, feci, factus": (None, "third conjugation"),
+ "subjicio, subjicere, subjeci, subjectus": (None, "third conjugation"),
+ "vescor, vesci": (None, "third conjugation, deponent"),
+ "affero, afferre, attuli, allatus": (None, "irregular verb"),
+ "fero, ferre, tuli, latus": (None, "irregular verb"),
+ "profero, proferre, protuli, prolatus": (None, "irregular verb"),
+ "fio, fieri, factus sum": (None, "irregular verb"),
+ "sum, esse, fui": (None, "irregular verb"),
+ "præsum, præesse, præfui": (None, "irregular verb"),
+ "aio": (None, "defective verb"),
+}
+
+# Part of speech, shown as the card's corner chip ("NOUN", "VERB", ...).
+def pos_of(cls):
+    if "adjective" in cls:
+        return "adjective"
+    if "pronoun" in cls:
+        return "pronoun"
+    # function words BEFORE the verb check: "verb" is a substring of "adverb"
+    for w in ("preposition", "conjunction", "adverb", "interjection", "numeral"):
+        if w in cls:
+            return w
+    if "noun" in cls or "declension" in cls:
+        return "noun"
+    if "verb" in cls or "conjugation" in cls:
+        return "verb"
+    return ""
+
+# Declensions and conjugations as Roman numerals (Olivetti dictionary
+# convention Michael liked): "feminine · I declension", "III conjugation".
+def romanize(cls):
+    for a, b in [
+        ("first- and second-declension", "I-II declension"),
+        ("third-declension", "III declension"),
+        ("first declension", "I declension"),
+        ("second declension", "II declension"),
+        ("third declension", "III declension"),
+        ("fourth declension", "IV declension"),
+        ("fifth declension", "V declension"),
+        ("first conjugation", "I conjugation"),
+        ("second conjugation", "II conjugation"),
+        ("third conjugation", "III conjugation"),
+    ]:
+        cls = cls.replace(a, b)
+    return cls
+
+
+# The grammar line reads "pos · class facts · occurrence" for every word,
+# so class strings must not repeat the part of speech: "III declension
+# adjective" becomes attrs "III declension" under kind "adjective".
+def attrs_of(cls):
+    a = cls
+    for pat, rep in [
+        ("III declension adjective", "III declension"),
+        ("I-II declension adjective", "I-II declension"),
+        ("ordinal adjective", "ordinal"),
+        ("possessive adjective", "possessive"),
+        ("comparative adjective", "comparative"),
+        ("numeral adjective", "numeral"),
+        ("irregular verb", "irregular"),
+        ("defective verb", "defective"),
+        ("indeclinable noun", "indeclinable"),
+        ("relative pronoun", "relative"),
+        ("personal pronoun", "personal"),
+        ("reflexive pronoun", "reflexive"),
+    ]:
+        a = a.replace(pat, rep)
+    return a.replace(", ", " · ")
+
+
+# Parse-line rule: only occurrence facts, in conventional case-number-gender
+# order. Nouns never state gender (it is a lemma fact, shown below the line);
+# adjectives and pronouns do, because theirs is borrowed by agreement.
+PARSE_FIX = {
+ "inanis": "nominative singular feminine",
+ "vacua": "nominative singular feminine",
+ "bona": "nominative singular feminine",
+ "eam": "accusative singular feminine",
+ "eas": "accusative plural feminine",
+ "eos": "accusative plural masculine",
+ "illum": "accusative singular masculine",
+ "quam": "accusative singular feminine",
+ "nostram": "accusative singular feminine",
+ "suam": "accusative singular feminine",
+ "suas": "accusative plural feminine",
+ "grandia": "accusative plural neuter",
+ "magna": "accusative plural neuter",
+ "cuncta": "accusative plural neuter",
+ "universa": "accusative plural neuter",
+ "omne": "accusative singular neuter",
+ "majus": "accusative singular neuter, comparative",
+ "minus": "accusative singular neuter, comparative",
+ "universæque": "dative singular feminine, with -que (and) fused on",
+ "omnem": "accusative singular feminine",
+ "suum": "accusative singular neuter",
+ "suo": "ablative singular neuter",
+ "sui": "genitive singular neuter",
+ "duo": "accusative plural neuter",
+ "unus": "nominative singular masculine",
+ "secundus": "nominative singular masculine",
+ "tertius": "nominative singular masculine",
+ "quartus": "nominative singular masculine",
+ "quintus": "nominative singular masculine",
+ "sextus": "nominative singular masculine",
+}
+for form, parse in PARSE_FIX.items():
+    g, _, l, df = E[form]
+    E[form] = (g, parse, l, df)
+OVERRIDES[(31, "bona", 1)] = {"p": "nominative plural neuter"}
+OVERRIDES[(26, "quod", 1)] = {"p": "nominative singular neuter, relative pronoun"}
+OVERRIDES[(11, "semen", 2)] = {"p": "nominative singular"}
+OVERRIDES[(27, "suam", 1)] = {"g": "his own"}
+OVERRIDES[(10, "congregationesque", 1)] = {"g": "and the gathering"}
+OVERRIDES[(26, "cæli", 1)] = {"g": "of the air"}
+OVERRIDES[(28, "cæli", 1)] = {"g": "of the air"}
+OVERRIDES[(30, "cæli", 1)] = {"g": "of the air"}
+OVERRIDES[(31, "quæ", 1)] = {"p": "accusative plural neuter, relative pronoun"}
+OVERRIDES[(11, "terra", 1)] = {"g": "the land"}
+OVERRIDES[(12, "terra", 1)] = {"g": "the land"}
+OVERRIDES[(24, "terra", 1)] = {"g": "the land"}
+OVERRIDES[(11, "lignum", 1)] = {"g": "trees"}
+OVERRIDES[(6, "firmamentum", 1)] = {"g": "a firmament"}
+OVERRIDES[(7, "firmamentum", 1)] = {"g": "a firmament"}
+OVERRIDES[(21, "in", 1)] = {"g": "according to"}
+
+# ---------- noun paradigm tables ----------
+# Generated from citation + declension, with hand overrides where Latin is
+# irregular. Verbs/adjectives get no table yet. Counts per cell = corpus
+# occurrences of that spelling.
+CASES = ["Nom", "Gen", "Dat", "Acc", "Abl"]
+
+# Citations that get no table in this pass (mixed or defective paradigms);
+# two-part citations (animans) and indeclinables (mane) skip automatically.
+NO_TABLE = {"vesper, vesperis, m.", "cetus, ceti, m."}
+
+# Third-declension facts the citation cannot supply: genitive plural type
+# and, for neuters, the plural in -a/-ia (i-stem neuters in -e also take
+# ablative singular -i).
+THIRD = {
+ "avis": {"gp": "avium"},
+ "congregatio": {"gp": "congregationum"},
+ "homo": {"gp": "hominum"},
+ "imago": {"gp": "imaginum"},
+ "lux": {"gp": "lucum"},
+ "nox": {"gp": "noctium"},
+ "sementis": {"gp": "sementium"},
+ "similitudo": {"gp": "similitudinum"},
+ "volucris": {"gp": "volucrum"},
+ "piscis": {"gp": "piscium"},
+ "genus": {"gp": "generum", "npl": "genera"},
+ "semen": {"gp": "seminum", "npl": "semina"},
+ "tempus": {"gp": "temporum", "npl": "tempora"},
+ "luminare": {"gp": "luminarium", "npl": "luminaria", "abl": "luminari"},
+ "mare": {"gp": "marium", "npl": "maria", "abl": "mari"},
+ "reptile": {"gp": "reptilium", "npl": "reptilia", "abl": "reptili"},
+}
+
+# Fully irregular tables.
+IRREGULAR_TABLES = {
+ "deus": [["Deus", "dii"], ["Dei", "deorum"], ["Deo", "diis"], ["Deum", "deos"], ["Deo", "diis"]],
+ # heteroclites: neuter singular, masculine/neuter plural as the Vulgate uses
+ "cælum": [["cælum", "cæli"], ["cæli", "cælorum"], ["cælo", "cælis"],
+           ["cælum", "cælos"], ["cælo", "cælis"]],
+ "locus": [["locus", "loca"], ["loci", "locorum"], ["loco", "locis"],
+           ["locum", "loca"], ["loco", "locis"]],
+ # dea/filia-type -abus dative/ablative plural (animis belongs to animus)
+ "anima": [["anima", "animæ"], ["animæ", "animarum"], ["animæ", "animabus"],
+           ["animam", "animas"], ["anima", "animabus"]],
+}
+
+
+def noun_table(cite):
+    """cite like 'terra, terræ, f.' -> [[sg, pl] x 5 cases] or None."""
+    parts = [p.strip() for p in cite.split(",")]
+    if len(parts) != 3:
+        return None
+    nom, gen = parts[0], parts[1]
+    key = nom.lower()
+    if key in IRREGULAR_TABLES:
+        return IRREGULAR_TABLES[key]
+    if gen.endswith("arum"):  # first declension, plural only (tenebræ)
+        s = gen[:-4]
+        return [[None, s + "æ"], [None, s + "arum"], [None, s + "is"],
+                [None, s + "as"], [None, s + "is"]]
+    if gen.endswith("æ"):  # first declension
+        s = gen[:-1]
+        return [[s + "a", s + "æ"], [s + "æ", s + "arum"], [s + "æ", s + "is"],
+                [s + "am", s + "as"], [s + "a", s + "is"]]
+    if gen.endswith("ei"):  # fifth declension
+        s = gen[:-2]
+        return [[s + "es", s + "es"], [s + "ei", s + "erum"], [s + "ei", s + "ebus"],
+                [s + "em", s + "es"], [s + "e", s + "ebus"]]
+    if gen.endswith("us") and not gen.endswith("ius"):  # fourth declension
+        s = gen[:-2]
+        return [[s + "us", s + "us"], [s + "us", s + "uum"], [s + "ui", s + "ibus"],
+                [s + "um", s + "us"], [s + "u", s + "ibus"]]
+    if gen.endswith("is"):  # third declension
+        s = gen[:-2]
+        x = THIRD.get(key, {})
+        gp = x.get("gp", s + "um")
+        if "npl" in x:  # neuter
+            npl = x["npl"]
+            abl = x.get("abl", s + "e")
+            return [[nom, npl], [s + "is", gp], [s + "i", s + "ibus"],
+                    [nom, npl], [abl, s + "ibus"]]
+        return [[nom, s + "es"], [s + "is", gp], [s + "i", s + "ibus"],
+                [s + "em", s + "es"], [s + "e", s + "ibus"]]
+    if gen.endswith("i"):  # second declension
+        s = gen[:-1]
+        if nom.endswith("um"):  # neuter
+            return [[nom, s + "a"], [s + "i", s + "orum"], [s + "o", s + "is"],
+                    [nom, s + "a"], [s + "o", s + "is"]]
+        return [[nom, s + "i"], [s + "i", s + "orum"], [s + "o", s + "is"],
+                [s + "um", s + "os"], [s + "o", s + "is"]]
+    return None
+
+
+def ls_cite(cite, cls):
+    """Lewis & Short style citation: clipped genitive ending per declension
+    ("terra, æ, f."; third declension keeps the full genitive, as L&S does).
+    cls arrives romanized: "feminine · I declension"."""
+    parts = [p.strip() for p in cite.split(",")]
+    if len(parts) != 3:
+        return cite
+    nom, gen, g = parts
+    m = re.search(r"\b(I-II|III|IV|V|II|I)\s+declension", cls)
+    num = m.group(1) if m else ""
+    if num == "I":
+        end = "arum" if gen.endswith("arum") else "æ"
+    elif num == "II":
+        end = "ii" if gen.endswith("ii") else "i"
+    elif num == "III":
+        return f"{nom}, {gen}, {g}"
+    elif num == "IV":
+        end = "us"
+    elif num == "V":
+        end = "ei"
+    else:
+        return cite
+    return f"{nom}, {end}, {g}"
+
+
+# (table key, form) -> corrected count where the raw string count includes
+# a different lexeme (maribus = mas; lucum/luci/lucis partly = lucus).
+COUNT_OVERRIDES = {
+    ("mare", "maribus"): 0,
+    ("lux", "lucum"): 0,
+    ("lux", "luci"): 2,
+    ("lux", "lucis"): 11,
+}
+
+
+def build_tables(forms):
+    """Attach noun tables: forms get a 't' key; returns {key: table}."""
+    tables = {}
+    for key, entry in forms.items():
+        cls, cite = entry["c"], entry["l"]
+        if "declension" not in cls or "adjective" in cls or cite in NO_TABLE:
+            continue
+        rows = noun_table(cite)
+        if rows is None:
+            continue
+        tkey = cite.split(",")[0].strip().lower()
+        if tkey not in tables:
+            tables[tkey] = {
+                "l": ls_cite(cite, cls),
+                "c": cls,
+                "rows": [
+                    [CASES[i]]
+                    + [None if f is None else
+                       [f, COUNT_OVERRIDES.get((tkey, f.lower()),
+                                               freq.get(f.lower(), 0))]
+                       for f in row]
+                    for i, row in enumerate(rows)
+                ],
+            }
+        entry["t"] = tkey
+    return tables
+
+
+# Hand-authored grammatical links for the glow demo, all 31 verses.
+# (head index, dependent index, type); indices AFTER merges. Types:
+#   s = subject, o = object, d = recipient (clause roles: rendered as one
+#       who-did-what line in the verse's own word order)
+#   g = ownership: the genitive names the owner (spiritus Dei = the Spirit
+#       belongs to Dei; Dei is the owner of spiritus)
+#   a = agreement (adjective/participle matches its noun)
+#   w = preposition and its object
+#   c = subordinator introduces its verb (why the subjunctive)
+# Glow invariant (Michael, 2026-07-25): whatever words the card's relation
+# line names, the page glows. Line and glow must never disagree.
+RELATED = {
+ 1: [(2, 3, "s"), (2, 4, "o"), (2, 6, "o"), (0, 1, "w")],
+ 2: [(2, 0, "s"), (0, 3, "a"), (0, 5, "a"), (8, 7, "s"), (9, 10, "w"),
+     (10, 11, "g"), (13, 14, "g"), (15, 13, "s"), (16, 17, "w")],
+ 3: [(0, 1, "s"), (2, 3, "s"), (5, 6, "s")],
+ 4: [(1, 2, "s"), (1, 3, "o"), (3, 6, "a"), (8, 2, "s"), (8, 9, "o"), (10, 11, "w"), (4, 5, "c")],
+ 5: [(0, 1, "o"), (0, 2, "o"), (0, 4, "o"), (0, 5, "o"), (10, 11, "a")],
+ 6: [(0, 2, "s"), (3, 4, "s"), (5, 6, "w"), (6, 7, "g"), (9, 10, "o"), (11, 12, "w")],
+ 7: [(1, 2, "s"), (1, 3, "o"), (4, 2, "s"), (4, 5, "o"), (7, 6, "s"),
+     (8, 9, "w"), (10, 11, "w"), (13, 12, "s"), (14, 15, "w")],
+ 8: [(0, 1, "s"), (0, 2, "o"), (0, 3, "o"), (9, 10, "a")],
+ 9: [(0, 2, "s"), (3, 4, "s"), (8, 5, "s"), (6, 7, "w"), (9, 10, "w"),
+     (10, 11, "a"), (13, 14, "s")],
+ 10: [(1, 2, "s"), (1, 3, "o"), (1, 4, "o"), (7, 2, "s"), (7, 5, "o"),
+      (7, 8, "o"), (5, 6, "g"), (10, 11, "s"), (12, 13, "c")],
+ 11: [(2, 3, "s"), (2, 4, "o"), (2, 10, "o"), (4, 5, "a"), (4, 7, "a"),
+      (7, 8, "o"), (10, 11, "a"), (10, 12, "a"), (12, 13, "o"),
+      (14, 15, "w"), (15, 16, "a"), (18, 17, "g"), (21, 18, "s"),
+      (19, 20, "w"), (22, 23, "w")],
+ 12: [(1, 2, "s"), (1, 3, "o"), (1, 11, "o"), (3, 4, "a"), (3, 6, "a"), (6, 7, "o"),
+      (8, 9, "w"), (9, 10, "a"), (11, 12, "a"), (12, 13, "o"),
+      (11, 15, "a"), (15, 17, "o"), (18, 19, "w"), (19, 20, "a"),
+      (22, 23, "s"), (24, 25, "c")],
+ 13: [(5, 6, "a")],
+ 14: [(0, 2, "s"), (3, 4, "s"), (5, 6, "w"), (6, 7, "g"), (9, 10, "o"),
+      (9, 12, "o"), (9, 4, "s"), (14, 4, "s"),
+      (15, 16, "w"), (15, 18, "w"), (15, 20, "w"), (15, 22, "w")],
+ 15: [(0, 1, "c"), (2, 3, "w"), (3, 4, "g"), (6, 7, "o")],
+ 16: [(0, 1, "s"), (0, 3, "o"), (3, 2, "a"), (3, 4, "a"), (7, 8, "c"),
+      (13, 14, "c"), (0, 17, "o"), (8, 9, "d"), (14, 15, "d"),
+      (5, 6, "a"), (11, 12, "a")],
+ 17: [(1, 2, "o"), (3, 4, "w"), (4, 5, "g"), (6, 7, "c"), (8, 9, "w")],
+ 18: [(6, 7, "o"), (6, 9, "o"), (11, 12, "s"), (13, 14, "c"), (1, 2, "d"), (1, 4, "d")],
+ 19: [(5, 6, "a")],
+ 20: [(0, 2, "s"), (3, 4, "s"), (3, 5, "o"), (5, 6, "g"), (6, 7, "a"),
+      (3, 9, "o"), (10, 11, "w"), (12, 13, "w"), (13, 14, "g")],
+ 21: [(0, 1, "s"), (0, 2, "o"), (2, 3, "a"), (0, 6, "o"), (6, 5, "a"),
+      (6, 7, "a"), (6, 9, "a"), (11, 10, "o"), (11, 12, "s"),
+      (13, 14, "w"), (14, 15, "a"), (0, 18, "o"), (18, 17, "a"),
+      (19, 20, "w"), (20, 21, "a"), (23, 24, "s"), (25, 26, "c")],
+ 22: [(7, 8, "o"), (8, 9, "g"), (11, 10, "s"), (12, 13, "w"), (0, 1, "d")],
+ 23: [(5, 6, "a")],
+ 24: [(0, 2, "s"), (3, 4, "s"), (3, 5, "o"), (5, 6, "a"), (7, 8, "w"),
+      (8, 9, "a"), (3, 10, "o"), (3, 12, "o"), (3, 14, "o"),
+      (14, 15, "g"), (16, 17, "w"), (17, 18, "a")],
+ 25: [(1, 2, "s"), (1, 3, "o"), (3, 4, "g"), (5, 6, "w"), (6, 7, "a"),
+      (1, 9, "o"), (1, 12, "o"), (12, 11, "a"), (12, 13, "g"),
+      (14, 15, "w"), (15, 16, "a"), (18, 19, "s"), (20, 21, "c")],
+ 26: [(2, 3, "o"), (4, 5, "w"), (4, 7, "w"), (7, 8, "a"), (11, 12, "g"), (14, 15, "g"),
+      (23, 22, "s"), (24, 25, "w"), (10, 11, "d"), (10, 14, "d"), (10, 17, "d"),
+      (10, 19, "d"), (10, 21, "d"), (19, 18, "a"), (21, 20, "a")],
+ 27: [(1, 2, "s"), (1, 3, "o"), (4, 5, "w"), (5, 6, "a"), (7, 8, "w"),
+      (8, 9, "g"), (10, 11, "o"), (15, 12, "o"), (15, 14, "o"), (15, 16, "o")],
+ 28: [(0, 2, "s"), (9, 10, "o"), (12, 13, "o"), (16, 17, "g"), (19, 20, "g"),
+      (25, 24, "s"), (26, 27, "w"), (0, 1, "d"), (15, 16, "d"), (15, 19, "d"),
+      (15, 23, "d"), (23, 22, "a")],
+ 29: [(0, 1, "s"), (3, 4, "d"), (3, 6, "o"), (3, 13, "o"), (6, 5, "a"),
+      (6, 7, "a"), (7, 8, "o"), (9, 10, "w"), (13, 12, "a"), (15, 14, "s"),
+      (15, 18, "o"), (16, 17, "w"), (18, 19, "g"), (19, 20, "a"),
+      (21, 22, "c"), (22, 23, "d"), (24, 25, "w")],
+ 30: [(2, 1, "a"), (2, 3, "g"), (5, 4, "a"), (5, 6, "g"), (10, 9, "s"),
+      (11, 12, "w"), (14, 15, "w"), (16, 17, "s"), (17, 18, "a"),
+      (19, 20, "c"), (21, 22, "w")],
+ 31: [(0, 1, "s"), (0, 2, "o"), (4, 3, "o"), (6, 2, "s"), (2, 8, "a"), (14, 15, "a")],
+}
+
+CLAUSE_TYPES = {"s": "subject", "o": "object", "d": "recipient"}
+GLOW_TYPES = {"s", "o", "d", "g", "a", "w", "c"}
+
+# Pairwise phrasing (everything except clause groups, which render in the
+# verse's own word order).
+HEAD_PHRASE = {"a": "described by", "w": "with", "g": "belongs to", "c": "introduces"}
+DEP_PHRASE = {"a": "adjective for", "w": "with", "g": "owner of", "c": "introduced by"}
+
+d = json.load(open(f"{ROOT}/public/bible/genesis/1.json"))
+verses = {}
+forms = {}
+missing = set()
+missing_lemmas = set()
+
+for v in d["verses"]:
+    toks = " ".join(p[0] for p in v["pairs"]).split()
+    out = []
+    seen = collections.Counter()
+    i = 0
+    while i < len(toks):
+        c1 = clean(toks[i])
+        c2 = clean(toks[i + 1]) if i + 1 < len(toks) else None
+        if c2 and (c1, c2) in MERGES:
+            g, p, l, df = MERGES[(c1, c2)]
+            display = toks[i] + " " + toks[i + 1]
+            key = f"{c1} {c2}"
+            n = bigrams[(c1, c2)]
+            i += 2
+        else:
+            if c1 not in E:
+                missing.add(c1)
+                i += 1
+                continue
+            g, p, l, df = E[c1]
+            display = toks[i]
+            key = c1
+            n = freq[c1]
+            i += 1
+        seen[key] += 1
+        ov = OVERRIDES.get((v["v"], key, seen[key]), {})
+        g = ov.get("g", g)
+        p = ov.get("p", p)
+        # forms map holds the default entry; per-token overrides ride on the token
+        if key not in forms:
+            default_parse = E[key][1] if key in E else p
+            info = LEMMAS.get(l)
+            if info is None:
+                missing_lemmas.add(l)
+                cite, cls = l, ""
+            else:
+                cite, cls = info[0] or l, info[1]
+            forms[key] = {"p": default_parse, "l": cite,
+                          "c": attrs_of(romanize(cls)),
+                          "k": pos_of(cls), "d": df, "n": n}
+        tok_entry = [display, g]
+        if ov:
+            tok_entry.append({k: ov[k] for k in ov})
+        out.append(tok_entry)
+    verses[str(v["v"])] = out
+
+if missing:
+    raise SystemExit(f"UNGLOSSED FORMS: {sorted(missing)}")
+if missing_lemmas:
+    raise SystemExit(f"LEMMAS WITHOUT CLASS INFO: {sorted(missing_lemmas)}")
+
+# attach symmetric related-word links plus a card line naming each relation
+def word_of(toks, i):
+    return re.sub(r"[^\wÆæŒœëï ]+$", "", re.sub(r"^[^\wÆæŒœëï]+", "", toks[i][0].split(" ")[0] if " " not in toks[i][0] else toks[i][0]))
+
+for vnum, pairs in RELATED.items():
+    toks = verses[str(vnum)]
+    clauses = {}   # verb index -> [(index, role), ...]
+    pairwise = []  # agreement / with links
+    for i, j, typ in pairs:
+        assert i < len(toks) and j < len(toks), (vnum, i, j)
+        if typ in CLAUSE_TYPES:
+            clauses.setdefault(i, [(i, "verb")]).append((j, CLAUSE_TYPES[typ]))
+        else:
+            pairwise.append((i, j, typ))
+    rel_r = {}     # index -> glow partner indices
+    rel_line = {}  # index -> phrase list, clause line first
+    # Whole clause in the verse's own word order; every member gets the same
+    # line and glows every other member ("who did what", as the text put it).
+    for members in clauses.values():
+        ordered = sorted(members, key=lambda m: m[0])
+        parts = []
+        for idx, role in ordered:
+            w = word_of(toks, idx)
+            if parts and parts[-1][0] == role:
+                parts[-1][1].append(w)
+            else:
+                parts.append((role, [w]))
+        line = " · ".join(f"{role} {', '.join(ws)}" for role, ws in parts)
+        idxs = [m[0] for m in members]
+        for idx in idxs:
+            rel_line.setdefault(idx, []).append(line)
+            rel_r.setdefault(idx, set()).update(x for x in idxs if x != idx)
+    rel_pairs = {}  # index -> [(phrase, word)] to be grouped by phrase
+    for i, j, typ in pairwise:
+        if typ in GLOW_TYPES:
+            rel_r.setdefault(i, set()).add(j)
+            rel_r.setdefault(j, set()).add(i)
+        rel_pairs.setdefault(i, []).append((HEAD_PHRASE[typ], word_of(toks, j)))
+        rel_pairs.setdefault(j, []).append((DEP_PHRASE[typ], word_of(toks, i)))
+    for idx, parts in rel_pairs.items():
+        grouped = []
+        for phrase, w in parts:
+            if grouped and grouped[-1][0] == phrase:
+                grouped[-1][1].append(w)
+            else:
+                grouped.append((phrase, [w]))
+        rel_line.setdefault(idx, []).extend(
+            f"{ph} {', '.join(ws)}" for ph, ws in grouped
+        )
+    for idx, lines in rel_line.items():
+        t = toks[idx]
+        if len(t) == 2:
+            t.append({})
+        if rel_r.get(idx):
+            t[2]["r"] = sorted(rel_r[idx])
+        t[2]["rd"] = " · ".join(lines)
+
+tables = build_tables(forms)
+
+# First verb tables: sum, hand-coded (most frequent AND most irregular verb).
+# Each block is one mood+tense, same grid shape as a noun table: persons
+# down, singular/plural across. A tapped form opens its own block.
+SUM_BLOCKS = {
+ "sum-pres-ind": ("indicative · present",
+   [("1st", "sum", "sumus"), ("2nd", "es", "estis"), ("3rd", "est", "sunt")]),
+ "sum-impf-ind": ("indicative · imperfect",
+   [("1st", "eram", "eramus"), ("2nd", "eras", "eratis"), ("3rd", "erat", "erant")]),
+ "sum-fut-ind": ("indicative · future",
+   [("1st", "ero", "erimus"), ("2nd", "eris", "eritis"), ("3rd", "erit", "erunt")]),
+ "sum-perf-ind": ("indicative · perfect",
+   [("1st", "fui", "fuimus"), ("2nd", "fuisti", "fuistis"), ("3rd", "fuit", "fuerunt")]),
+ "sum-pres-subj": ("subjunctive · present",
+   [("1st", "sim", "simus"), ("2nd", "sis", "sitis"), ("3rd", "sit", "sint")]),
+ "sum-impf-subj": ("subjunctive · imperfect",
+   [("1st", "essem", "essemus"), ("2nd", "esses", "essetis"), ("3rd", "esset", "essent")]),
+}
+for bk, (label, rows) in SUM_BLOCKS.items():
+    tables[bk] = {
+        "l": "sum, esse, fui",
+        "c": label,
+        "rows": [[p, [s, freq.get(s, 0)], [pl, freq.get(pl, 0)]]
+                 for p, s, pl in rows],
+    }
+for k, e in forms.items():
+    if e["l"] == "sum, esse, fui" and " " not in k:
+        for bk, (label, rows) in SUM_BLOCKS.items():
+            if any(k in (s, pl) for _, s, pl in rows):
+                e["t"] = bk
+                break
+result = {"verses": verses, "forms": forms, "tables": tables}
+path = f"{ROOT}/public/bible/genesis/1.gloss.json"
+json.dump(result, open(path, "w"), ensure_ascii=False, separators=(",", ":"))
+ntok = sum(len(t) for t in verses.values())
+print(f"wrote {path}: {len(verses)} verses, {ntok} tokens, {len(forms)} forms, {len(tables)} tables")
+# sanity: reconstructed Latin must equal the source text
+for v in d["verses"]:
+    src = " ".join(p[0] for p in v["pairs"])
+    rec = " ".join(t[0] for t in verses[str(v["v"])])
+    assert src == rec, f"verse {v['v']} mismatch:\n{src}\n{rec}"
+print("reconstruction check passed")

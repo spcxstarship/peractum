@@ -1,0 +1,4826 @@
+{
+ "book": "genesis",
+ "chapter": 4,
+ "verses": {
+  "1": {
+   "tokens": [
+    {
+     "w": "Adam",
+     "g": "Adam",
+     "p": "nominative singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "vero",
+     "g": "now",
+     "p": "adverb, always second in its clause",
+     "l": "vero",
+     "c": "adverb",
+     "d": "truly, indeed"
+    },
+    {
+     "w": "cognovit",
+     "g": "knew",
+     "p": "perfect, third singular",
+     "l": "cognosco, cognoscere, cognovi, cognitus",
+     "c": "III conjugation",
+     "d": "to learn, to recognize"
+    },
+    {
+     "w": "uxorem",
+     "g": "wife",
+     "p": "accusative singular",
+     "l": "uxor, uxoris, f.",
+     "c": "feminine · III declension",
+     "d": "wife"
+    },
+    {
+     "w": "suam",
+     "g": "his own",
+     "p": "accusative singular feminine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "Hevam,",
+     "g": "Eve",
+     "p": "accusative singular",
+     "l": "Heva, Hevæ, f.",
+     "c": "feminine · I declension",
+     "d": "Eve, the first woman"
+    },
+    {
+     "w": "quæ",
+     "g": "who",
+     "p": "nominative singular feminine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "concepit",
+     "g": "conceived",
+     "p": "perfect, third singular",
+     "l": "concipio, concipere, concepi, conceptus",
+     "c": "III conjugation",
+     "d": "to conceive, to take in"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "peperit",
+     "g": "gave birth to",
+     "p": "perfect, third singular",
+     "l": "pario, parere, peperi, partus",
+     "c": "III conjugation",
+     "d": "to bring forth, to give birth to"
+    },
+    {
+     "w": "Cain,",
+     "g": "Cain",
+     "p": "accusative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "dicens:",
+     "g": "saying",
+     "p": "nominative singular feminine, present participle",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Possedi",
+     "g": "I have obtained",
+     "p": "perfect, first singular",
+     "l": "possideo, possidere, possedi, possessus",
+     "c": "II conjugation",
+     "d": "to possess, to obtain"
+    },
+    {
+     "w": "hominem",
+     "g": "a man",
+     "p": "accusative singular",
+     "l": "homo, hominis, m.",
+     "c": "masculine · III declension",
+     "d": "man, human being"
+    },
+    {
+     "w": "per",
+     "g": "through",
+     "p": "preposition with the accusative",
+     "l": "per",
+     "c": "preposition",
+     "d": "through, by means of"
+    },
+    {
+     "w": "Deum.",
+     "g": "God",
+     "p": "accusative singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    }
+   ],
+   "links": [
+    [
+     2,
+     0,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "o"
+    ],
+    [
+     3,
+     4,
+     "a"
+    ],
+    [
+     3,
+     5,
+     "a"
+    ],
+    [
+     6,
+     11,
+     "a"
+    ],
+    [
+     7,
+     6,
+     "s"
+    ],
+    [
+     9,
+     6,
+     "s"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     12,
+     13,
+     "o"
+    ],
+    [
+     14,
+     15,
+     "w"
+    ]
+   ]
+  },
+  "2": {
+   "tokens": [
+    {
+     "w": "Rursumque",
+     "g": "and again",
+     "p": "adverb, with -que (and) fused on",
+     "l": "rursum",
+     "c": "adverb",
+     "d": "again, back"
+    },
+    {
+     "w": "peperit",
+     "g": "she gave birth to",
+     "p": "perfect, third singular",
+     "l": "pario, parere, peperi, partus",
+     "c": "III conjugation",
+     "d": "to bring forth, to give birth to"
+    },
+    {
+     "w": "fratrem",
+     "g": "the brother",
+     "p": "accusative singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "ejus",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Abel.",
+     "g": "Abel",
+     "p": "accusative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "Fuit",
+     "g": "was",
+     "p": "perfect, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "autem",
+     "g": "moreover",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "Abel",
+     "g": "Abel",
+     "p": "nominative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "pastor",
+     "g": "a shepherd",
+     "p": "nominative singular",
+     "l": "pastor, pastoris, m.",
+     "c": "masculine · III declension",
+     "d": "shepherd, herdsman"
+    },
+    {
+     "w": "ovium,",
+     "g": "of sheep",
+     "p": "genitive plural",
+     "l": "ovis, ovis, f.",
+     "c": "feminine · III declension",
+     "d": "sheep"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "agricola.",
+     "g": "a farmer",
+     "p": "nominative singular",
+     "l": "agricola, agricolæ, m.",
+     "c": "masculine · I declension",
+     "d": "farmer, husbandman"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "o"
+    ],
+    [
+     2,
+     3,
+     "g"
+    ],
+    [
+     2,
+     4,
+     "a"
+    ],
+    [
+     5,
+     7,
+     "s"
+    ],
+    [
+     7,
+     8,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "g"
+    ],
+    [
+     11,
+     12,
+     "a"
+    ]
+   ]
+  },
+  "3": {
+   "tokens": [
+    {
+     "w": "Factum est",
+     "g": "it happened",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "autem",
+     "g": "then",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "post",
+     "g": "after",
+     "p": "preposition with the accusative",
+     "l": "post",
+     "c": "preposition",
+     "d": "after, behind"
+    },
+    {
+     "w": "multos",
+     "g": "many",
+     "p": "accusative plural masculine",
+     "l": "multus, multa, multum",
+     "c": "I-II declension",
+     "d": "much, many"
+    },
+    {
+     "w": "dies",
+     "g": "days",
+     "p": "accusative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "ut",
+     "g": "that",
+     "p": "conjunction with the subjunctive",
+     "l": "ut",
+     "c": "conjunction",
+     "d": "that, so that, in order that"
+    },
+    {
+     "w": "offerret",
+     "g": "offered",
+     "p": "imperfect subjunctive, third singular",
+     "l": "offero, offerre, obtuli, oblatus",
+     "c": "irregular",
+     "d": "to offer, to present"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "de",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "fructibus",
+     "g": "the fruits",
+     "p": "ablative plural",
+     "l": "fructus, fructus, m.",
+     "c": "masculine · IV declension",
+     "d": "fruit, produce"
+    },
+    {
+     "w": "terræ",
+     "g": "of the earth",
+     "p": "genitive singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    },
+    {
+     "w": "munera",
+     "g": "gifts",
+     "p": "accusative plural",
+     "l": "munus, muneris, n.",
+     "c": "neuter · III declension",
+     "d": "gift, offering"
+    },
+    {
+     "w": "Domino.",
+     "g": "to the Lord",
+     "p": "dative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    }
+   ],
+   "links": [
+    [
+     2,
+     4,
+     "w"
+    ],
+    [
+     4,
+     3,
+     "a"
+    ],
+    [
+     5,
+     6,
+     "c"
+    ],
+    [
+     6,
+     7,
+     "s"
+    ],
+    [
+     6,
+     11,
+     "o"
+    ],
+    [
+     6,
+     12,
+     "d"
+    ],
+    [
+     8,
+     9,
+     "w"
+    ],
+    [
+     9,
+     10,
+     "g"
+    ]
+   ]
+  },
+  "4": {
+   "tokens": [
+    {
+     "w": "Abel",
+     "g": "Abel",
+     "p": "nominative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "quoque",
+     "g": "also",
+     "p": "adverb",
+     "l": "quoque",
+     "c": "adverb",
+     "d": "also, too"
+    },
+    {
+     "w": "obtulit",
+     "g": "offered",
+     "p": "perfect, third singular",
+     "l": "offero, offerre, obtuli, oblatus",
+     "c": "irregular",
+     "d": "to offer, to present"
+    },
+    {
+     "w": "de",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "primogenitis",
+     "g": "the firstborn",
+     "p": "ablative plural neuter, adjective used as a noun",
+     "l": "primogenitus, primogenita, primogenitum",
+     "c": "I-II declension",
+     "d": "firstborn"
+    },
+    {
+     "w": "gregis",
+     "g": "of flock",
+     "p": "genitive singular",
+     "l": "grex, gregis, m.",
+     "c": "masculine · III declension",
+     "d": "flock, herd"
+    },
+    {
+     "w": "sui,",
+     "g": "his own",
+     "p": "genitive singular masculine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "de",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "adipibus",
+     "g": "the fat",
+     "p": "ablative plural",
+     "l": "adeps, adipis, c.",
+     "c": "common gender · III declension",
+     "d": "fat, fatness"
+    },
+    {
+     "w": "eorum:",
+     "g": "of them",
+     "p": "genitive plural neuter",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "respexit",
+     "g": "looked with favor",
+     "p": "perfect, third singular",
+     "l": "respicio, respicere, respexi, respectus",
+     "c": "III conjugation",
+     "d": "to look back at, to regard"
+    },
+    {
+     "w": "Dominus",
+     "g": "the Lord",
+     "p": "nominative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "ad",
+     "g": "on",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "Abel,",
+     "g": "Abel",
+     "p": "accusative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ad",
+     "g": "on",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "munera",
+     "g": "the gifts",
+     "p": "accusative plural",
+     "l": "munus, muneris, n.",
+     "c": "neuter · III declension",
+     "d": "gift, offering"
+    },
+    {
+     "w": "ejus.",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    }
+   ],
+   "links": [
+    [
+     2,
+     0,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "w"
+    ],
+    [
+     4,
+     5,
+     "g"
+    ],
+    [
+     5,
+     6,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "w"
+    ],
+    [
+     9,
+     10,
+     "g"
+    ],
+    [
+     12,
+     13,
+     "s"
+    ],
+    [
+     14,
+     15,
+     "w"
+    ],
+    [
+     17,
+     18,
+     "w"
+    ],
+    [
+     18,
+     19,
+     "g"
+    ]
+   ]
+  },
+  "5": {
+   "tokens": [
+    {
+     "w": "Ad",
+     "g": "on",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "accusative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "vero,",
+     "g": "truly",
+     "p": "adverb, always second in its clause",
+     "l": "vero",
+     "c": "adverb",
+     "d": "truly, indeed"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ad",
+     "g": "on",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "munera",
+     "g": "the gifts",
+     "p": "accusative plural",
+     "l": "munus, muneris, n.",
+     "c": "neuter · III declension",
+     "d": "gift, offering"
+    },
+    {
+     "w": "illius",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "ille, illa, illud",
+     "c": "pronoun",
+     "d": "that one; he, she, it"
+    },
+    {
+     "w": "non",
+     "g": "not",
+     "p": "adverb",
+     "l": "non",
+     "c": "adverb",
+     "d": "not"
+    },
+    {
+     "w": "respexit:",
+     "g": "did he look with favor",
+     "p": "perfect, third singular",
+     "l": "respicio, respicere, respexi, respectus",
+     "c": "III conjugation",
+     "d": "to look back at, to regard"
+    },
+    {
+     "w": "iratusque est",
+     "g": "and became angry",
+     "p": "perfect, third singular (deponent verb): two words, one verb, with -que (and) fused on",
+     "l": "irascor, irasci, iratus sum",
+     "c": "III conjugation · deponent",
+     "d": "to be angry, to grow angry"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "vehementer,",
+     "g": "vehemently",
+     "p": "adverb",
+     "l": "vehementer",
+     "c": "adverb",
+     "d": "vehemently, violently"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "concidit",
+     "g": "fell",
+     "p": "perfect, third singular",
+     "l": "concido, concidere, concidi",
+     "c": "III conjugation",
+     "d": "to fall down, to collapse"
+    },
+    {
+     "w": "vultus",
+     "g": "the countenance",
+     "p": "nominative singular",
+     "l": "vultus, vultus, m.",
+     "c": "masculine · IV declension",
+     "d": "face, countenance"
+    },
+    {
+     "w": "ejus.",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "w"
+    ],
+    [
+     4,
+     5,
+     "w"
+    ],
+    [
+     5,
+     6,
+     "g"
+    ],
+    [
+     9,
+     10,
+     "s"
+    ],
+    [
+     13,
+     14,
+     "s"
+    ],
+    [
+     14,
+     15,
+     "g"
+    ]
+   ]
+  },
+  "6": {
+   "tokens": [
+    {
+     "w": "Dixitque",
+     "g": "and said",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Dominus",
+     "g": "the Lord",
+     "p": "nominative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "eum:",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Quare",
+     "g": "why",
+     "p": "adverb introducing a question",
+     "l": "quare",
+     "c": "adverb",
+     "d": "why? for what reason?"
+    },
+    {
+     "w": "iratus es?",
+     "g": "are you angry",
+     "p": "perfect, second singular (deponent verb): two words, one verb",
+     "l": "irascor, irasci, iratus sum",
+     "c": "III conjugation · deponent",
+     "d": "to be angry, to grow angry"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "cur",
+     "g": "why",
+     "p": "adverb introducing a question",
+     "l": "cur",
+     "c": "adverb",
+     "d": "why?"
+    },
+    {
+     "w": "concidit",
+     "g": "has fallen",
+     "p": "perfect, third singular",
+     "l": "concido, concidere, concidi",
+     "c": "III conjugation",
+     "d": "to fall down, to collapse"
+    },
+    {
+     "w": "facies",
+     "g": "the face",
+     "p": "nominative singular",
+     "l": "facies, faciei, f.",
+     "c": "feminine · V declension",
+     "d": "face, surface"
+    },
+    {
+     "w": "tua?",
+     "g": "your",
+     "p": "nominative singular feminine",
+     "l": "tuus, tua, tuum",
+     "c": "possessive",
+     "d": "your, yours"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "w"
+    ],
+    [
+     8,
+     9,
+     "s"
+    ],
+    [
+     9,
+     10,
+     "a"
+    ]
+   ]
+  },
+  "7": {
+   "tokens": [
+    {
+     "w": "nonne",
+     "g": "will you not",
+     "p": "interrogative particle expecting the answer yes",
+     "l": "nonne",
+     "c": "adverb",
+     "d": "is it not?, surely"
+    },
+    {
+     "w": "si",
+     "g": "if",
+     "p": "conjunction",
+     "l": "si",
+     "c": "conjunction",
+     "d": "if"
+    },
+    {
+     "w": "bene",
+     "g": "well",
+     "p": "adverb",
+     "l": "bene",
+     "c": "adverb",
+     "d": "well, rightly"
+    },
+    {
+     "w": "egeris,",
+     "g": "you will have acted",
+     "p": "future perfect, second singular",
+     "l": "ago, agere, egi, actus",
+     "c": "III conjugation",
+     "d": "to do, to drive"
+    },
+    {
+     "w": "recipies:",
+     "g": "receive",
+     "p": "future, second singular",
+     "l": "recipio, recipere, recepi, receptus",
+     "c": "III conjugation",
+     "d": "to receive, to take back"
+    },
+    {
+     "w": "sin",
+     "g": "but if",
+     "p": "conjunction",
+     "l": "sin",
+     "c": "conjunction",
+     "d": "but if, if however"
+    },
+    {
+     "w": "autem",
+     "g": "however",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "male,",
+     "g": "badly",
+     "p": "adverb",
+     "l": "male",
+     "c": "adverb",
+     "d": "badly, wickedly"
+    },
+    {
+     "w": "statim",
+     "g": "at once",
+     "p": "adverb",
+     "l": "statim",
+     "c": "adverb",
+     "d": "at once, immediately"
+    },
+    {
+     "w": "in",
+     "g": "at",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "foribus",
+     "g": "the door",
+     "p": "ablative plural",
+     "l": "foris, foris, f.",
+     "c": "feminine · III declension",
+     "d": "door, doorway"
+    },
+    {
+     "w": "peccatum",
+     "g": "sin",
+     "p": "nominative singular",
+     "l": "peccatum, peccati, n.",
+     "c": "neuter · II declension",
+     "d": "sin, fault"
+    },
+    {
+     "w": "aderit?",
+     "g": "will be present",
+     "p": "future, third singular",
+     "l": "adsum, adesse, adfui",
+     "c": "irregular",
+     "d": "to be present, to be at hand"
+    },
+    {
+     "w": "sed",
+     "g": "but",
+     "p": "conjunction",
+     "l": "sed",
+     "c": "conjunction",
+     "d": "but"
+    },
+    {
+     "w": "sub",
+     "g": "under",
+     "p": "preposition with the ablative or accusative",
+     "l": "sub",
+     "c": "preposition",
+     "d": "under, beneath"
+    },
+    {
+     "w": "te",
+     "g": "you",
+     "p": "ablative singular, second person pronoun",
+     "l": "tu",
+     "c": "personal",
+     "d": "you"
+    },
+    {
+     "w": "erit",
+     "g": "will be",
+     "p": "future, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "appetitus",
+     "g": "the desire",
+     "p": "nominative singular",
+     "l": "appetitus, appetitus, m.",
+     "c": "masculine · IV declension",
+     "d": "desire, appetite"
+    },
+    {
+     "w": "ejus,",
+     "g": "of it",
+     "p": "genitive singular neuter",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "tu",
+     "g": "you",
+     "p": "nominative singular, second person pronoun",
+     "l": "tu",
+     "c": "personal",
+     "d": "you"
+    },
+    {
+     "w": "dominaberis",
+     "g": "will have dominion over",
+     "p": "future, second singular (deponent verb)",
+     "l": "dominor, dominari, dominatus sum",
+     "c": "I conjugation · deponent",
+     "d": "to rule, to have dominion"
+    },
+    {
+     "w": "illius.",
+     "g": "it",
+     "p": "genitive singular neuter",
+     "l": "ille, illa, illud",
+     "c": "pronoun",
+     "d": "that one; he, she, it"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "c"
+    ],
+    [
+     9,
+     10,
+     "w"
+    ],
+    [
+     12,
+     11,
+     "s"
+    ],
+    [
+     14,
+     15,
+     "w"
+    ],
+    [
+     16,
+     17,
+     "s"
+    ],
+    [
+     17,
+     18,
+     "g"
+    ],
+    [
+     21,
+     20,
+     "s"
+    ]
+   ]
+  },
+  "8": {
+   "tokens": [
+    {
+     "w": "Dixitque",
+     "g": "and said",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "Abel",
+     "g": "Abel",
+     "p": "accusative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "fratrem",
+     "g": "brother",
+     "p": "accusative singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "suum:",
+     "g": "his own",
+     "p": "accusative singular masculine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "Egrediamur",
+     "g": "let us go out",
+     "p": "present subjunctive, first plural (deponent verb)",
+     "l": "egredior, egredi, egressus sum",
+     "c": "III conjugation · deponent",
+     "d": "to go out, to go forth"
+    },
+    {
+     "w": "foras.",
+     "g": "outside",
+     "p": "adverb",
+     "l": "foras",
+     "c": "adverb",
+     "d": "outside, out of doors"
+    },
+    {
+     "w": "Cumque",
+     "g": "and when",
+     "p": "conjunction with the subjunctive, with -que (and) fused on",
+     "l": "cum",
+     "c": "conjunction",
+     "d": "when, since, although"
+    },
+    {
+     "w": "essent",
+     "g": "they were",
+     "p": "imperfect subjunctive, third plural",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "in",
+     "g": "in",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "agro,",
+     "g": "the field",
+     "p": "ablative singular",
+     "l": "ager, agri, m.",
+     "c": "masculine · II declension",
+     "d": "field, land"
+    },
+    {
+     "w": "consurrexit",
+     "g": "rose up",
+     "p": "perfect, third singular",
+     "l": "consurgo, consurgere, consurrexi, consurrectus",
+     "c": "III conjugation",
+     "d": "to rise up, to stand up"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "adversus",
+     "g": "against",
+     "p": "preposition with the accusative",
+     "l": "adversus",
+     "c": "preposition",
+     "d": "against, opposite"
+    },
+    {
+     "w": "fratrem",
+     "g": "brother",
+     "p": "accusative singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "suum",
+     "g": "his own",
+     "p": "accusative singular masculine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "Abel,",
+     "g": "Abel",
+     "p": "accusative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "interfecit",
+     "g": "killed",
+     "p": "perfect, third singular",
+     "l": "interficio, interficere, interfeci, interfectus",
+     "c": "III conjugation",
+     "d": "to kill, to destroy"
+    },
+    {
+     "w": "eum.",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "w"
+    ],
+    [
+     3,
+     4,
+     "a"
+    ],
+    [
+     4,
+     5,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "c"
+    ],
+    [
+     10,
+     11,
+     "w"
+    ],
+    [
+     12,
+     13,
+     "s"
+    ],
+    [
+     14,
+     15,
+     "w"
+    ],
+    [
+     15,
+     16,
+     "a"
+    ],
+    [
+     15,
+     17,
+     "a"
+    ],
+    [
+     19,
+     20,
+     "o"
+    ]
+   ]
+  },
+  "9": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ait",
+     "g": "said",
+     "p": "present, third singular",
+     "l": "aio",
+     "c": "defective",
+     "d": "to say, to affirm"
+    },
+    {
+     "w": "Dominus",
+     "g": "the Lord",
+     "p": "nominative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "Cain:",
+     "g": "Cain",
+     "p": "accusative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "Ubi",
+     "g": "where",
+     "p": "adverb",
+     "l": "ubi",
+     "c": "adverb",
+     "d": "where, when"
+    },
+    {
+     "w": "est",
+     "g": "is",
+     "p": "present, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "Abel",
+     "g": "Abel",
+     "p": "nominative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "frater",
+     "g": "brother",
+     "p": "nominative singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "tuus?",
+     "g": "your",
+     "p": "nominative singular masculine",
+     "l": "tuus, tua, tuum",
+     "c": "possessive",
+     "d": "your, yours"
+    },
+    {
+     "w": "Qui",
+     "g": "and he",
+     "p": "nominative singular masculine, relative pronoun carrying on from the last sentence",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "respondit:",
+     "g": "answered",
+     "p": "perfect, third singular",
+     "l": "respondeo, respondere, respondi, responsus",
+     "c": "II conjugation",
+     "d": "to answer, to reply"
+    },
+    {
+     "w": "Nescio:",
+     "g": "I do not know",
+     "p": "present, first singular",
+     "l": "nescio, nescire, nescivi, nescitus",
+     "c": "IV conjugation",
+     "d": "not to know, to be ignorant of"
+    },
+    {
+     "w": "num",
+     "g": "surely not",
+     "p": "interrogative particle expecting the answer no",
+     "l": "num",
+     "c": "adverb",
+     "d": "surely not?"
+    },
+    {
+     "w": "custos",
+     "g": "the keeper",
+     "p": "nominative singular",
+     "l": "custos, custodis, m.",
+     "c": "masculine · III declension",
+     "d": "guard, keeper"
+    },
+    {
+     "w": "fratris",
+     "g": "of brother",
+     "p": "genitive singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "mei",
+     "g": "my",
+     "p": "genitive singular masculine",
+     "l": "meus, mea, meum",
+     "c": "possessive",
+     "d": "my, mine"
+    },
+    {
+     "w": "sum",
+     "g": "am",
+     "p": "present, first singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "ego?",
+     "g": "I",
+     "p": "nominative singular, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "w"
+    ],
+    [
+     6,
+     7,
+     "s"
+    ],
+    [
+     7,
+     8,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "a"
+    ],
+    [
+     11,
+     10,
+     "s"
+    ],
+    [
+     14,
+     15,
+     "g"
+    ],
+    [
+     15,
+     16,
+     "a"
+    ],
+    [
+     17,
+     18,
+     "s"
+    ],
+    [
+     18,
+     14,
+     "a"
+    ]
+   ]
+  },
+  "10": {
+   "tokens": [
+    {
+     "w": "Dixitque",
+     "g": "and he said",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "eum:",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Quid",
+     "g": "what",
+     "p": "accusative singular neuter, interrogative pronoun",
+     "l": "quis, quid",
+     "c": "interrogative",
+     "d": "who? what?"
+    },
+    {
+     "w": "fecisti?",
+     "g": "have you done",
+     "p": "perfect, second singular",
+     "l": "facio, facere, feci, factus",
+     "c": "III conjugation",
+     "d": "to make, to do"
+    },
+    {
+     "w": "vox",
+     "g": "the voice",
+     "p": "nominative singular",
+     "l": "vox, vocis, f.",
+     "c": "feminine · III declension",
+     "d": "voice, sound"
+    },
+    {
+     "w": "sanguinis",
+     "g": "of the blood",
+     "p": "genitive singular",
+     "l": "sanguis, sanguinis, m.",
+     "c": "masculine · III declension",
+     "d": "blood"
+    },
+    {
+     "w": "fratris",
+     "g": "of brother",
+     "p": "genitive singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "tui",
+     "g": "your",
+     "p": "genitive singular masculine",
+     "l": "tuus, tua, tuum",
+     "c": "possessive",
+     "d": "your, yours"
+    },
+    {
+     "w": "clamat",
+     "g": "cries out",
+     "p": "present, third singular",
+     "l": "clamo, clamare, clamavi, clamatus",
+     "c": "I conjugation",
+     "d": "to cry out, to shout"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "me",
+     "g": "me",
+     "p": "accusative singular, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    },
+    {
+     "w": "de",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "terra.",
+     "g": "the land",
+     "p": "ablative singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "w"
+    ],
+    [
+     4,
+     3,
+     "o"
+    ],
+    [
+     5,
+     6,
+     "g"
+    ],
+    [
+     6,
+     7,
+     "g"
+    ],
+    [
+     7,
+     8,
+     "a"
+    ],
+    [
+     9,
+     5,
+     "s"
+    ],
+    [
+     10,
+     11,
+     "w"
+    ],
+    [
+     12,
+     13,
+     "w"
+    ]
+   ]
+  },
+  "11": {
+   "tokens": [
+    {
+     "w": "Nunc",
+     "g": "now",
+     "p": "adverb",
+     "l": "nunc",
+     "c": "adverb",
+     "d": "now"
+    },
+    {
+     "w": "igitur",
+     "g": "therefore",
+     "p": "conjunction",
+     "l": "igitur",
+     "c": "conjunction",
+     "d": "therefore, then"
+    },
+    {
+     "w": "maledictus eris",
+     "g": "you will be cursed",
+     "p": "future perfect passive, second singular: two words, one verb",
+     "l": "maledico, maledicere, maledixi, maledictus",
+     "c": "III conjugation",
+     "d": "to curse, to speak ill of"
+    },
+    {
+     "w": "super",
+     "g": "upon",
+     "p": "preposition with the accusative",
+     "l": "super",
+     "c": "preposition",
+     "d": "over, above, upon"
+    },
+    {
+     "w": "terram,",
+     "g": "the land",
+     "p": "accusative singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    },
+    {
+     "w": "quæ",
+     "g": "which",
+     "p": "nominative singular feminine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "aperuit",
+     "g": "opened",
+     "p": "perfect, third singular",
+     "l": "aperio, aperire, aperui, apertus",
+     "c": "IV conjugation",
+     "d": "to open, to uncover"
+    },
+    {
+     "w": "os",
+     "g": "mouth",
+     "p": "accusative singular",
+     "l": "os, oris, n.",
+     "c": "neuter · III declension",
+     "d": "mouth, face"
+    },
+    {
+     "w": "suum,",
+     "g": "its own",
+     "p": "accusative singular neuter",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "suscepit",
+     "g": "received",
+     "p": "perfect, third singular",
+     "l": "suscipio, suscipere, suscepi, susceptus",
+     "c": "III conjugation",
+     "d": "to take up, to receive"
+    },
+    {
+     "w": "sanguinem",
+     "g": "the blood",
+     "p": "accusative singular",
+     "l": "sanguis, sanguinis, m.",
+     "c": "masculine · III declension",
+     "d": "blood"
+    },
+    {
+     "w": "fratris",
+     "g": "of brother",
+     "p": "genitive singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "tui",
+     "g": "your",
+     "p": "genitive singular masculine",
+     "l": "tuus, tua, tuum",
+     "c": "possessive",
+     "d": "your, yours"
+    },
+    {
+     "w": "de",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "manu",
+     "g": "the hand",
+     "p": "ablative singular",
+     "l": "manus, manus, f.",
+     "c": "feminine · IV declension",
+     "d": "hand"
+    },
+    {
+     "w": "tua.",
+     "g": "your",
+     "p": "ablative singular feminine",
+     "l": "tuus, tua, tuum",
+     "c": "possessive",
+     "d": "your, yours"
+    }
+   ],
+   "links": [
+    [
+     3,
+     4,
+     "w"
+    ],
+    [
+     6,
+     5,
+     "s"
+    ],
+    [
+     6,
+     7,
+     "o"
+    ],
+    [
+     7,
+     8,
+     "a"
+    ],
+    [
+     10,
+     5,
+     "s"
+    ],
+    [
+     10,
+     11,
+     "o"
+    ],
+    [
+     11,
+     12,
+     "g"
+    ],
+    [
+     12,
+     13,
+     "a"
+    ],
+    [
+     14,
+     15,
+     "w"
+    ],
+    [
+     15,
+     16,
+     "a"
+    ]
+   ]
+  },
+  "12": {
+   "tokens": [
+    {
+     "w": "Cum",
+     "g": "when",
+     "p": "conjunction",
+     "l": "cum",
+     "c": "conjunction",
+     "d": "when, since, although"
+    },
+    {
+     "w": "operatus fueris",
+     "g": "you will have worked",
+     "p": "future perfect, second singular (deponent verb): two words, one verb",
+     "l": "operor, operari, operatus sum",
+     "c": "I conjugation · deponent",
+     "d": "to work, to labor"
+    },
+    {
+     "w": "eam,",
+     "g": "it",
+     "p": "accusative singular feminine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "non",
+     "g": "not",
+     "p": "adverb",
+     "l": "non",
+     "c": "adverb",
+     "d": "not"
+    },
+    {
+     "w": "dabit",
+     "g": "will it give",
+     "p": "future, third singular",
+     "l": "do, dare, dedi, datus",
+     "c": "I conjugation · irregular",
+     "d": "to give"
+    },
+    {
+     "w": "tibi",
+     "g": "to you",
+     "p": "dative singular, second person pronoun",
+     "l": "tu",
+     "c": "personal",
+     "d": "you"
+    },
+    {
+     "w": "fructus",
+     "g": "fruits",
+     "p": "accusative plural",
+     "l": "fructus, fructus, m.",
+     "c": "masculine · IV declension",
+     "d": "fruit, produce"
+    },
+    {
+     "w": "suos:",
+     "g": "its own",
+     "p": "accusative plural masculine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "vagus",
+     "g": "a wanderer",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "vagus, vaga, vagum",
+     "c": "I-II declension",
+     "d": "wandering, roaming"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "profugus",
+     "g": "a fugitive",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "profugus, profuga, profugum",
+     "c": "I-II declension",
+     "d": "fugitive, exiled"
+    },
+    {
+     "w": "eris",
+     "g": "you shall be",
+     "p": "future, second singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "super",
+     "g": "upon",
+     "p": "preposition with the accusative",
+     "l": "super",
+     "c": "preposition",
+     "d": "over, above, upon"
+    },
+    {
+     "w": "terram.",
+     "g": "the land",
+     "p": "accusative singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "c"
+    ],
+    [
+     1,
+     2,
+     "o"
+    ],
+    [
+     4,
+     5,
+     "d"
+    ],
+    [
+     4,
+     6,
+     "o"
+    ],
+    [
+     6,
+     7,
+     "a"
+    ],
+    [
+     12,
+     13,
+     "w"
+    ]
+   ]
+  },
+  "13": {
+   "tokens": [
+    {
+     "w": "Dixitque",
+     "g": "and said",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "Dominum:",
+     "g": "the Lord",
+     "p": "accusative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "Major",
+     "g": "greater",
+     "p": "nominative singular feminine",
+     "l": "major, majus",
+     "c": "comparative",
+     "d": "greater, larger"
+    },
+    {
+     "w": "est",
+     "g": "is",
+     "p": "present, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "iniquitas",
+     "g": "iniquity",
+     "p": "nominative singular",
+     "l": "iniquitas, iniquitatis, f.",
+     "c": "feminine · III declension",
+     "d": "iniquity, injustice"
+    },
+    {
+     "w": "mea,",
+     "g": "my",
+     "p": "nominative singular feminine",
+     "l": "meus, mea, meum",
+     "c": "possessive",
+     "d": "my, mine"
+    },
+    {
+     "w": "quam",
+     "g": "than",
+     "p": "conjunction after a comparative",
+     "l": "quam",
+     "c": "conjunction",
+     "d": "than, as"
+    },
+    {
+     "w": "ut",
+     "g": "that",
+     "p": "conjunction with the subjunctive",
+     "l": "ut",
+     "c": "conjunction",
+     "d": "that, so that, in order that"
+    },
+    {
+     "w": "veniam",
+     "g": "pardon",
+     "p": "accusative singular",
+     "l": "venia, veniæ, f.",
+     "c": "feminine · I declension",
+     "d": "pardon, favor"
+    },
+    {
+     "w": "merear.",
+     "g": "I should deserve",
+     "p": "present subjunctive, first singular (deponent verb)",
+     "l": "mereor, mereri, meritus sum",
+     "c": "II conjugation · deponent",
+     "d": "to deserve, to earn"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "w"
+    ],
+    [
+     5,
+     6,
+     "s"
+    ],
+    [
+     6,
+     4,
+     "a"
+    ],
+    [
+     6,
+     7,
+     "a"
+    ],
+    [
+     9,
+     11,
+     "c"
+    ],
+    [
+     11,
+     10,
+     "o"
+    ]
+   ]
+  },
+  "14": {
+   "tokens": [
+    {
+     "w": "Ecce",
+     "g": "behold",
+     "p": "interjection",
+     "l": "ecce",
+     "c": "interjection",
+     "d": "behold, see"
+    },
+    {
+     "w": "ejicis",
+     "g": "you cast out",
+     "p": "present, second singular",
+     "l": "ejicio, ejicere, ejeci, ejectus",
+     "c": "III conjugation",
+     "d": "to cast out, to expel"
+    },
+    {
+     "w": "me",
+     "g": "me",
+     "p": "accusative singular, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    },
+    {
+     "w": "hodie",
+     "g": "today",
+     "p": "adverb",
+     "l": "hodie",
+     "c": "adverb",
+     "d": "today"
+    },
+    {
+     "w": "a",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "a, ab",
+     "c": "preposition",
+     "d": "from, away from, by"
+    },
+    {
+     "w": "facie",
+     "g": "the face",
+     "p": "ablative singular",
+     "l": "facies, faciei, f.",
+     "c": "feminine · V declension",
+     "d": "face, surface"
+    },
+    {
+     "w": "terræ,",
+     "g": "of the earth",
+     "p": "genitive singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "a",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "a, ab",
+     "c": "preposition",
+     "d": "from, away from, by"
+    },
+    {
+     "w": "facie",
+     "g": "the face",
+     "p": "ablative singular",
+     "l": "facies, faciei, f.",
+     "c": "feminine · V declension",
+     "d": "face, surface"
+    },
+    {
+     "w": "tua",
+     "g": "your",
+     "p": "ablative singular feminine",
+     "l": "tuus, tua, tuum",
+     "c": "possessive",
+     "d": "your, yours"
+    },
+    {
+     "w": "abscondar,",
+     "g": "I shall be hidden",
+     "p": "future passive, first singular",
+     "l": "abscondo, abscondere, abscondi, absconditus",
+     "c": "III conjugation",
+     "d": "to hide, to conceal"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ero",
+     "g": "I shall be",
+     "p": "future, first singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "vagus",
+     "g": "a wanderer",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "vagus, vaga, vagum",
+     "c": "I-II declension",
+     "d": "wandering, roaming"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "profugus",
+     "g": "a fugitive",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "profugus, profuga, profugum",
+     "c": "I-II declension",
+     "d": "fugitive, exiled"
+    },
+    {
+     "w": "in",
+     "g": "on",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "terra:",
+     "g": "the earth",
+     "p": "ablative singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    },
+    {
+     "w": "omnis",
+     "g": "everyone",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "igitur",
+     "g": "therefore",
+     "p": "conjunction",
+     "l": "igitur",
+     "c": "conjunction",
+     "d": "therefore, then"
+    },
+    {
+     "w": "qui",
+     "g": "who",
+     "p": "nominative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "invenerit",
+     "g": "will have found",
+     "p": "future perfect, third singular",
+     "l": "invenio, invenire, inveni, inventus",
+     "c": "IV conjugation",
+     "d": "to find, to discover"
+    },
+    {
+     "w": "me,",
+     "g": "me",
+     "p": "accusative singular, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    },
+    {
+     "w": "occidet",
+     "g": "will kill",
+     "p": "future, third singular",
+     "l": "occido, occidere, occidi, occisus",
+     "c": "III conjugation",
+     "d": "to kill, to strike down"
+    },
+    {
+     "w": "me.",
+     "g": "me",
+     "p": "accusative singular, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "o"
+    ],
+    [
+     4,
+     5,
+     "w"
+    ],
+    [
+     5,
+     6,
+     "g"
+    ],
+    [
+     8,
+     9,
+     "w"
+    ],
+    [
+     9,
+     10,
+     "a"
+    ],
+    [
+     17,
+     18,
+     "w"
+    ],
+    [
+     22,
+     21,
+     "s"
+    ],
+    [
+     22,
+     23,
+     "o"
+    ],
+    [
+     24,
+     19,
+     "s"
+    ],
+    [
+     24,
+     25,
+     "o"
+    ]
+   ]
+  },
+  "15": {
+   "tokens": [
+    {
+     "w": "Dixitque",
+     "g": "and said",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "ei",
+     "g": "to him",
+     "p": "dative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Dominus:",
+     "g": "the Lord",
+     "p": "nominative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "Nequaquam",
+     "g": "by no means",
+     "p": "adverb",
+     "l": "nequaquam",
+     "c": "adverb",
+     "d": "by no means, not at all"
+    },
+    {
+     "w": "ita",
+     "g": "so",
+     "p": "adverb",
+     "l": "ita",
+     "c": "adverb",
+     "d": "so, thus"
+    },
+    {
+     "w": "fiet:",
+     "g": "will it be",
+     "p": "future, third singular",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "sed",
+     "g": "but",
+     "p": "conjunction",
+     "l": "sed",
+     "c": "conjunction",
+     "d": "but"
+    },
+    {
+     "w": "omnis",
+     "g": "everyone",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "qui",
+     "g": "who",
+     "p": "nominative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "occiderit",
+     "g": "will have killed",
+     "p": "future perfect, third singular",
+     "l": "occido, occidere, occidi, occisus",
+     "c": "III conjugation",
+     "d": "to kill, to strike down"
+    },
+    {
+     "w": "Cain,",
+     "g": "Cain",
+     "p": "accusative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "septuplum",
+     "g": "sevenfold",
+     "p": "accusative singular neuter, adjective used adverbially",
+     "l": "septuplus, septupla, septuplum",
+     "c": "I-II declension",
+     "d": "sevenfold"
+    },
+    {
+     "w": "punietur.",
+     "g": "will be punished",
+     "p": "future passive, third singular",
+     "l": "punio, punire, punivi, punitus",
+     "c": "IV conjugation",
+     "d": "to punish"
+    },
+    {
+     "w": "Posuitque",
+     "g": "and placed",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "pono, ponere, posui, positus",
+     "c": "III conjugation",
+     "d": "to place, to put"
+    },
+    {
+     "w": "Dominus",
+     "g": "the Lord",
+     "p": "nominative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "Cain",
+     "g": "on Cain",
+     "p": "dative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "signum,",
+     "g": "a mark",
+     "p": "accusative singular",
+     "l": "signum, signi, n.",
+     "c": "neuter · II declension",
+     "d": "sign, mark"
+    },
+    {
+     "w": "ut",
+     "g": "so that",
+     "p": "conjunction with the subjunctive",
+     "l": "ut",
+     "c": "conjunction",
+     "d": "that, so that, in order that"
+    },
+    {
+     "w": "non",
+     "g": "not",
+     "p": "adverb",
+     "l": "non",
+     "c": "adverb",
+     "d": "not"
+    },
+    {
+     "w": "interficeret",
+     "g": "should kill",
+     "p": "imperfect subjunctive, third singular",
+     "l": "interficio, interficere, interfeci, interfectus",
+     "c": "III conjugation",
+     "d": "to kill, to destroy"
+    },
+    {
+     "w": "eum",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "omnis",
+     "g": "anyone",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "qui",
+     "g": "who",
+     "p": "nominative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "invenisset",
+     "g": "had found",
+     "p": "pluperfect subjunctive, third singular",
+     "l": "invenio, invenire, inveni, inventus",
+     "c": "IV conjugation",
+     "d": "to find, to discover"
+    },
+    {
+     "w": "eum.",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "d"
+    ],
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     9,
+     8,
+     "s"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     12,
+     7,
+     "s"
+    ],
+    [
+     13,
+     14,
+     "s"
+    ],
+    [
+     13,
+     15,
+     "d"
+    ],
+    [
+     13,
+     16,
+     "o"
+    ],
+    [
+     17,
+     19,
+     "c"
+    ],
+    [
+     19,
+     20,
+     "o"
+    ],
+    [
+     19,
+     21,
+     "s"
+    ],
+    [
+     23,
+     22,
+     "s"
+    ],
+    [
+     23,
+     24,
+     "o"
+    ]
+   ]
+  },
+  "16": {
+   "tokens": [
+    {
+     "w": "Egressusque",
+     "g": "and having gone out",
+     "p": "nominative singular masculine, perfect participle, with -que (and) fused on",
+     "l": "egredior, egredi, egressus sum",
+     "c": "III conjugation · deponent",
+     "d": "to go out, to go forth"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "a",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "a, ab",
+     "c": "preposition",
+     "d": "from, away from, by"
+    },
+    {
+     "w": "facie",
+     "g": "the face",
+     "p": "ablative singular",
+     "l": "facies, faciei, f.",
+     "c": "feminine · V declension",
+     "d": "face, surface"
+    },
+    {
+     "w": "Domini,",
+     "g": "of the Lord",
+     "p": "genitive singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    },
+    {
+     "w": "habitavit",
+     "g": "dwelt",
+     "p": "perfect, third singular",
+     "l": "habito, habitare, habitavi, habitatus",
+     "c": "I conjugation",
+     "d": "to dwell, to live in"
+    },
+    {
+     "w": "profugus",
+     "g": "as a fugitive",
+     "p": "nominative singular masculine, adjective used as a noun",
+     "l": "profugus, profuga, profugum",
+     "c": "I-II declension",
+     "d": "fugitive, exiled"
+    },
+    {
+     "w": "in",
+     "g": "in",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "terra",
+     "g": "the land",
+     "p": "ablative singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    },
+    {
+     "w": "ad",
+     "g": "toward",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "orientalem",
+     "g": "the eastern",
+     "p": "accusative singular feminine",
+     "l": "orientalis, orientale",
+     "c": "III declension",
+     "d": "eastern"
+    },
+    {
+     "w": "plagam",
+     "g": "region",
+     "p": "accusative singular",
+     "l": "plaga, plagæ, f.",
+     "c": "feminine · I declension",
+     "d": "region, district"
+    },
+    {
+     "w": "Eden.",
+     "g": "of Eden",
+     "p": "genitive singular, indeclinable",
+     "l": "Eden",
+     "c": "indeclinable",
+     "d": "Eden, the land of Paradise"
+    }
+   ],
+   "links": [
+    [
+     1,
+     0,
+     "a"
+    ],
+    [
+     1,
+     6,
+     "a"
+    ],
+    [
+     2,
+     3,
+     "w"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     5,
+     1,
+     "s"
+    ],
+    [
+     7,
+     8,
+     "w"
+    ],
+    [
+     9,
+     11,
+     "w"
+    ],
+    [
+     11,
+     10,
+     "a"
+    ],
+    [
+     11,
+     12,
+     "g"
+    ]
+   ]
+  },
+  "17": {
+   "tokens": [
+    {
+     "w": "Cognovit",
+     "g": "knew",
+     "p": "perfect, third singular",
+     "l": "cognosco, cognoscere, cognovi, cognitus",
+     "c": "III conjugation",
+     "d": "to learn, to recognize"
+    },
+    {
+     "w": "autem",
+     "g": "then",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "Cain",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "uxorem",
+     "g": "wife",
+     "p": "accusative singular",
+     "l": "uxor, uxoris, f.",
+     "c": "feminine · III declension",
+     "d": "wife"
+    },
+    {
+     "w": "suam,",
+     "g": "his own",
+     "p": "accusative singular feminine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "quæ",
+     "g": "who",
+     "p": "nominative singular feminine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "concepit,",
+     "g": "conceived",
+     "p": "perfect, third singular",
+     "l": "concipio, concipere, concepi, conceptus",
+     "c": "III conjugation",
+     "d": "to conceive, to take in"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "peperit",
+     "g": "gave birth to",
+     "p": "perfect, third singular",
+     "l": "pario, parere, peperi, partus",
+     "c": "III conjugation",
+     "d": "to bring forth, to give birth to"
+    },
+    {
+     "w": "Henoch:",
+     "g": "Henoch",
+     "p": "accusative singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also a son of Jared"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ædificavit",
+     "g": "he built",
+     "p": "perfect, third singular",
+     "l": "ædifico, ædificare, ædificavi, ædificatus",
+     "c": "I conjugation",
+     "d": "to build, to construct"
+    },
+    {
+     "w": "civitatem,",
+     "g": "a city",
+     "p": "accusative singular",
+     "l": "civitas, civitatis, f.",
+     "c": "feminine · III declension",
+     "d": "city, citizenry"
+    },
+    {
+     "w": "vocavitque",
+     "g": "and called",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "voco, vocare, vocavi, vocatus",
+     "c": "I conjugation",
+     "d": "to call, to summon"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "accusative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "ejus",
+     "g": "of it",
+     "p": "genitive singular feminine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "ex",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "e, ex",
+     "c": "preposition",
+     "d": "out of, from"
+    },
+    {
+     "w": "nomine",
+     "g": "the name",
+     "p": "ablative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "filii",
+     "g": "of son",
+     "p": "genitive singular",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "sui,",
+     "g": "his own",
+     "p": "genitive singular masculine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "Henoch.",
+     "g": "Henoch",
+     "p": "nominative singular, indeclinable, the name quoted in its own form",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also a son of Jared"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     0,
+     3,
+     "o"
+    ],
+    [
+     3,
+     4,
+     "a"
+    ],
+    [
+     6,
+     5,
+     "s"
+    ],
+    [
+     8,
+     5,
+     "s"
+    ],
+    [
+     8,
+     9,
+     "o"
+    ],
+    [
+     11,
+     2,
+     "s"
+    ],
+    [
+     11,
+     12,
+     "o"
+    ],
+    [
+     13,
+     2,
+     "s"
+    ],
+    [
+     13,
+     14,
+     "o"
+    ],
+    [
+     14,
+     15,
+     "g"
+    ],
+    [
+     16,
+     17,
+     "w"
+    ],
+    [
+     17,
+     18,
+     "g"
+    ],
+    [
+     18,
+     19,
+     "a"
+    ]
+   ]
+  },
+  "18": {
+   "tokens": [
+    {
+     "w": "Porro",
+     "g": "furthermore",
+     "p": "adverb",
+     "l": "porro",
+     "c": "adverb",
+     "d": "furthermore, moreover"
+    },
+    {
+     "w": "Henoch",
+     "g": "Henoch",
+     "p": "nominative singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also a son of Jared"
+    },
+    {
+     "w": "genuit",
+     "g": "begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Irad,",
+     "g": "Irad",
+     "p": "accusative singular, indeclinable",
+     "l": "Irad",
+     "c": "indeclinable",
+     "d": "Irad, a son of Henoch"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Irad",
+     "g": "Irad",
+     "p": "nominative singular, indeclinable",
+     "l": "Irad",
+     "c": "indeclinable",
+     "d": "Irad, a son of Henoch"
+    },
+    {
+     "w": "genuit",
+     "g": "begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Maviaël,",
+     "g": "Maviaël",
+     "p": "accusative singular, indeclinable",
+     "l": "Maviaël",
+     "c": "indeclinable",
+     "d": "Maviaël, a son of Irad"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Maviaël",
+     "g": "Maviaël",
+     "p": "nominative singular, indeclinable",
+     "l": "Maviaël",
+     "c": "indeclinable",
+     "d": "Maviaël, a son of Irad"
+    },
+    {
+     "w": "genuit",
+     "g": "begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Mathusaël,",
+     "g": "Mathusaël",
+     "p": "accusative singular, indeclinable",
+     "l": "Mathusaël",
+     "c": "indeclinable",
+     "d": "Mathusaël, a son of Maviaël"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Mathusaël",
+     "g": "Mathusaël",
+     "p": "nominative singular, indeclinable",
+     "l": "Mathusaël",
+     "c": "indeclinable",
+     "d": "Mathusaël, a son of Maviaël"
+    },
+    {
+     "w": "genuit",
+     "g": "begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Lamech.",
+     "g": "Lamech",
+     "p": "accusative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    }
+   ],
+   "links": [
+    [
+     2,
+     1,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "o"
+    ],
+    [
+     6,
+     5,
+     "s"
+    ],
+    [
+     6,
+     7,
+     "o"
+    ],
+    [
+     10,
+     9,
+     "s"
+    ],
+    [
+     10,
+     11,
+     "o"
+    ],
+    [
+     14,
+     13,
+     "s"
+    ],
+    [
+     14,
+     15,
+     "o"
+    ]
+   ]
+  },
+  "19": {
+   "tokens": [
+    {
+     "w": "Qui",
+     "g": "and he",
+     "p": "nominative singular masculine, relative pronoun carrying on from the last sentence",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "accepit",
+     "g": "took",
+     "p": "perfect, third singular",
+     "l": "accipio, accipere, accepi, acceptus",
+     "c": "III conjugation",
+     "d": "to receive, to take"
+    },
+    {
+     "w": "duas",
+     "g": "two",
+     "p": "accusative plural feminine",
+     "l": "duo, duæ, duo",
+     "c": "numeral",
+     "d": "two"
+    },
+    {
+     "w": "uxores,",
+     "g": "wives",
+     "p": "accusative plural",
+     "l": "uxor, uxoris, f.",
+     "c": "feminine · III declension",
+     "d": "wife"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "nominative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "uni",
+     "g": "for the one",
+     "p": "dative singular feminine",
+     "l": "unus, una, unum",
+     "c": "numeral",
+     "d": "one"
+    },
+    {
+     "w": "Ada,",
+     "g": "Ada",
+     "p": "nominative singular, the name quoted in its own form",
+     "l": "Ada, Adæ, f.",
+     "c": "feminine · I declension",
+     "d": "Ada, a wife of Lamech"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "nominative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "alteri",
+     "g": "for the other",
+     "p": "dative singular feminine",
+     "l": "alter, altera, alterum",
+     "c": "I-II declension",
+     "d": "the other, the second"
+    },
+    {
+     "w": "Sella.",
+     "g": "Sella",
+     "p": "nominative singular, the name quoted in its own form",
+     "l": "Sella, Sellæ, f.",
+     "c": "feminine · I declension",
+     "d": "Sella, a wife of Lamech"
+    }
+   ],
+   "links": [
+    [
+     1,
+     0,
+     "s"
+    ],
+    [
+     1,
+     3,
+     "o"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ]
+   ]
+  },
+  "20": {
+   "tokens": [
+    {
+     "w": "Genuitque",
+     "g": "and bore",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Ada",
+     "g": "Ada",
+     "p": "nominative singular",
+     "l": "Ada, Adæ, f.",
+     "c": "feminine · I declension",
+     "d": "Ada, a wife of Lamech"
+    },
+    {
+     "w": "Jabel,",
+     "g": "Jabel",
+     "p": "accusative singular, indeclinable",
+     "l": "Jabel",
+     "c": "indeclinable",
+     "d": "Jabel, a son of Lamech"
+    },
+    {
+     "w": "qui",
+     "g": "who",
+     "p": "nominative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "fuit",
+     "g": "was",
+     "p": "perfect, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "pater",
+     "g": "the father",
+     "p": "nominative singular",
+     "l": "pater, patris, m.",
+     "c": "masculine · III declension",
+     "d": "father"
+    },
+    {
+     "w": "habitantium",
+     "g": "of those dwelling",
+     "p": "genitive plural masculine, present participle used as a noun",
+     "l": "habito, habitare, habitavi, habitatus",
+     "c": "I conjugation",
+     "d": "to dwell, to live in"
+    },
+    {
+     "w": "in",
+     "g": "in",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "tentoriis,",
+     "g": "tents",
+     "p": "ablative plural",
+     "l": "tentorium, tentorii, n.",
+     "c": "neuter · II declension",
+     "d": "tent"
+    },
+    {
+     "w": "atque",
+     "g": "and",
+     "p": "conjunction",
+     "l": "atque",
+     "c": "conjunction",
+     "d": "and, and also"
+    },
+    {
+     "w": "pastorum.",
+     "g": "of shepherds",
+     "p": "genitive plural",
+     "l": "pastor, pastoris, m.",
+     "c": "masculine · III declension",
+     "d": "shepherd, herdsman"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     0,
+     2,
+     "o"
+    ],
+    [
+     3,
+     5,
+     "a"
+    ],
+    [
+     4,
+     3,
+     "s"
+    ],
+    [
+     5,
+     6,
+     "g"
+    ],
+    [
+     5,
+     10,
+     "g"
+    ],
+    [
+     7,
+     8,
+     "w"
+    ]
+   ]
+  },
+  "21": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "nominative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "fratris",
+     "g": "of brother",
+     "p": "genitive singular",
+     "l": "frater, fratris, m.",
+     "c": "masculine · III declension",
+     "d": "brother"
+    },
+    {
+     "w": "ejus",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Jubal:",
+     "g": "Jubal",
+     "p": "nominative singular, the name quoted in its own form",
+     "l": "Jubal",
+     "c": "indeclinable",
+     "d": "Jubal, a son of Lamech"
+    },
+    {
+     "w": "ipse",
+     "g": "he himself",
+     "p": "nominative singular masculine",
+     "l": "ipse, ipsa, ipsum",
+     "c": "pronoun",
+     "d": "himself, herself, itself; the very one"
+    },
+    {
+     "w": "fuit",
+     "g": "was",
+     "p": "perfect, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "pater",
+     "g": "the father",
+     "p": "nominative singular",
+     "l": "pater, patris, m.",
+     "c": "masculine · III declension",
+     "d": "father"
+    },
+    {
+     "w": "canentium",
+     "g": "of those playing",
+     "p": "genitive plural masculine, present participle used as a noun",
+     "l": "cano, canere, cecini, cantus",
+     "c": "III conjugation",
+     "d": "to sing, to play"
+    },
+    {
+     "w": "cithara",
+     "g": "on the harp",
+     "p": "ablative singular",
+     "l": "cithara, citharæ, f.",
+     "c": "feminine · I declension",
+     "d": "lyre, harp"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "organo.",
+     "g": "the organ",
+     "p": "ablative singular",
+     "l": "organum, organi, n.",
+     "c": "neuter · II declension",
+     "d": "instrument, organ"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "g"
+    ],
+    [
+     2,
+     3,
+     "g"
+    ],
+    [
+     5,
+     7,
+     "a"
+    ],
+    [
+     6,
+     5,
+     "s"
+    ],
+    [
+     7,
+     8,
+     "g"
+    ]
+   ]
+  },
+  "22": {
+   "tokens": [
+    {
+     "w": "Sella",
+     "g": "Sella",
+     "p": "nominative singular",
+     "l": "Sella, Sellæ, f.",
+     "c": "feminine · I declension",
+     "d": "Sella, a wife of Lamech"
+    },
+    {
+     "w": "quoque",
+     "g": "also",
+     "p": "adverb",
+     "l": "quoque",
+     "c": "adverb",
+     "d": "also, too"
+    },
+    {
+     "w": "genuit",
+     "g": "bore",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Tubalcain,",
+     "g": "Tubalcain",
+     "p": "accusative singular, indeclinable",
+     "l": "Tubalcain",
+     "c": "indeclinable",
+     "d": "Tubalcain, a son of Lamech"
+    },
+    {
+     "w": "qui",
+     "g": "who",
+     "p": "nominative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "fuit",
+     "g": "was",
+     "p": "perfect, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "malleator",
+     "g": "a hammerer",
+     "p": "nominative singular",
+     "l": "malleator, malleatoris, m.",
+     "c": "masculine · III declension",
+     "d": "hammerer, smith"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "faber",
+     "g": "a craftsman",
+     "p": "nominative singular",
+     "l": "faber, fabri, m.",
+     "c": "masculine · II declension",
+     "d": "craftsman, smith"
+    },
+    {
+     "w": "in",
+     "g": "in",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "cuncta",
+     "g": "every",
+     "p": "accusative plural neuter",
+     "l": "cunctus, cuncta, cunctum",
+     "c": "I-II declension",
+     "d": "all, the whole"
+    },
+    {
+     "w": "opera",
+     "g": "work",
+     "p": "accusative plural",
+     "l": "opus, operis, n.",
+     "c": "neuter · III declension",
+     "d": "work, labor"
+    },
+    {
+     "w": "æris",
+     "g": "of bronze",
+     "p": "genitive singular",
+     "l": "æs, æris, n.",
+     "c": "neuter · III declension",
+     "d": "bronze, brass"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ferri.",
+     "g": "of iron",
+     "p": "genitive singular",
+     "l": "ferrum, ferri, n.",
+     "c": "neuter · II declension",
+     "d": "iron"
+    },
+    {
+     "w": "Soror",
+     "g": "the sister",
+     "p": "nominative singular",
+     "l": "soror, sororis, f.",
+     "c": "feminine · III declension",
+     "d": "sister"
+    },
+    {
+     "w": "vero",
+     "g": "truly",
+     "p": "adverb, always second in its clause",
+     "l": "vero",
+     "c": "adverb",
+     "d": "truly, indeed"
+    },
+    {
+     "w": "Tubalcain,",
+     "g": "of Tubalcain",
+     "p": "genitive singular, indeclinable",
+     "l": "Tubalcain",
+     "c": "indeclinable",
+     "d": "Tubalcain, a son of Lamech"
+    },
+    {
+     "w": "Noëma.",
+     "g": "Noëma",
+     "p": "nominative singular, indeclinable",
+     "l": "Noëma",
+     "c": "indeclinable",
+     "d": "Noëma, the sister of Tubalcain"
+    }
+   ],
+   "links": [
+    [
+     2,
+     0,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "o"
+    ],
+    [
+     4,
+     6,
+     "a"
+    ],
+    [
+     4,
+     8,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "s"
+    ],
+    [
+     9,
+     11,
+     "w"
+    ],
+    [
+     11,
+     10,
+     "a"
+    ],
+    [
+     11,
+     12,
+     "g"
+    ],
+    [
+     11,
+     14,
+     "g"
+    ],
+    [
+     15,
+     17,
+     "g"
+    ]
+   ]
+  },
+  "23": {
+   "tokens": [
+    {
+     "w": "Dixitque",
+     "g": "and said",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Lamech",
+     "g": "Lamech",
+     "p": "nominative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "uxoribus",
+     "g": "to wives",
+     "p": "dative plural",
+     "l": "uxor, uxoris, f.",
+     "c": "feminine · III declension",
+     "d": "wife"
+    },
+    {
+     "w": "suis",
+     "g": "his own",
+     "p": "dative plural feminine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "Adæ",
+     "g": "Ada",
+     "p": "dative singular",
+     "l": "Ada, Adæ, f.",
+     "c": "feminine · I declension",
+     "d": "Ada, a wife of Lamech"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Sellæ:",
+     "g": "Sella",
+     "p": "dative singular",
+     "l": "Sella, Sellæ, f.",
+     "c": "feminine · I declension",
+     "d": "Sella, a wife of Lamech"
+    },
+    {
+     "w": "Audite",
+     "g": "hear",
+     "p": "present imperative, second plural",
+     "l": "audio, audire, audivi, auditus",
+     "c": "IV conjugation",
+     "d": "to hear, to listen to"
+    },
+    {
+     "w": "vocem",
+     "g": "the voice",
+     "p": "accusative singular",
+     "l": "vox, vocis, f.",
+     "c": "feminine · III declension",
+     "d": "voice, sound"
+    },
+    {
+     "w": "meam,",
+     "g": "my",
+     "p": "accusative singular feminine",
+     "l": "meus, mea, meum",
+     "c": "possessive",
+     "d": "my, mine"
+    },
+    {
+     "w": "uxores",
+     "g": "wives",
+     "p": "vocative plural",
+     "l": "uxor, uxoris, f.",
+     "c": "feminine · III declension",
+     "d": "wife"
+    },
+    {
+     "w": "Lamech;",
+     "g": "of Lamech",
+     "p": "genitive singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "auscultate",
+     "g": "listen to",
+     "p": "present imperative, second plural",
+     "l": "ausculto, auscultare, auscultavi, auscultatus",
+     "c": "I conjugation",
+     "d": "to listen to, to heed"
+    },
+    {
+     "w": "sermonem",
+     "g": "the speech",
+     "p": "accusative singular",
+     "l": "sermo, sermonis, m.",
+     "c": "masculine · III declension",
+     "d": "speech, discourse"
+    },
+    {
+     "w": "meum:",
+     "g": "my",
+     "p": "accusative singular masculine",
+     "l": "meus, mea, meum",
+     "c": "possessive",
+     "d": "my, mine"
+    },
+    {
+     "w": "quoniam",
+     "g": "because",
+     "p": "conjunction",
+     "l": "quoniam",
+     "c": "conjunction",
+     "d": "because, since"
+    },
+    {
+     "w": "occidi",
+     "g": "I have killed",
+     "p": "perfect, first singular",
+     "l": "occido, occidere, occidi, occisus",
+     "c": "III conjugation",
+     "d": "to kill, to strike down"
+    },
+    {
+     "w": "virum",
+     "g": "a man",
+     "p": "accusative singular",
+     "l": "vir, viri, m.",
+     "c": "masculine · II declension",
+     "d": "man, husband"
+    },
+    {
+     "w": "in",
+     "g": "to",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "vulnus",
+     "g": "the wounding",
+     "p": "accusative singular",
+     "l": "vulnus, vulneris, n.",
+     "c": "neuter · III declension",
+     "d": "wound, injury"
+    },
+    {
+     "w": "meum,",
+     "g": "of myself",
+     "p": "accusative singular neuter",
+     "l": "meus, mea, meum",
+     "c": "possessive",
+     "d": "my, mine"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "adolescentulum",
+     "g": "a young man",
+     "p": "accusative singular",
+     "l": "adolescentulus, adolescentuli, m.",
+     "c": "masculine · II declension",
+     "d": "a young man, youth"
+    },
+    {
+     "w": "in",
+     "g": "to",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "livorem",
+     "g": "the bruising",
+     "p": "accusative singular",
+     "l": "livor, livoris, m.",
+     "c": "masculine · III declension",
+     "d": "bruise, discoloration"
+    },
+    {
+     "w": "meum.",
+     "g": "of myself",
+     "p": "accusative singular masculine",
+     "l": "meus, mea, meum",
+     "c": "possessive",
+     "d": "my, mine"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     0,
+     2,
+     "d"
+    ],
+    [
+     2,
+     3,
+     "a"
+    ],
+    [
+     2,
+     4,
+     "a"
+    ],
+    [
+     2,
+     6,
+     "a"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ],
+    [
+     8,
+     9,
+     "a"
+    ],
+    [
+     10,
+     11,
+     "g"
+    ],
+    [
+     12,
+     13,
+     "o"
+    ],
+    [
+     13,
+     14,
+     "a"
+    ],
+    [
+     15,
+     16,
+     "c"
+    ],
+    [
+     16,
+     17,
+     "o"
+    ],
+    [
+     16,
+     22,
+     "o"
+    ],
+    [
+     18,
+     19,
+     "w"
+    ],
+    [
+     19,
+     20,
+     "a"
+    ],
+    [
+     23,
+     24,
+     "w"
+    ],
+    [
+     24,
+     25,
+     "a"
+    ]
+   ]
+  },
+  "24": {
+   "tokens": [
+    {
+     "w": "Septuplum",
+     "g": "sevenfold",
+     "p": "accusative singular neuter, adjective used adverbially",
+     "l": "septuplus, septupla, septuplum",
+     "c": "I-II declension",
+     "d": "sevenfold"
+    },
+    {
+     "w": "ultio",
+     "g": "vengeance",
+     "p": "nominative singular",
+     "l": "ultio, ultionis, f.",
+     "c": "feminine · III declension",
+     "d": "vengeance, revenge"
+    },
+    {
+     "w": "dabitur",
+     "g": "will be given",
+     "p": "future passive, third singular",
+     "l": "do, dare, dedi, datus",
+     "c": "I conjugation · irregular",
+     "d": "to give"
+    },
+    {
+     "w": "de",
+     "g": "for",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "Cain:",
+     "g": "Cain",
+     "p": "ablative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    },
+    {
+     "w": "de",
+     "g": "for",
+     "p": "preposition with the ablative",
+     "l": "de",
+     "c": "preposition",
+     "d": "from, down from, about"
+    },
+    {
+     "w": "Lamech",
+     "g": "Lamech",
+     "p": "ablative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "vero",
+     "g": "but",
+     "p": "adverb, always second in its clause",
+     "l": "vero",
+     "c": "adverb",
+     "d": "truly, indeed"
+    },
+    {
+     "w": "septuagies",
+     "g": "seventy times",
+     "p": "numeral adverb",
+     "l": "septuagies",
+     "c": "adverb",
+     "d": "seventy times"
+    },
+    {
+     "w": "septies.",
+     "g": "seven times",
+     "p": "numeral adverb",
+     "l": "septies",
+     "c": "adverb",
+     "d": "seven times"
+    }
+   ],
+   "links": [
+    [
+     2,
+     1,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "w"
+    ],
+    [
+     5,
+     6,
+     "w"
+    ]
+   ]
+  },
+  "25": {
+   "tokens": [
+    {
+     "w": "Cognovit",
+     "g": "knew",
+     "p": "perfect, third singular",
+     "l": "cognosco, cognoscere, cognovi, cognitus",
+     "c": "III conjugation",
+     "d": "to learn, to recognize"
+    },
+    {
+     "w": "quoque",
+     "g": "also",
+     "p": "adverb",
+     "l": "quoque",
+     "c": "adverb",
+     "d": "also, too"
+    },
+    {
+     "w": "adhuc",
+     "g": "again",
+     "p": "adverb",
+     "l": "adhuc",
+     "c": "adverb",
+     "d": "still, yet, further"
+    },
+    {
+     "w": "Adam",
+     "g": "Adam",
+     "p": "nominative singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "uxorem",
+     "g": "wife",
+     "p": "accusative singular",
+     "l": "uxor, uxoris, f.",
+     "c": "feminine · III declension",
+     "d": "wife"
+    },
+    {
+     "w": "suam:",
+     "g": "his own",
+     "p": "accusative singular feminine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "peperit",
+     "g": "she gave birth to",
+     "p": "perfect, third singular",
+     "l": "pario, parere, peperi, partus",
+     "c": "III conjugation",
+     "d": "to bring forth, to give birth to"
+    },
+    {
+     "w": "filium,",
+     "g": "a son",
+     "p": "accusative singular",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "vocavitque",
+     "g": "and called",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "voco, vocare, vocavi, vocatus",
+     "c": "I conjugation",
+     "d": "to call, to summon"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "accusative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "ejus",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Seth,",
+     "g": "Seth",
+     "p": "accusative singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, the third son of Adam"
+    },
+    {
+     "w": "dicens:",
+     "g": "saying",
+     "p": "nominative singular feminine, present participle",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Posuit",
+     "g": "has given",
+     "p": "perfect, third singular",
+     "l": "pono, ponere, posui, positus",
+     "c": "III conjugation",
+     "d": "to place, to put"
+    },
+    {
+     "w": "mihi",
+     "g": "to me",
+     "p": "dative singular, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    },
+    {
+     "w": "Deus",
+     "g": "God",
+     "p": "nominative singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    },
+    {
+     "w": "semen",
+     "g": "seed",
+     "p": "accusative singular",
+     "l": "semen, seminis, n.",
+     "c": "neuter · III declension",
+     "d": "seed"
+    },
+    {
+     "w": "aliud",
+     "g": "another",
+     "p": "accusative singular neuter",
+     "l": "alius, alia, aliud",
+     "c": "I-II declension",
+     "d": "other, another"
+    },
+    {
+     "w": "pro",
+     "g": "in place of",
+     "p": "preposition with the ablative",
+     "l": "pro",
+     "c": "preposition",
+     "d": "for, on behalf of"
+    },
+    {
+     "w": "Abel,",
+     "g": "Abel",
+     "p": "ablative singular, indeclinable",
+     "l": "Abel",
+     "c": "indeclinable",
+     "d": "Abel, the second son of Adam"
+    },
+    {
+     "w": "quem",
+     "g": "whom",
+     "p": "accusative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "occidit",
+     "g": "killed",
+     "p": "perfect, third singular",
+     "l": "occido, occidere, occidi, occisus",
+     "c": "III conjugation",
+     "d": "to kill, to strike down"
+    },
+    {
+     "w": "Cain.",
+     "g": "Cain",
+     "p": "nominative singular, indeclinable",
+     "l": "Cain",
+     "c": "indeclinable",
+     "d": "Cain, the first son of Adam"
+    }
+   ],
+   "links": [
+    [
+     0,
+     3,
+     "s"
+    ],
+    [
+     0,
+     4,
+     "o"
+    ],
+    [
+     4,
+     5,
+     "a"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     10,
+     11,
+     "g"
+    ],
+    [
+     14,
+     15,
+     "d"
+    ],
+    [
+     14,
+     16,
+     "s"
+    ],
+    [
+     14,
+     17,
+     "o"
+    ],
+    [
+     17,
+     18,
+     "a"
+    ],
+    [
+     19,
+     20,
+     "w"
+    ],
+    [
+     22,
+     21,
+     "o"
+    ],
+    [
+     22,
+     23,
+     "s"
+    ]
+   ]
+  },
+  "26": {
+   "tokens": [
+    {
+     "w": "Sed",
+     "g": "but",
+     "p": "conjunction",
+     "l": "sed",
+     "c": "conjunction",
+     "d": "but"
+    },
+    {
+     "w": "et",
+     "g": "also",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Seth",
+     "g": "to Seth",
+     "p": "dative singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, the third son of Adam"
+    },
+    {
+     "w": "natus est",
+     "g": "was born",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "nascor, nasci, natus sum",
+     "c": "III conjugation · deponent",
+     "d": "to be born, to arise"
+    },
+    {
+     "w": "filius,",
+     "g": "a son",
+     "p": "nominative singular",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "quem",
+     "g": "whom",
+     "p": "accusative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "vocavit",
+     "g": "he called",
+     "p": "perfect, third singular",
+     "l": "voco, vocare, vocavi, vocatus",
+     "c": "I conjugation",
+     "d": "to call, to summon"
+    },
+    {
+     "w": "Enos:",
+     "g": "Enos",
+     "p": "accusative singular, indeclinable",
+     "l": "Enos",
+     "c": "indeclinable",
+     "d": "Enos, the son of Seth"
+    },
+    {
+     "w": "iste",
+     "g": "this one",
+     "p": "nominative singular masculine",
+     "l": "iste, ista, istud",
+     "c": "pronoun",
+     "d": "that, this one"
+    },
+    {
+     "w": "cœpit",
+     "g": "began",
+     "p": "perfect, third singular",
+     "l": "cœpi, cœpisse",
+     "c": "defective",
+     "d": "to begin"
+    },
+    {
+     "w": "invocare",
+     "g": "to call upon",
+     "p": "present infinitive",
+     "l": "invoco, invocare, invocavi, invocatus",
+     "c": "I conjugation",
+     "d": "to call upon, to invoke"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "accusative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "Domini.",
+     "g": "of the Lord",
+     "p": "genitive singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "lord, master"
+    }
+   ],
+   "links": [
+    [
+     3,
+     2,
+     "d"
+    ],
+    [
+     3,
+     4,
+     "s"
+    ],
+    [
+     6,
+     5,
+     "o"
+    ],
+    [
+     9,
+     8,
+     "s"
+    ],
+    [
+     10,
+     11,
+     "o"
+    ],
+    [
+     11,
+     12,
+     "g"
+    ]
+   ]
+  }
+ },
+ "notes": [
+  "frater: genitive plural fratrum, not fraterum",
+  "pater: genitive plural patrum, not paterum",
+  "pastor: genitive plural pastorum",
+  "malleator: genitive plural malleatorum",
+  "custos: genitive plural custodum",
+  "soror: genitive plural sororum",
+  "livor: genitive plural livorum",
+  "sermo: genitive plural sermonum",
+  "ultio: genitive plural ultionum",
+  "iniquitas: genitive plural iniquitatum",
+  "civitas: genitive plural civitatum",
+  "sanguis: genitive plural sanguinum; the stem sanguin- shows only from the genitive on",
+  "grex: genitive plural gregum, and the stem greg- shows only from the genitive on",
+  "ovis: i-stem, genitive plural ovium",
+  "foris: i-stem, genitive plural forium; the singular is rare and the plural fores means one double door",
+  "adeps, adipis, c.: common gender, and the stem adip- shows only from the genitive on; genitive plural adipum",
+  "munus: genitive plural munerum, neuter plural munera",
+  "vulnus: genitive plural vulnerum, neuter plural vulnera",
+  "opus: genitive plural operum, neuter plural opera",
+  "æs, æris, n.: genitive plural ærum, neuter plural æra; the plural is rare in this sense",
+  "os, oris, n. (mouth) is a different word from os, ossis, n. (bone), and the two are identical in the nominative and accusative singular; genitive plural orum, neuter plural ora",
+  "faber, fabri, m.: the stem is fabr-, so there is no e after the nominative",
+  "ager, agri, m.: the stem is agr-, so there is no e after the nominative",
+  "agricola, agricolæ, m.: first declension but masculine, like nauta and poeta",
+  "appetitus, appetitus, m.: fourth declension, built on the supine stem of appeto",
+  "Ada, Adæ, f. and Sella, Sellæ, f. decline as first-declension nouns (Adæ, Sellæ in 4:23); Adæ is also the dative and genitive of Adam",
+  "Cain, Abel, Henoch, Irad, Maviaël, Mathusaël, Lamech, Jabel, Jubal, Tubalcain, Noëma, Seth, Enos and Eden are indeclinable; only the context gives their case",
+  "Henoch names two men — this son of Cain and the son of Jared in Genesis 5 — and Lamech likewise names this descendant of Cain and the father of Noë",
+  "Noëma occurs only here, in the nominative, so nothing shows whether it declines",
+  "major, majus is the comparative of magnus; superlative maximus",
+  "alter, altera, alterum: pronominal — genitive alterius, dative alteri",
+  "alius, alia, aliud: pronominal — genitive alterius, borrowed from alter, and dative alii",
+  "unus, una, unum: pronominal — genitive unius, dative uni",
+  "duo, duæ, duo: declines like nothing else in the language",
+  "septuplus, septupla, septuplum: the neuter septuplum stands as an adverb, 'sevenfold'",
+  "septuagies and septies are numeral adverbs and indeclinable",
+  "pario, parere, peperi, partus: the perfect peperi is reduplicated, and the present stem is pari- (paries, pariam)",
+  "gigno, gignere, genui, genitus: the present is reduplicated from the root gen-, which the perfect and supine show plain",
+  "cano, canere, cecini, cantus: the perfect cecini is reduplicated and weakens the a of the stem",
+  "cœpi, cœpisse: defective — perfect, pluperfect and future perfect only, with no present system at all",
+  "aio: defective — present indicative and a few subjunctive forms only, no perfect and no supine",
+  "concido, concidere, concidi: a compound of cado with no supine in use; the homograph concido, concidere, concidi, concisus (to cut to pieces) is a compound of cædo",
+  "concidit is both the present and the perfect third singular of concido; only the context separates them",
+  "occido, occidere, occidi, occisus (to kill) is a compound of cædo; the homograph occido, occidere, occidi, occasus (to fall, to set) is a compound of cado",
+  "offero, offerre, obtuli, oblatus: compound of fero, and the prefix assimilates twice over — of- before the f of fero, ob- before the t of tuli — so the perfect is obtuli, not oftuli",
+  "adsum, adesse, adfui: compound of sum; the perfect is also written affui",
+  "do, dare, dedi, datus: the only first-conjugation verb with a short stem vowel (das, dat, damus) and a reduplicated perfect dedi",
+  "fio, fieri, factus sum: passive in form, active in meaning, and its perfect is written as two words (factum est)",
+  "sum, esse, fui: no supine in use; adsum is its compound and inherits every form",
+  "possideo, possidere, possedi, possessus: the perfect possedi is shared with possido, possidere, possedi, possessus (to take possession of)",
+  "irascor, irasci, iratus sum: deponent with no supine of its own, and its perfect participle iratus is also used as a plain adjective, 'angry'",
+  "mereor, mereri, meritus sum: deponent, beside an active mereo of the same meaning",
+  "operor, operari, operatus sum: deponent, and operatus fueris in 4:12 is its future perfect written as two words",
+  "nascor, nasci, natus sum: deponent, and the supine stem nat- shares nothing with the present nasc-",
+  "egredior, egredi, egressus sum: deponent, and the supine stem egress- shares nothing with the present egred-",
+  "dominor, dominari, dominatus sum: deponent, and it governs the genitive here (dominaberis illius)",
+  "nescio, nescire, nescivi, nescitus: ne + scio, so the negative is inside the one word",
+  "maledico, maledicere, maledixi, maledictus: a compound of dico, so the imperative is maledic, not maledice",
+  "quam in 4:13 is the comparative particle 'than', not the accusative feminine of qui, quæ, quod — one surface form, two words",
+  "veniam in 4:13 is the accusative of venia (pardon), not the first singular of venio",
+  "egeris, invenerit and occiderit are future perfect indicative here; the same forms are also the perfect subjunctive",
+  "abscondar in 4:14 is the future passive; the same form is also the present passive subjunctive",
+  "cum is a conjunction here (cumque essent, cum operatus fueris) and a preposition elsewhere: one surface form, two words",
+  "habitantium and canentium are present participles used as nouns, so they take the genitive plural in -ium"
+ ]
+}

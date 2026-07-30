@@ -1,0 +1,4216 @@
+{
+ "book": "genesis",
+ "chapter": 5,
+ "verses": {
+  "1": {
+   "tokens": [
+    {
+     "w": "Hic",
+     "g": "this",
+     "p": "nominative singular masculine",
+     "l": "hic, hæc, hoc",
+     "c": "pronoun",
+     "d": "this"
+    },
+    {
+     "w": "est",
+     "g": "is",
+     "p": "present, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "liber",
+     "g": "the book",
+     "p": "nominative singular",
+     "l": "liber, libri, m.",
+     "c": "masculine · II declension",
+     "d": "book, record"
+    },
+    {
+     "w": "generationis",
+     "g": "of the generation",
+     "p": "genitive singular",
+     "l": "generatio, generationis, f.",
+     "c": "feminine · III declension",
+     "d": "generation, origin"
+    },
+    {
+     "w": "Adam.",
+     "g": "of Adam",
+     "p": "genitive singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "In",
+     "g": "on",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "die",
+     "g": "the day",
+     "p": "ablative singular",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "qua",
+     "g": "on which",
+     "p": "ablative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "creavit",
+     "g": "created",
+     "p": "perfect, third singular",
+     "l": "creo, creare, creavi, creatus",
+     "c": "I conjugation",
+     "d": "to create"
+    },
+    {
+     "w": "Deus",
+     "g": "God",
+     "p": "nominative singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    },
+    {
+     "w": "hominem,",
+     "g": "man",
+     "p": "accusative singular",
+     "l": "homo, hominis, m.",
+     "c": "masculine · III declension",
+     "d": "man, human being"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "similitudinem",
+     "g": "the likeness",
+     "p": "accusative singular",
+     "l": "similitudo, similitudinis, f.",
+     "c": "feminine · III declension",
+     "d": "likeness"
+    },
+    {
+     "w": "Dei",
+     "g": "of God",
+     "p": "genitive singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    },
+    {
+     "w": "fecit",
+     "g": "he made",
+     "p": "perfect, third singular",
+     "l": "facio, facere, feci, factus",
+     "c": "III conjugation",
+     "d": "to make, to do"
+    },
+    {
+     "w": "illum.",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "ille, illa, illud",
+     "c": "pronoun",
+     "d": "that one; he, she, it"
+    }
+   ],
+   "links": [
+    [
+     1,
+     0,
+     "s"
+    ],
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "g"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     5,
+     6,
+     "w"
+    ],
+    [
+     8,
+     9,
+     "s"
+    ],
+    [
+     8,
+     10,
+     "o"
+    ],
+    [
+     11,
+     12,
+     "w"
+    ],
+    [
+     12,
+     13,
+     "g"
+    ],
+    [
+     14,
+     15,
+     "o"
+    ]
+   ]
+  },
+  "2": {
+   "tokens": [
+    {
+     "w": "Masculum",
+     "g": "male",
+     "p": "accusative singular",
+     "l": "masculus, masculi, m.",
+     "c": "masculine · II declension",
+     "d": "male"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "feminam",
+     "g": "female",
+     "p": "accusative singular",
+     "l": "femina, feminæ, f.",
+     "c": "feminine · I declension",
+     "d": "woman, female"
+    },
+    {
+     "w": "creavit",
+     "g": "he created",
+     "p": "perfect, third singular",
+     "l": "creo, creare, creavi, creatus",
+     "c": "I conjugation",
+     "d": "to create"
+    },
+    {
+     "w": "eos,",
+     "g": "them",
+     "p": "accusative plural masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "benedixit",
+     "g": "he blessed",
+     "p": "perfect, third singular",
+     "l": "benedico, benedicere, benedixi, benedictus",
+     "c": "III conjugation",
+     "d": "to bless"
+    },
+    {
+     "w": "illis:",
+     "g": "them",
+     "p": "dative plural masculine",
+     "l": "ille, illa, illud",
+     "c": "pronoun",
+     "d": "that one; he, she, it"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "vocavit",
+     "g": "he called",
+     "p": "perfect, third singular",
+     "l": "voco, vocare, vocavi, vocatus",
+     "c": "I conjugation",
+     "d": "to call"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "accusative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "eorum",
+     "g": "of them",
+     "p": "genitive plural masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Adam,",
+     "g": "Adam",
+     "p": "accusative singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "in",
+     "g": "on",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "die",
+     "g": "the day",
+     "p": "ablative singular",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "quo",
+     "g": "on which",
+     "p": "ablative singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "creati sunt.",
+     "g": "they were created",
+     "p": "perfect passive, third plural: two words, one verb",
+     "l": "creo, creare, creavi, creatus",
+     "c": "I conjugation",
+     "d": "to create"
+    }
+   ],
+   "links": [
+    [
+     3,
+     0,
+     "o"
+    ],
+    [
+     3,
+     2,
+     "o"
+    ],
+    [
+     3,
+     4,
+     "o"
+    ],
+    [
+     6,
+     7,
+     "d"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     10,
+     11,
+     "g"
+    ],
+    [
+     13,
+     14,
+     "w"
+    ]
+   ]
+  },
+  "3": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "autem",
+     "g": "moreover",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "Adam",
+     "g": "Adam",
+     "p": "nominative singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "centum",
+     "g": "a hundred",
+     "p": "indeclinable numeral",
+     "l": "centum",
+     "c": "numeral",
+     "d": "a hundred"
+    },
+    {
+     "w": "triginta",
+     "g": "thirty",
+     "p": "indeclinable numeral",
+     "l": "triginta",
+     "c": "numeral",
+     "d": "thirty"
+    },
+    {
+     "w": "annis:",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "ad",
+     "g": "to",
+     "p": "preposition with the accusative",
+     "l": "ad",
+     "c": "preposition",
+     "d": "to, toward"
+    },
+    {
+     "w": "imaginem",
+     "g": "the image",
+     "p": "accusative singular",
+     "l": "imago, imaginis, f.",
+     "c": "feminine · III declension",
+     "d": "image, likeness"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "similitudinem",
+     "g": "the likeness",
+     "p": "accusative singular",
+     "l": "similitudo, similitudinis, f.",
+     "c": "feminine · III declension",
+     "d": "likeness"
+    },
+    {
+     "w": "suam,",
+     "g": "his own",
+     "p": "accusative singular feminine",
+     "l": "suus, sua, suum",
+     "c": "possessive",
+     "d": "his own, her own, its own"
+    },
+    {
+     "w": "vocavitque",
+     "g": "and called",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "voco, vocare, vocavi, vocatus",
+     "c": "I conjugation",
+     "d": "to call"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "accusative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "ejus",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Seth.",
+     "g": "Seth",
+     "p": "accusative singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, a son of Adam"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     5,
+     3,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "w"
+    ],
+    [
+     8,
+     11,
+     "w"
+    ],
+    [
+     11,
+     12,
+     "a"
+    ],
+    [
+     13,
+     14,
+     "o"
+    ],
+    [
+     14,
+     15,
+     "g"
+    ]
+   ]
+  },
+  "4": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Adam,",
+     "g": "of Adam",
+     "p": "genitive singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Seth,",
+     "g": "Seth",
+     "p": "accusative singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, a son of Adam"
+    },
+    {
+     "w": "octingenti",
+     "g": "eight hundred",
+     "p": "nominative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "anni:",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "genuitque",
+     "g": "and he begot",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "g"
+    ],
+    [
+     4,
+     5,
+     "c"
+    ],
+    [
+     5,
+     6,
+     "o"
+    ],
+    [
+     1,
+     8,
+     "s"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     9,
+     12,
+     "o"
+    ]
+   ]
+  },
+  "5": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "factum est",
+     "g": "was",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omne",
+     "g": "all",
+     "p": "nominative singular neuter",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "tempus",
+     "g": "the time",
+     "p": "nominative singular",
+     "l": "tempus, temporis, n.",
+     "c": "neuter · III declension",
+     "d": "time, season"
+    },
+    {
+     "w": "quod",
+     "g": "which",
+     "p": "accusative singular neuter, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Adam,",
+     "g": "Adam",
+     "p": "nominative singular, indeclinable",
+     "l": "Adam",
+     "c": "indeclinable",
+     "d": "Adam, the first man"
+    },
+    {
+     "w": "anni",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "nongenti",
+     "g": "nine hundred",
+     "p": "nominative plural masculine",
+     "l": "nongenti, nongentæ, nongenta",
+     "c": "numeral",
+     "d": "nine hundred"
+    },
+    {
+     "w": "triginta,",
+     "g": "thirty",
+     "p": "indeclinable numeral",
+     "l": "triginta",
+     "c": "numeral",
+     "d": "thirty"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "o"
+    ],
+    [
+     5,
+     6,
+     "s"
+    ],
+    [
+     7,
+     8,
+     "a"
+    ],
+    [
+     7,
+     9,
+     "a"
+    ]
+   ]
+  },
+  "6": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "quoque",
+     "g": "also",
+     "p": "adverb",
+     "l": "quoque",
+     "c": "adverb",
+     "d": "also, too"
+    },
+    {
+     "w": "Seth",
+     "g": "Seth",
+     "p": "nominative singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, a son of Adam"
+    },
+    {
+     "w": "centum",
+     "g": "a hundred",
+     "p": "indeclinable numeral",
+     "l": "centum",
+     "c": "numeral",
+     "d": "a hundred"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Enos.",
+     "g": "Enos",
+     "p": "accusative singular, indeclinable",
+     "l": "Enos",
+     "c": "indeclinable",
+     "d": "Enos, a son of Seth"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     5,
+     3,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "a"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ]
+   ]
+  },
+  "7": {
+   "tokens": [
+    {
+     "w": "Vixitque",
+     "g": "and lived",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Seth,",
+     "g": "Seth",
+     "p": "nominative singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, a son of Adam"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Enos,",
+     "g": "Enos",
+     "p": "accusative singular, indeclinable",
+     "l": "Enos",
+     "c": "indeclinable",
+     "d": "Enos, a son of Seth"
+    },
+    {
+     "w": "octingentis",
+     "g": "eight hundred",
+     "p": "ablative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "septem",
+     "g": "seven",
+     "p": "indeclinable numeral",
+     "l": "septem",
+     "c": "numeral",
+     "d": "seven"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "genuitque",
+     "g": "and he begot",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "c"
+    ],
+    [
+     3,
+     4,
+     "o"
+    ],
+    [
+     7,
+     5,
+     "a"
+    ],
+    [
+     7,
+     6,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "o"
+    ],
+    [
+     8,
+     11,
+     "o"
+    ]
+   ]
+  },
+  "8": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Seth",
+     "g": "of Seth",
+     "p": "genitive singular, indeclinable",
+     "l": "Seth",
+     "c": "indeclinable",
+     "d": "Seth, a son of Adam"
+    },
+    {
+     "w": "nongentorum",
+     "g": "of nine hundred",
+     "p": "genitive plural masculine",
+     "l": "nongenti, nongentæ, nongenta",
+     "c": "numeral",
+     "d": "nine hundred"
+    },
+    {
+     "w": "duodecim",
+     "g": "twelve",
+     "p": "indeclinable numeral",
+     "l": "duodecim",
+     "c": "numeral",
+     "d": "twelve"
+    },
+    {
+     "w": "annorum,",
+     "g": "years",
+     "p": "genitive plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     3,
+     7,
+     "g"
+    ],
+    [
+     7,
+     5,
+     "a"
+    ],
+    [
+     7,
+     6,
+     "a"
+    ]
+   ]
+  },
+  "9": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "vero",
+     "g": "truly",
+     "p": "adverb",
+     "l": "vero",
+     "c": "adverb",
+     "d": "truly, indeed"
+    },
+    {
+     "w": "Enos",
+     "g": "Enos",
+     "p": "nominative singular, indeclinable",
+     "l": "Enos",
+     "c": "indeclinable",
+     "d": "Enos, a son of Seth"
+    },
+    {
+     "w": "nonaginta",
+     "g": "ninety",
+     "p": "indeclinable numeral",
+     "l": "nonaginta",
+     "c": "numeral",
+     "d": "ninety"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Cainan.",
+     "g": "Cainan",
+     "p": "accusative singular, indeclinable",
+     "l": "Cainan",
+     "c": "indeclinable",
+     "d": "Cainan, a son of Enos"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     4,
+     3,
+     "a"
+    ],
+    [
+     6,
+     7,
+     "o"
+    ]
+   ]
+  },
+  "10": {
+   "tokens": [
+    {
+     "w": "Post",
+     "g": "after",
+     "p": "preposition with the accusative",
+     "l": "post",
+     "c": "preposition",
+     "d": "after, behind"
+    },
+    {
+     "w": "cujus",
+     "g": "whose",
+     "p": "genitive singular masculine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "ortum",
+     "g": "birth",
+     "p": "accusative singular",
+     "l": "ortus, ortus, m.",
+     "c": "masculine · IV declension",
+     "d": "rising, birth"
+    },
+    {
+     "w": "vixit",
+     "g": "he lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "octingentis",
+     "g": "eight hundred",
+     "p": "ablative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "quindecim",
+     "g": "fifteen",
+     "p": "indeclinable numeral",
+     "l": "quindecim",
+     "c": "numeral",
+     "d": "fifteen"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "w"
+    ],
+    [
+     2,
+     1,
+     "g"
+    ],
+    [
+     6,
+     4,
+     "a"
+    ],
+    [
+     6,
+     5,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "o"
+    ],
+    [
+     8,
+     11,
+     "o"
+    ]
+   ]
+  },
+  "11": {
+   "tokens": [
+    {
+     "w": "Factique sunt",
+     "g": "and were",
+     "p": "perfect of fio: two words, one verb, with -que (and) fused on",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Enos",
+     "g": "of Enos",
+     "p": "genitive singular, indeclinable",
+     "l": "Enos",
+     "c": "indeclinable",
+     "d": "Enos, a son of Seth"
+    },
+    {
+     "w": "nongenti",
+     "g": "nine hundred",
+     "p": "nominative plural masculine",
+     "l": "nongenti, nongentæ, nongenta",
+     "c": "numeral",
+     "d": "nine hundred"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "anni,",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     2,
+     1,
+     "a"
+    ],
+    [
+     2,
+     3,
+     "g"
+    ],
+    [
+     6,
+     4,
+     "a"
+    ],
+    [
+     6,
+     5,
+     "a"
+    ]
+   ]
+  },
+  "12": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "quoque",
+     "g": "also",
+     "p": "adverb",
+     "l": "quoque",
+     "c": "adverb",
+     "d": "also, too"
+    },
+    {
+     "w": "Cainan",
+     "g": "Cainan",
+     "p": "nominative singular, indeclinable",
+     "l": "Cainan",
+     "c": "indeclinable",
+     "d": "Cainan, a son of Enos"
+    },
+    {
+     "w": "septuaginta",
+     "g": "seventy",
+     "p": "indeclinable numeral",
+     "l": "septuaginta",
+     "c": "numeral",
+     "d": "seventy"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Malaleel.",
+     "g": "Malaleel",
+     "p": "accusative singular, indeclinable",
+     "l": "Malaleel",
+     "c": "indeclinable",
+     "d": "Malaleel, a son of Cainan"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     4,
+     3,
+     "a"
+    ],
+    [
+     6,
+     7,
+     "o"
+    ]
+   ]
+  },
+  "13": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Cainan,",
+     "g": "Cainan",
+     "p": "nominative singular, indeclinable",
+     "l": "Cainan",
+     "c": "indeclinable",
+     "d": "Cainan, a son of Enos"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Malaleel,",
+     "g": "Malaleel",
+     "p": "accusative singular, indeclinable",
+     "l": "Malaleel",
+     "c": "indeclinable",
+     "d": "Malaleel, a son of Cainan"
+    },
+    {
+     "w": "octingentis",
+     "g": "eight hundred",
+     "p": "ablative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "quadraginta",
+     "g": "forty",
+     "p": "indeclinable numeral",
+     "l": "quadraginta",
+     "c": "numeral",
+     "d": "forty"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "genuitque",
+     "g": "and he begot",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "c"
+    ],
+    [
+     4,
+     5,
+     "o"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     9,
+     12,
+     "o"
+    ]
+   ]
+  },
+  "14": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Cainan",
+     "g": "of Cainan",
+     "p": "genitive singular, indeclinable",
+     "l": "Cainan",
+     "c": "indeclinable",
+     "d": "Cainan, a son of Enos"
+    },
+    {
+     "w": "nongenti",
+     "g": "nine hundred",
+     "p": "nominative plural masculine",
+     "l": "nongenti, nongentæ, nongenta",
+     "c": "numeral",
+     "d": "nine hundred"
+    },
+    {
+     "w": "decem",
+     "g": "ten",
+     "p": "indeclinable numeral",
+     "l": "decem",
+     "c": "numeral",
+     "d": "ten"
+    },
+    {
+     "w": "anni,",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     7,
+     5,
+     "a"
+    ],
+    [
+     7,
+     6,
+     "a"
+    ]
+   ]
+  },
+  "15": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "autem",
+     "g": "moreover",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "Malaleel",
+     "g": "Malaleel",
+     "p": "nominative singular, indeclinable",
+     "l": "Malaleel",
+     "c": "indeclinable",
+     "d": "Malaleel, a son of Cainan"
+    },
+    {
+     "w": "sexaginta",
+     "g": "sixty",
+     "p": "indeclinable numeral",
+     "l": "sexaginta",
+     "c": "numeral",
+     "d": "sixty"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Jared.",
+     "g": "Jared",
+     "p": "accusative singular, indeclinable",
+     "l": "Jared",
+     "c": "indeclinable",
+     "d": "Jared, a son of Malaleel"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     5,
+     3,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "a"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ]
+   ]
+  },
+  "16": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Malaleel,",
+     "g": "Malaleel",
+     "p": "nominative singular, indeclinable",
+     "l": "Malaleel",
+     "c": "indeclinable",
+     "d": "Malaleel, a son of Cainan"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Jared,",
+     "g": "Jared",
+     "p": "accusative singular, indeclinable",
+     "l": "Jared",
+     "c": "indeclinable",
+     "d": "Jared, a son of Malaleel"
+    },
+    {
+     "w": "octingentis",
+     "g": "eight hundred",
+     "p": "ablative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "triginta",
+     "g": "thirty",
+     "p": "indeclinable numeral",
+     "l": "triginta",
+     "c": "numeral",
+     "d": "thirty"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "c"
+    ],
+    [
+     4,
+     5,
+     "o"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ],
+    [
+     10,
+     11,
+     "o"
+    ],
+    [
+     10,
+     13,
+     "o"
+    ]
+   ]
+  },
+  "17": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Malaleel",
+     "g": "of Malaleel",
+     "p": "genitive singular, indeclinable",
+     "l": "Malaleel",
+     "c": "indeclinable",
+     "d": "Malaleel, a son of Cainan"
+    },
+    {
+     "w": "octingenti",
+     "g": "eight hundred",
+     "p": "nominative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "nonaginta",
+     "g": "ninety",
+     "p": "indeclinable numeral",
+     "l": "nonaginta",
+     "c": "numeral",
+     "d": "ninety"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "anni,",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     8,
+     5,
+     "a"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ]
+   ]
+  },
+  "18": {
+   "tokens": [
+    {
+     "w": "Vixitque",
+     "g": "and lived",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Jared",
+     "g": "Jared",
+     "p": "nominative singular, indeclinable",
+     "l": "Jared",
+     "c": "indeclinable",
+     "d": "Jared, a son of Malaleel"
+    },
+    {
+     "w": "centum",
+     "g": "a hundred",
+     "p": "indeclinable numeral",
+     "l": "centum",
+     "c": "numeral",
+     "d": "a hundred"
+    },
+    {
+     "w": "sexaginta",
+     "g": "sixty",
+     "p": "indeclinable numeral",
+     "l": "sexaginta",
+     "c": "numeral",
+     "d": "sixty"
+    },
+    {
+     "w": "duobus",
+     "g": "two",
+     "p": "ablative plural masculine",
+     "l": "duo, duæ, duo",
+     "c": "numeral",
+     "d": "two"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Henoch.",
+     "g": "Henoch",
+     "p": "accusative singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also the son of Jared who walked with God"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     5,
+     2,
+     "a"
+    ],
+    [
+     5,
+     3,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "a"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ]
+   ]
+  },
+  "19": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Jared,",
+     "g": "Jared",
+     "p": "nominative singular, indeclinable",
+     "l": "Jared",
+     "c": "indeclinable",
+     "d": "Jared, a son of Malaleel"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Henoch,",
+     "g": "Henoch",
+     "p": "accusative singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also the son of Jared who walked with God"
+    },
+    {
+     "w": "octingentis",
+     "g": "eight hundred",
+     "p": "ablative plural masculine",
+     "l": "octingenti, octingentæ, octingenta",
+     "c": "numeral",
+     "d": "eight hundred"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "c"
+    ],
+    [
+     4,
+     5,
+     "o"
+    ],
+    [
+     7,
+     6,
+     "a"
+    ],
+    [
+     9,
+     10,
+     "o"
+    ],
+    [
+     9,
+     12,
+     "o"
+    ]
+   ]
+  },
+  "20": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Jared",
+     "g": "of Jared",
+     "p": "genitive singular, indeclinable",
+     "l": "Jared",
+     "c": "indeclinable",
+     "d": "Jared, a son of Malaleel"
+    },
+    {
+     "w": "nongenti",
+     "g": "nine hundred",
+     "p": "nominative plural masculine",
+     "l": "nongenti, nongentæ, nongenta",
+     "c": "numeral",
+     "d": "nine hundred"
+    },
+    {
+     "w": "sexaginta",
+     "g": "sixty",
+     "p": "indeclinable numeral",
+     "l": "sexaginta",
+     "c": "numeral",
+     "d": "sixty"
+    },
+    {
+     "w": "duo",
+     "g": "two",
+     "p": "nominative plural masculine",
+     "l": "duo, duæ, duo",
+     "c": "numeral",
+     "d": "two"
+    },
+    {
+     "w": "anni,",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     8,
+     5,
+     "a"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ]
+   ]
+  },
+  "21": {
+   "tokens": [
+    {
+     "w": "Porro",
+     "g": "furthermore",
+     "p": "adverb",
+     "l": "porro",
+     "c": "adverb",
+     "d": "furthermore, moreover"
+    },
+    {
+     "w": "Henoch",
+     "g": "Henoch",
+     "p": "nominative singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also the son of Jared who walked with God"
+    },
+    {
+     "w": "vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "sexaginta",
+     "g": "sixty",
+     "p": "indeclinable numeral",
+     "l": "sexaginta",
+     "c": "numeral",
+     "d": "sixty"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Mathusalam.",
+     "g": "Mathusala",
+     "p": "accusative singular",
+     "l": "Mathusala, Mathusalæ, m.",
+     "c": "masculine · I declension",
+     "d": "Mathusala, a son of Henoch"
+    }
+   ],
+   "links": [
+    [
+     2,
+     1,
+     "s"
+    ],
+    [
+     5,
+     3,
+     "a"
+    ],
+    [
+     5,
+     4,
+     "a"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ]
+   ]
+  },
+  "22": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "ambulavit",
+     "g": "walked",
+     "p": "perfect, third singular",
+     "l": "ambulo, ambulare, ambulavi, ambulatus",
+     "c": "I conjugation",
+     "d": "to walk"
+    },
+    {
+     "w": "Henoch",
+     "g": "Henoch",
+     "p": "nominative singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also the son of Jared who walked with God"
+    },
+    {
+     "w": "cum",
+     "g": "with",
+     "p": "preposition with the ablative",
+     "l": "cum (preposition)",
+     "c": "preposition",
+     "d": "with, together with"
+    },
+    {
+     "w": "Deo:",
+     "g": "God",
+     "p": "ablative singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "vixit,",
+     "g": "he lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Mathusalam,",
+     "g": "Mathusala",
+     "p": "accusative singular",
+     "l": "Mathusala, Mathusalæ, m.",
+     "c": "masculine · I declension",
+     "d": "Mathusala, a son of Henoch"
+    },
+    {
+     "w": "trecentis",
+     "g": "three hundred",
+     "p": "ablative plural masculine",
+     "l": "trecenti, trecentæ, trecenta",
+     "c": "numeral",
+     "d": "three hundred"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "w"
+    ],
+    [
+     7,
+     8,
+     "c"
+    ],
+    [
+     8,
+     9,
+     "o"
+    ],
+    [
+     11,
+     10,
+     "a"
+    ],
+    [
+     13,
+     14,
+     "o"
+    ],
+    [
+     13,
+     16,
+     "o"
+    ]
+   ]
+  },
+  "23": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Henoch",
+     "g": "of Henoch",
+     "p": "genitive singular, indeclinable",
+     "l": "Henoch",
+     "c": "indeclinable",
+     "d": "Henoch, a son of Cain; also the son of Jared who walked with God"
+    },
+    {
+     "w": "trecenti",
+     "g": "three hundred",
+     "p": "nominative plural masculine",
+     "l": "trecenti, trecentæ, trecenta",
+     "c": "numeral",
+     "d": "three hundred"
+    },
+    {
+     "w": "sexaginta",
+     "g": "sixty",
+     "p": "indeclinable numeral",
+     "l": "sexaginta",
+     "c": "numeral",
+     "d": "sixty"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "anni.",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     8,
+     5,
+     "a"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ]
+   ]
+  },
+  "24": {
+   "tokens": [
+    {
+     "w": "Ambulavitque",
+     "g": "and he walked",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "ambulo, ambulare, ambulavi, ambulatus",
+     "c": "I conjugation",
+     "d": "to walk"
+    },
+    {
+     "w": "cum",
+     "g": "with",
+     "p": "preposition with the ablative",
+     "l": "cum (preposition)",
+     "c": "preposition",
+     "d": "with, together with"
+    },
+    {
+     "w": "Deo,",
+     "g": "God",
+     "p": "ablative singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "non",
+     "g": "not",
+     "p": "adverb",
+     "l": "non",
+     "c": "adverb",
+     "d": "not"
+    },
+    {
+     "w": "apparuit:",
+     "g": "he was seen",
+     "p": "perfect, third singular",
+     "l": "appareo, apparere, apparui",
+     "c": "II conjugation",
+     "d": "to appear"
+    },
+    {
+     "w": "quia",
+     "g": "because",
+     "p": "conjunction",
+     "l": "quia",
+     "c": "conjunction",
+     "d": "because, since"
+    },
+    {
+     "w": "tulit",
+     "g": "took",
+     "p": "perfect, third singular",
+     "l": "fero, ferre, tuli, latus",
+     "c": "irregular",
+     "d": "to carry, to bear"
+    },
+    {
+     "w": "eum",
+     "g": "him",
+     "p": "accusative singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Deus.",
+     "g": "God",
+     "p": "nominative singular",
+     "l": "Deus, Dei, m.",
+     "c": "masculine · II declension",
+     "d": "God"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "w"
+    ],
+    [
+     6,
+     7,
+     "c"
+    ],
+    [
+     7,
+     8,
+     "o"
+    ],
+    [
+     7,
+     9,
+     "s"
+    ]
+   ]
+  },
+  "25": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "quoque",
+     "g": "also",
+     "p": "adverb",
+     "l": "quoque",
+     "c": "adverb",
+     "d": "also, too"
+    },
+    {
+     "w": "Mathusala",
+     "g": "Mathusala",
+     "p": "nominative singular",
+     "l": "Mathusala, Mathusalæ, m.",
+     "c": "masculine · I declension",
+     "d": "Mathusala, a son of Henoch"
+    },
+    {
+     "w": "centum",
+     "g": "a hundred",
+     "p": "indeclinable numeral",
+     "l": "centum",
+     "c": "numeral",
+     "d": "a hundred"
+    },
+    {
+     "w": "octoginta",
+     "g": "eighty",
+     "p": "indeclinable numeral",
+     "l": "octoginta",
+     "c": "numeral",
+     "d": "eighty"
+    },
+    {
+     "w": "septem",
+     "g": "seven",
+     "p": "indeclinable numeral",
+     "l": "septem",
+     "c": "numeral",
+     "d": "seven"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Lamech.",
+     "g": "Lamech",
+     "p": "accusative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     6,
+     3,
+     "a"
+    ],
+    [
+     6,
+     4,
+     "a"
+    ],
+    [
+     6,
+     5,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "o"
+    ]
+   ]
+  },
+  "26": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Mathusala,",
+     "g": "Mathusala",
+     "p": "nominative singular",
+     "l": "Mathusala, Mathusalæ, m.",
+     "c": "masculine · I declension",
+     "d": "Mathusala, a son of Henoch"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Lamech,",
+     "g": "Lamech",
+     "p": "accusative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "septingentis",
+     "g": "seven hundred",
+     "p": "ablative plural masculine",
+     "l": "septingenti, septingentæ, septingenta",
+     "c": "numeral",
+     "d": "seven hundred"
+    },
+    {
+     "w": "octoginta",
+     "g": "eighty",
+     "p": "indeclinable numeral",
+     "l": "octoginta",
+     "c": "numeral",
+     "d": "eighty"
+    },
+    {
+     "w": "duobus",
+     "g": "two",
+     "p": "ablative plural masculine",
+     "l": "duo, duæ, duo",
+     "c": "numeral",
+     "d": "two"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     1,
+     2,
+     "s"
+    ],
+    [
+     3,
+     4,
+     "c"
+    ],
+    [
+     4,
+     5,
+     "o"
+    ],
+    [
+     9,
+     6,
+     "a"
+    ],
+    [
+     9,
+     7,
+     "a"
+    ],
+    [
+     9,
+     8,
+     "a"
+    ],
+    [
+     11,
+     12,
+     "o"
+    ],
+    [
+     11,
+     14,
+     "o"
+    ]
+   ]
+  },
+  "27": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Mathusala",
+     "g": "of Mathusala",
+     "p": "genitive singular",
+     "l": "Mathusala, Mathusalæ, m.",
+     "c": "masculine · I declension",
+     "d": "Mathusala, a son of Henoch"
+    },
+    {
+     "w": "nongenti",
+     "g": "nine hundred",
+     "p": "nominative plural masculine",
+     "l": "nongenti, nongentæ, nongenta",
+     "c": "numeral",
+     "d": "nine hundred"
+    },
+    {
+     "w": "sexaginta",
+     "g": "sixty",
+     "p": "indeclinable numeral",
+     "l": "sexaginta",
+     "c": "numeral",
+     "d": "sixty"
+    },
+    {
+     "w": "novem",
+     "g": "nine",
+     "p": "indeclinable numeral",
+     "l": "novem",
+     "c": "numeral",
+     "d": "nine"
+    },
+    {
+     "w": "anni,",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     8,
+     5,
+     "a"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ]
+   ]
+  },
+  "28": {
+   "tokens": [
+    {
+     "w": "Vixit",
+     "g": "lived",
+     "p": "perfect, third singular",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "autem",
+     "g": "moreover",
+     "p": "conjunction, always second in its clause",
+     "l": "autem",
+     "c": "conjunction",
+     "d": "but, moreover"
+    },
+    {
+     "w": "Lamech",
+     "g": "Lamech",
+     "p": "nominative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "centum",
+     "g": "a hundred",
+     "p": "indeclinable numeral",
+     "l": "centum",
+     "c": "numeral",
+     "d": "a hundred"
+    },
+    {
+     "w": "octoginta",
+     "g": "eighty",
+     "p": "indeclinable numeral",
+     "l": "octoginta",
+     "c": "numeral",
+     "d": "eighty"
+    },
+    {
+     "w": "duobus",
+     "g": "two",
+     "p": "ablative plural masculine",
+     "l": "duo, duæ, duo",
+     "c": "numeral",
+     "d": "two"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filium:",
+     "g": "a son",
+     "p": "accusative singular",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    }
+   ],
+   "links": [
+    [
+     0,
+     2,
+     "s"
+    ],
+    [
+     6,
+     3,
+     "a"
+    ],
+    [
+     6,
+     4,
+     "a"
+    ],
+    [
+     6,
+     5,
+     "a"
+    ],
+    [
+     8,
+     9,
+     "o"
+    ]
+   ]
+  },
+  "29": {
+   "tokens": [
+    {
+     "w": "vocavitque",
+     "g": "and he called",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "voco, vocare, vocavi, vocatus",
+     "c": "I conjugation",
+     "d": "to call"
+    },
+    {
+     "w": "nomen",
+     "g": "the name",
+     "p": "accusative singular",
+     "l": "nomen, nominis, n.",
+     "c": "neuter · III declension",
+     "d": "name"
+    },
+    {
+     "w": "ejus",
+     "g": "of him",
+     "p": "genitive singular masculine",
+     "l": "is, ea, id",
+     "c": "pronoun",
+     "d": "he, she, it"
+    },
+    {
+     "w": "Noë,",
+     "g": "Noë",
+     "p": "accusative singular, indeclinable",
+     "l": "Noë",
+     "c": "indeclinable",
+     "d": "Noë, the builder of the ark"
+    },
+    {
+     "w": "dicens:",
+     "g": "saying",
+     "p": "nominative singular masculine, present participle",
+     "l": "dico, dicere, dixi, dictus",
+     "c": "III conjugation",
+     "d": "to say, to speak"
+    },
+    {
+     "w": "Iste",
+     "g": "this one",
+     "p": "nominative singular masculine",
+     "l": "iste, ista, istud",
+     "c": "pronoun",
+     "d": "that, this one"
+    },
+    {
+     "w": "consolabitur",
+     "g": "will comfort",
+     "p": "future, third singular (deponent verb)",
+     "l": "consolor, consolari, consolatus sum",
+     "c": "I conjugation · deponent",
+     "d": "to console, to comfort"
+    },
+    {
+     "w": "nos",
+     "g": "us",
+     "p": "accusative plural, first person pronoun",
+     "l": "ego",
+     "c": "personal",
+     "d": "I, we"
+    },
+    {
+     "w": "ab",
+     "g": "from",
+     "p": "preposition with the ablative",
+     "l": "a, ab",
+     "c": "preposition",
+     "d": "from, away from"
+    },
+    {
+     "w": "operibus",
+     "g": "the works",
+     "p": "ablative plural",
+     "l": "opus, operis, n.",
+     "c": "neuter · III declension",
+     "d": "work, labor"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "laboribus",
+     "g": "the hardships",
+     "p": "ablative plural",
+     "l": "labor, laboris, m.",
+     "c": "masculine · III declension",
+     "d": "labor, hardship"
+    },
+    {
+     "w": "manuum",
+     "g": "of the hands",
+     "p": "genitive plural",
+     "l": "manus, manus, f.",
+     "c": "feminine · IV declension",
+     "d": "hand"
+    },
+    {
+     "w": "nostrarum",
+     "g": "our",
+     "p": "genitive plural feminine",
+     "l": "noster, nostra, nostrum",
+     "c": "possessive",
+     "d": "our"
+    },
+    {
+     "w": "in",
+     "g": "in",
+     "p": "preposition with the ablative or accusative",
+     "l": "in",
+     "c": "preposition",
+     "d": "in, into, on"
+    },
+    {
+     "w": "terra,",
+     "g": "the land",
+     "p": "ablative singular",
+     "l": "terra, terræ, f.",
+     "c": "feminine · I declension",
+     "d": "earth, land"
+    },
+    {
+     "w": "cui",
+     "g": "which",
+     "p": "dative singular feminine, relative pronoun",
+     "l": "qui, quæ, quod",
+     "c": "relative",
+     "d": "who, which"
+    },
+    {
+     "w": "maledixit",
+     "g": "has cursed",
+     "p": "perfect, third singular",
+     "l": "maledico, maledicere, maledixi, maledictus",
+     "c": "III conjugation",
+     "d": "to curse, to speak ill of"
+    },
+    {
+     "w": "Dominus.",
+     "g": "the Lord",
+     "p": "nominative singular",
+     "l": "Dominus, Domini, m.",
+     "c": "masculine · II declension",
+     "d": "Lord, master"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "o"
+    ],
+    [
+     1,
+     2,
+     "g"
+    ],
+    [
+     6,
+     5,
+     "s"
+    ],
+    [
+     6,
+     7,
+     "o"
+    ],
+    [
+     8,
+     9,
+     "w"
+    ],
+    [
+     8,
+     11,
+     "w"
+    ],
+    [
+     9,
+     12,
+     "g"
+    ],
+    [
+     11,
+     12,
+     "g"
+    ],
+    [
+     12,
+     13,
+     "a"
+    ],
+    [
+     14,
+     15,
+     "w"
+    ],
+    [
+     17,
+     16,
+     "d"
+    ],
+    [
+     17,
+     18,
+     "s"
+    ]
+   ]
+  },
+  "30": {
+   "tokens": [
+    {
+     "w": "Vixitque",
+     "g": "and lived",
+     "p": "perfect, third singular, with -que (and) fused on",
+     "l": "vivo, vivere, vixi, victus",
+     "c": "III conjugation",
+     "d": "to live"
+    },
+    {
+     "w": "Lamech,",
+     "g": "Lamech",
+     "p": "nominative singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "postquam",
+     "g": "after",
+     "p": "conjunction",
+     "l": "postquam",
+     "c": "conjunction",
+     "d": "after, when"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Noë,",
+     "g": "Noë",
+     "p": "accusative singular, indeclinable",
+     "l": "Noë",
+     "c": "indeclinable",
+     "d": "Noë, the builder of the ark"
+    },
+    {
+     "w": "quingentis",
+     "g": "five hundred",
+     "p": "ablative plural masculine",
+     "l": "quingenti, quingentæ, quingenta",
+     "c": "numeral",
+     "d": "five hundred"
+    },
+    {
+     "w": "nonaginta",
+     "g": "ninety",
+     "p": "indeclinable numeral",
+     "l": "nonaginta",
+     "c": "numeral",
+     "d": "ninety"
+    },
+    {
+     "w": "quinque",
+     "g": "five",
+     "p": "indeclinable numeral",
+     "l": "quinque",
+     "c": "numeral",
+     "d": "five"
+    },
+    {
+     "w": "annis,",
+     "g": "years",
+     "p": "ablative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "filios",
+     "g": "sons",
+     "p": "accusative plural",
+     "l": "filius, filii, m.",
+     "c": "masculine · II declension",
+     "d": "son"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "filias.",
+     "g": "daughters",
+     "p": "accusative plural",
+     "l": "filia, filiæ, f.",
+     "c": "feminine · I declension",
+     "d": "daughter"
+    }
+   ],
+   "links": [
+    [
+     0,
+     1,
+     "s"
+    ],
+    [
+     2,
+     3,
+     "c"
+    ],
+    [
+     3,
+     4,
+     "o"
+    ],
+    [
+     8,
+     5,
+     "a"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ],
+    [
+     10,
+     11,
+     "o"
+    ],
+    [
+     10,
+     13,
+     "o"
+    ]
+   ]
+  },
+  "31": {
+   "tokens": [
+    {
+     "w": "Et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "facti sunt",
+     "g": "were",
+     "p": "perfect of fio: two words, one verb",
+     "l": "fio, fieri, factus sum",
+     "c": "irregular",
+     "d": "to become, to be made"
+    },
+    {
+     "w": "omnes",
+     "g": "all",
+     "p": "nominative plural masculine",
+     "l": "omnis, omne",
+     "c": "III declension",
+     "d": "all, every"
+    },
+    {
+     "w": "dies",
+     "g": "the days",
+     "p": "nominative plural",
+     "l": "dies, diei, m.",
+     "c": "masculine · V declension",
+     "d": "day"
+    },
+    {
+     "w": "Lamech",
+     "g": "of Lamech",
+     "p": "genitive singular, indeclinable",
+     "l": "Lamech",
+     "c": "indeclinable",
+     "d": "Lamech, a descendant of Cain; also the father of Noë"
+    },
+    {
+     "w": "septingenti",
+     "g": "seven hundred",
+     "p": "nominative plural masculine",
+     "l": "septingenti, septingentæ, septingenta",
+     "c": "numeral",
+     "d": "seven hundred"
+    },
+    {
+     "w": "septuaginta",
+     "g": "seventy",
+     "p": "indeclinable numeral",
+     "l": "septuaginta",
+     "c": "numeral",
+     "d": "seventy"
+    },
+    {
+     "w": "septem",
+     "g": "seven",
+     "p": "indeclinable numeral",
+     "l": "septem",
+     "c": "numeral",
+     "d": "seven"
+    },
+    {
+     "w": "anni,",
+     "g": "years",
+     "p": "nominative plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "mortuus est.",
+     "g": "he died",
+     "p": "perfect, third singular (deponent verb): two words, one verb",
+     "l": "morior, mori, mortuus sum",
+     "c": "III conjugation · deponent",
+     "d": "to die"
+    },
+    {
+     "w": "Noë",
+     "g": "Noë",
+     "p": "nominative singular, indeclinable",
+     "l": "Noë",
+     "c": "indeclinable",
+     "d": "Noë, the builder of the ark"
+    },
+    {
+     "w": "vero",
+     "g": "truly",
+     "p": "adverb",
+     "l": "vero",
+     "c": "adverb",
+     "d": "truly, indeed"
+    },
+    {
+     "w": "cum",
+     "g": "when",
+     "p": "conjunction with the subjunctive",
+     "l": "cum",
+     "c": "conjunction",
+     "d": "when, since, although"
+    },
+    {
+     "w": "quingentorum",
+     "g": "of five hundred",
+     "p": "genitive plural masculine",
+     "l": "quingenti, quingentæ, quingenta",
+     "c": "numeral",
+     "d": "five hundred"
+    },
+    {
+     "w": "esset",
+     "g": "he was",
+     "p": "imperfect subjunctive, third singular",
+     "l": "sum, esse, fui",
+     "c": "irregular",
+     "d": "to be"
+    },
+    {
+     "w": "annorum,",
+     "g": "years",
+     "p": "genitive plural",
+     "l": "annus, anni, m.",
+     "c": "masculine · II declension",
+     "d": "year"
+    },
+    {
+     "w": "genuit",
+     "g": "he begot",
+     "p": "perfect, third singular",
+     "l": "gigno, gignere, genui, genitus",
+     "c": "III conjugation",
+     "d": "to beget, to bring forth"
+    },
+    {
+     "w": "Sem,",
+     "g": "Sem",
+     "p": "accusative singular, indeclinable",
+     "l": "Sem",
+     "c": "indeclinable",
+     "d": "Sem, a son of Noë"
+    },
+    {
+     "w": "Cham",
+     "g": "Cham",
+     "p": "accusative singular, indeclinable",
+     "l": "Cham",
+     "c": "indeclinable",
+     "d": "Cham, a son of Noë"
+    },
+    {
+     "w": "et",
+     "g": "and",
+     "p": "conjunction",
+     "l": "et",
+     "c": "conjunction",
+     "d": "and, also"
+    },
+    {
+     "w": "Japheth.",
+     "g": "Japheth",
+     "p": "accusative singular, indeclinable",
+     "l": "Japheth",
+     "c": "indeclinable",
+     "d": "Japheth, a son of Noë"
+    }
+   ],
+   "links": [
+    [
+     1,
+     3,
+     "s"
+    ],
+    [
+     3,
+     2,
+     "a"
+    ],
+    [
+     3,
+     4,
+     "g"
+    ],
+    [
+     8,
+     5,
+     "a"
+    ],
+    [
+     8,
+     6,
+     "a"
+    ],
+    [
+     8,
+     7,
+     "a"
+    ],
+    [
+     13,
+     15,
+     "c"
+    ],
+    [
+     15,
+     11,
+     "s"
+    ],
+    [
+     16,
+     14,
+     "a"
+    ],
+    [
+     17,
+     18,
+     "o"
+    ],
+    [
+     17,
+     19,
+     "o"
+    ],
+    [
+     17,
+     21,
+     "o"
+    ]
+   ]
+  }
+ },
+ "notes": [
+  "annus: regular second declension, but the ablative plural annis is the standard way of counting age in this chapter",
+  "octingenti, nongenti, trecenti, septingenti, quingenti: first-and-second declension but plural by nature, like duo — there are no singular forms",
+  "centum, triginta, quinque, septem, duodecim, nonaginta, quindecim, septuaginta, quadraginta, decem, sexaginta, octoginta, novem: indeclinable numerals",
+  "gigno, gignere, genui, genitus: the present stem gign- is a reduplication of gen-",
+  "appareo, apparere, apparui: no supine in use",
+  "consolor, consolari, consolatus sum: deponent, active in meaning",
+  "Mathusala declines as a first-declension masculine (Mathusalam in vv.21-22), not indeclinable",
+  "Henoch in this chapter is the son of Jared, a different man from the Henoch son of Cain in Genesis 4:17",
+  "Lamech in this chapter is the father of Noë, a different man from the Lamech descended from Cain in Genesis 4:18",
+  "cum is two words: the preposition with the ablative, cited 'cum (preposition)' to keep it apart from the conjunction, and the conjunction with the subjunctive. Both are correct on their own tokens."
+ ]
+}

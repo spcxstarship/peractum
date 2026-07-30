@@ -1,0 +1,5246 @@
+{
+ "forms": {
+  "a": [
+   "a, ab"
+  ],
+  "ab": [
+   "a, ab"
+  ],
+  "abel": [
+   "Abel"
+  ],
+  "abscondar": [
+   "abscondo, abscondere, abscondi, absconditus"
+  ],
+  "abscondi": [
+   "abscondo, abscondere, abscondi, absconditus"
+  ],
+  "abscondit": [
+   "abscondo, abscondere, abscondi, absconditus"
+  ],
+  "abyssi": [
+   "abyssus, abyssi, f."
+  ],
+  "ac": [
+   "ac"
+  ],
+  "acceperunt": [
+   "accipio, accipere, accepi, acceptus"
+  ],
+  "accepit": [
+   "accipio, accipere, accepi, acceptus"
+  ],
+  "ad": [
+   "ad"
+  ],
+  "ada": [
+   "Ada"
+  ],
+  "adam": [
+   "Adam"
+  ],
+  "adducam": [
+   "adduco, adducere, adduxi, adductus"
+  ],
+  "adduxit": [
+   "adduco, adducere, adduxi, adductus"
+  ],
+  "aderit": [
+   "adsum, adesse, adfui"
+  ],
+  "adhuc": [
+   "adhuc"
+  ],
+  "adhærebit": [
+   "adhæreo, adhærere, adhæsi, adhæsus"
+  ],
+  "adipibus": [
+   "adeps, adipis, m."
+  ],
+  "adjutor": [
+   "adjutor, adjutoris, m."
+  ],
+  "adjutorium": [
+   "adjutorium, adjutorii, n."
+  ],
+  "adolescentulum": [
+   "adolescentulus, adolescentuli, m."
+  ],
+  "adversus": [
+   "adversus"
+  ],
+  "adæ": [
+   "Adam",
+   "Ada"
+  ],
+  "afferentem": [
+   "affero, afferre, attuli, allatus"
+  ],
+  "agri": [
+   "ager, agri, m."
+  ],
+  "agricola": [
+   "agricola, agricolæ, m."
+  ],
+  "agro": [
+   "ager, agri, m."
+  ],
+  "ait": [
+   "aio"
+  ],
+  "aliud": [
+   "alius, alia, aliud"
+  ],
+  "alteri": [
+   "alter, altera, alterum"
+  ],
+  "altitudo": [
+   "altitudo, altitudinis, f."
+  ],
+  "amborum": [
+   "ambo, ambæ, ambo"
+  ],
+  "ambulavit": [
+   "ambulo, ambulare, ambulavi, ambulatus"
+  ],
+  "ambulavitque": [
+   "ambulo, ambulare, ambulavi, ambulatus"
+  ],
+  "anima": [
+   "anima, animæ, f."
+  ],
+  "animam": [
+   "anima, animæ, f."
+  ],
+  "animantia": [
+   "animans, animantis"
+  ],
+  "animantibus": [
+   "animans, animantis"
+  ],
+  "animæ": [
+   "anima, animæ, f."
+  ],
+  "anni": [
+   "annus, anni, m."
+  ],
+  "annis": [
+   "annus, anni, m."
+  ],
+  "annorum": [
+   "annus, anni, m."
+  ],
+  "annos": [
+   "annus, anni, m."
+  ],
+  "ante": [
+   "ante"
+  ],
+  "antequam": [
+   "antequam"
+  ],
+  "aperientur": [
+   "aperio, aperire, aperui, apertus"
+  ],
+  "aperti sunt": [
+   "aperio, aperire, aperui, apertus"
+  ],
+  "aperuit": [
+   "aperio, aperire, aperui, apertus"
+  ],
+  "appareat": [
+   "appareo, apparere, apparui"
+  ],
+  "apparuit": [
+   "appareo, apparere, apparui"
+  ],
+  "appellavit": [
+   "appello, appellare, appellavi, appellatus"
+  ],
+  "appellavitque": [
+   "appello, appellare, appellavi, appellatus"
+  ],
+  "appetitus": [
+   "appetitus, appetitus, m."
+  ],
+  "apud": [
+   "apud"
+  ],
+  "aquarum": [
+   "aqua, aquæ, f."
+  ],
+  "aquas": [
+   "aqua, aquæ, f."
+  ],
+  "aquis": [
+   "aqua, aquæ, f."
+  ],
+  "aquæ": [
+   "aqua, aquæ, f."
+  ],
+  "arca": [
+   "arca, arcæ, f."
+  ],
+  "arcam": [
+   "arca, arcæ, f."
+  ],
+  "arcæ": [
+   "arca, arcæ, f."
+  ],
+  "arida": [
+   "aridus, arida, aridum"
+  ],
+  "aridam": [
+   "aridus, arida, aridum"
+  ],
+  "ascendebat": [
+   "ascendo, ascendere, ascendi, ascensus"
+  ],
+  "aspectuque": [
+   "aspectus, aspectus, m."
+  ],
+  "assyrios": [
+   "Assyrius, Assyrii, m."
+  ],
+  "atque": [
+   "atque"
+  ],
+  "audissent": [
+   "audio, audire, audivi, auditus"
+  ],
+  "audisti": [
+   "audio, audire, audivi, auditus"
+  ],
+  "audite": [
+   "audio, audire, audivi, auditus"
+  ],
+  "audivi": [
+   "audio, audire, audivi, auditus"
+  ],
+  "auram": [
+   "aura, auræ, f."
+  ],
+  "aurum": [
+   "aurum, auri, n."
+  ],
+  "auscultate": [
+   "ausculto, auscultare, auscultavi, auscultatus"
+  ],
+  "autem": [
+   "autem"
+  ],
+  "avesque": [
+   "avis, avis, f."
+  ],
+  "bdellium": [
+   "bdellium, bdellii, n."
+  ],
+  "bene": [
+   "bene"
+  ],
+  "benedixit": [
+   "benedico, benedicere, benedixi, benedictus"
+  ],
+  "benedixitque": [
+   "benedico, benedicere, benedixi, benedictus"
+  ],
+  "bestias": [
+   "bestia, bestiæ, f."
+  ],
+  "bestiis": [
+   "bestia, bestiæ, f."
+  ],
+  "bina": [
+   "bini, binæ, bina"
+  ],
+  "bitumine": [
+   "bitumen, bituminis, n."
+  ],
+  "bona": [
+   "bonus, bona, bonum"
+  ],
+  "boni": [
+   "bonus, bona, bonum"
+  ],
+  "bonum": [
+   "bonus, bona, bonum"
+  ],
+  "cain": [
+   "Cain"
+  ],
+  "cainan": [
+   "Cainan"
+  ],
+  "calcaneo": [
+   "calcaneum, calcanei, n."
+  ],
+  "callidior": [
+   "callidior, callidius"
+  ],
+  "canentium": [
+   "cano, canere, cecini, cantus"
+  ],
+  "capita": [
+   "caput, capitis, n."
+  ],
+  "caput": [
+   "caput, capitis, n."
+  ],
+  "carne": [
+   "caro, carnis, f."
+  ],
+  "carnem": [
+   "caro, carnis, f."
+  ],
+  "carnis": [
+   "caro, carnis, f."
+  ],
+  "caro": [
+   "caro, carnis, f."
+  ],
+  "centum": [
+   "centum"
+  ],
+  "cessaverat": [
+   "cesso, cessare, cessavi, cessatus"
+  ],
+  "cete": [
+   "cetus, ceti, m."
+  ],
+  "cham": [
+   "Cham"
+  ],
+  "cherubim": [
+   "cherubim"
+  ],
+  "cibum": [
+   "cibus, cibi, m."
+  ],
+  "circuit": [
+   "circumeo, circumire, circumivi, circumitus"
+  ],
+  "circumit": [
+   "circumeo, circumire, circumivi, circumitus"
+  ],
+  "cithara": [
+   "cithara, citharæ, f."
+  ],
+  "civitatem": [
+   "civitas, civitatis, f."
+  ],
+  "clamat": [
+   "clamo, clamare, clamavi, clamatus"
+  ],
+  "cogitatio": [
+   "cogitatio, cogitationis, f."
+  ],
+  "cognovissent": [
+   "cognosco, cognoscere, cognovi, cognitus"
+  ],
+  "cognovit": [
+   "cognosco, cognoscere, cognovi, cognitus"
+  ],
+  "collocavit": [
+   "colloco, collocare, collocavi, collocatus"
+  ],
+  "comedas": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comedat": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comede": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comederemus": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comederes": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comederetis": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comederis": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comederitis": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comedes": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comedi": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comedisti": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "comedit": [
+   "comedo, comedere, comedi, comesus"
+  ],
+  "complevitque": [
+   "compleo, complere, complevi, completus"
+  ],
+  "comportabis": [
+   "comporto, comportare, comportavi, comportatus"
+  ],
+  "concepit": [
+   "concipio, concipere, concepi, conceptus"
+  ],
+  "conceptus": [
+   "conceptus, conceptus, m."
+  ],
+  "concidit": [
+   "concido, concidere, concidi"
+  ],
+  "congregationesque": [
+   "congregatio, congregationis, f."
+  ],
+  "congregentur": [
+   "congrego, congregare, congregavi, congregatus"
+  ],
+  "consolabitur": [
+   "consolor, consolari, consolatus sum"
+  ],
+  "consuerunt": [
+   "consuo, consuere, consui, consutus"
+  ],
+  "consumentur": [
+   "consumo, consumere, consumpsi, consumptus"
+  ],
+  "consummabis": [
+   "consummo, consummare, consummavi, consummatus"
+  ],
+  "consurrexit": [
+   "consurgo, consurgere, consurrexi, consurrectus"
+  ],
+  "conteret": [
+   "contero, conterere, contrivi, contritus"
+  ],
+  "contra": [
+   "contra"
+  ],
+  "coram": [
+   "coram"
+  ],
+  "cordis": [
+   "cor, cordis, n."
+  ],
+  "corruperat": [
+   "corrumpo, corrumpere, corrupi, corruptus"
+  ],
+  "corrupta est": [
+   "corrumpo, corrumpere, corrupi, corruptus"
+  ],
+  "corruptam": [
+   "corrumpo, corrumpere, corrupi, corruptus"
+  ],
+  "costam": [
+   "costa, costæ, f."
+  ],
+  "costis": [
+   "costa, costæ, f."
+  ],
+  "creata sunt": [
+   "creo, creare, creavi, creatus"
+  ],
+  "creati sunt": [
+   "creo, creare, creavi, creatus"
+  ],
+  "creavi": [
+   "creo, creare, creavi, creatus"
+  ],
+  "creavit": [
+   "creo, creare, creavi, creatus"
+  ],
+  "creavitque": [
+   "creo, creare, creavi, creatus"
+  ],
+  "crescite": [
+   "cresco, crescere, crevi, cretus"
+  ],
+  "cubito": [
+   "cubitus, cubiti, m."
+  ],
+  "cubitorum": [
+   "cubitus, cubiti, m."
+  ],
+  "cui": [
+   "qui, quæ, quod"
+  ],
+  "cujus": [
+   "qui, quæ, quod"
+  ],
+  "cum": [
+   "cum",
+   "cum (preposition)"
+  ],
+  "cumque": [
+   "cum"
+  ],
+  "cuncta": [
+   "cunctus, cuncta, cunctum"
+  ],
+  "cunctis": [
+   "cunctus, cuncta, cunctum"
+  ],
+  "cunctorum": [
+   "cunctus, cuncta, cunctum"
+  ],
+  "cur": [
+   "cur"
+  ],
+  "custodiendam": [
+   "custodio, custodire, custodivi, custoditus"
+  ],
+  "custodiret": [
+   "custodio, custodire, custodivi, custoditus"
+  ],
+  "custos": [
+   "custos, custodis, m."
+  ],
+  "cæli": [
+   "cælum, cæli, n."
+  ],
+  "cælo": [
+   "cælum, cæli, n."
+  ],
+  "cælum": [
+   "cælum, cæli, n."
+  ],
+  "cœnacula": [
+   "cœnaculum, cœnaculi, n."
+  ],
+  "cœpissent": [
+   "cœpi, cœpisse"
+  ],
+  "cœpit": [
+   "cœpi, cœpisse"
+  ],
+  "dabit": [
+   "do, dare, dedi, datus"
+  ],
+  "dabitur": [
+   "do, dare, dedi, datus"
+  ],
+  "de": [
+   "de"
+  ],
+  "deambulantis": [
+   "deambulo, deambulare, deambulavi, deambulatus"
+  ],
+  "decem": [
+   "decem"
+  ],
+  "decepit": [
+   "decipio, decipere, decepi, deceptus"
+  ],
+  "dedi": [
+   "do, dare, dedi, datus"
+  ],
+  "dedisti": [
+   "do, dare, dedi, datus"
+  ],
+  "dedit": [
+   "do, dare, dedi, datus"
+  ],
+  "deditque": [
+   "do, dare, dedi, datus"
+  ],
+  "dei": [
+   "Deus, Dei, m."
+  ],
+  "delebo": [
+   "deleo, delere, delevi, deletus"
+  ],
+  "delectabile": [
+   "delectabilis, delectabile"
+  ],
+  "deo": [
+   "Deus, Dei, m."
+  ],
+  "deorsum": [
+   "deorsum"
+  ],
+  "deum": [
+   "Deus, Dei, m."
+  ],
+  "deus": [
+   "Deus, Dei, m."
+  ],
+  "dicens": [
+   "dico, dicere, dixi, dictus"
+  ],
+  "die": [
+   "dies, diei, m."
+  ],
+  "diebus": [
+   "dies, diei, m."
+  ],
+  "diei": [
+   "dies, diei, m."
+  ],
+  "diem": [
+   "dies, diei, m."
+  ],
+  "dies": [
+   "dies, diei, m."
+  ],
+  "dii": [
+   "Deus, Dei, m."
+  ],
+  "diluvii": [
+   "diluvium, diluvii, n."
+  ],
+  "disperdam": [
+   "disperdo, disperdere, disperdidi, disperditus"
+  ],
+  "dividant": [
+   "divido, dividere, divisi, divisus"
+  ],
+  "dividat": [
+   "divido, dividere, divisi, divisus"
+  ],
+  "dividerent": [
+   "divido, dividere, divisi, divisus"
+  ],
+  "dividitur": [
+   "divido, dividere, divisi, divisus"
+  ],
+  "divisit": [
+   "divido, dividere, divisi, divisus"
+  ],
+  "divisitque": [
+   "divido, dividere, divisi, divisus"
+  ],
+  "dixit": [
+   "dico, dicere, dixi, dictus"
+  ],
+  "dixitque": [
+   "dico, dicere, dixi, dictus"
+  ],
+  "dolore": [
+   "dolor, doloris, m."
+  ],
+  "dominaberis": [
+   "dominor, dominari, dominatus sum"
+  ],
+  "dominabitur": [
+   "dominor, dominari, dominatus sum"
+  ],
+  "dominamini": [
+   "dominor, dominari, dominatus sum"
+  ],
+  "domini": [
+   "Dominus, Domini, m."
+  ],
+  "domino": [
+   "Dominus, Domini, m."
+  ],
+  "dominum": [
+   "Dominus, Domini, m."
+  ],
+  "dominus": [
+   "Dominus, Domini, m."
+  ],
+  "donec": [
+   "donec"
+  ],
+  "duas": [
+   "duo, duæ, duo"
+  ],
+  "duo": [
+   "duo, duæ, duo"
+  ],
+  "duobus": [
+   "duo, duæ, duo"
+  ],
+  "duodecim": [
+   "duodecim"
+  ],
+  "e": [
+   "e, ex"
+  ],
+  "ea": [
+   "is, ea, id"
+  ],
+  "eam": [
+   "is, ea, id"
+  ],
+  "eas": [
+   "is, ea, id"
+  ],
+  "ecce": [
+   "ecce"
+  ],
+  "eden": [
+   "Eden"
+  ],
+  "egeris": [
+   "ago, agere, egi, actus"
+  ],
+  "ego": [
+   "ego"
+  ],
+  "egrediamur": [
+   "egredior, egredi, egressus sum"
+  ],
+  "egrediebatur": [
+   "egredior, egredi, egressus sum"
+  ],
+  "egressusque": [
+   "egredior, egredi, egressus sum"
+  ],
+  "ei": [
+   "is, ea, id"
+  ],
+  "eis": [
+   "is, ea, id"
+  ],
+  "ejecitque": [
+   "ejicio, ejicere, ejeci, ejectus"
+  ],
+  "ejicis": [
+   "ejicio, ejicere, ejeci, ejectus"
+  ],
+  "ejus": [
+   "is, ea, id"
+  ],
+  "elegerant": [
+   "eligo, eligere, elegi, electus"
+  ],
+  "emisit": [
+   "emitto, emittere, emisi, emissus"
+  ],
+  "enim": [
+   "enim"
+  ],
+  "enos": [
+   "Enos"
+  ],
+  "eo": [
+   "is, ea, id"
+  ],
+  "eorum": [
+   "is, ea, id"
+  ],
+  "eos": [
+   "is, ea, id"
+  ],
+  "erant": [
+   "sum, esse, fui"
+  ],
+  "erat": [
+   "sum, esse, fui"
+  ],
+  "ergo": [
+   "ergo"
+  ],
+  "eris": [
+   "sum, esse, fui"
+  ],
+  "erit": [
+   "sum, esse, fui"
+  ],
+  "eritis": [
+   "sum, esse, fui"
+  ],
+  "ero": [
+   "sum, esse, fui"
+  ],
+  "erubescebant": [
+   "erubesco, erubescere, erubui"
+  ],
+  "erunt": [
+   "sum, esse, fui"
+  ],
+  "eruntque": [
+   "sum, esse, fui"
+  ],
+  "es": [
+   "sum, esse, fui"
+  ],
+  "escam": [
+   "esca, escæ, f."
+  ],
+  "escis": [
+   "esca, escæ, f."
+  ],
+  "esse": [
+   "sum, esse, fui"
+  ],
+  "essem": [
+   "sum, esse, fui"
+  ],
+  "essent": [
+   "sum, esse, fui"
+  ],
+  "esses": [
+   "sum, esse, fui"
+  ],
+  "esset": [
+   "sum, esse, fui"
+  ],
+  "est": [
+   "sum, esse, fui"
+  ],
+  "et": [
+   "et"
+  ],
+  "etiam": [
+   "etiam"
+  ],
+  "eum": [
+   "is, ea, id"
+  ],
+  "euphrates": [
+   "Euphrates"
+  ],
+  "ex": [
+   "e, ex"
+  ],
+  "extrinsecus": [
+   "extrinsecus"
+  ],
+  "faber": [
+   "faber, fabri, m."
+  ],
+  "fac": [
+   "facio, facere, feci, factus"
+  ],
+  "faceret": [
+   "facio, facere, feci, factus"
+  ],
+  "faciamus": [
+   "facio, facere, feci, factus"
+  ],
+  "facie": [
+   "facies, faciei, f."
+  ],
+  "faciem": [
+   "facies, faciei, f."
+  ],
+  "faciens": [
+   "facio, facere, feci, factus"
+  ],
+  "facientem": [
+   "facio, facere, feci, factus"
+  ],
+  "facies": [
+   "facies, faciei, f.",
+   "facio, facere, feci, factus"
+  ],
+  "facta est": [
+   "fio, fieri, factus sum"
+  ],
+  "facti sunt": [
+   "fio, fieri, factus sum"
+  ],
+  "factique sunt": [
+   "fio, fieri, factus sum"
+  ],
+  "factum est": [
+   "fio, fieri, factus sum"
+  ],
+  "factumque est": [
+   "fio, fieri, factus sum"
+  ],
+  "factus est": [
+   "fio, fieri, factus sum"
+  ],
+  "famosi": [
+   "famosus, famosa, famosum"
+  ],
+  "fecerat": [
+   "facio, facere, feci, factus"
+  ],
+  "fecerunt": [
+   "facio, facere, feci, factus"
+  ],
+  "fecisse": [
+   "facio, facere, feci, factus"
+  ],
+  "fecisset": [
+   "facio, facere, feci, factus"
+  ],
+  "fecisti": [
+   "facio, facere, feci, factus"
+  ],
+  "fecit": [
+   "facio, facere, feci, factus"
+  ],
+  "fecitque": [
+   "facio, facere, feci, factus"
+  ],
+  "feminam": [
+   "femina, feminæ, f."
+  ],
+  "feminini": [
+   "femininus, feminina, femininum"
+  ],
+  "fenestram": [
+   "fenestra, fenestræ, f."
+  ],
+  "ferebatur": [
+   "fero, ferre, tuli, latus"
+  ],
+  "ferri": [
+   "ferrum, ferri, n."
+  ],
+  "fiant": [
+   "fio, fieri, factus sum"
+  ],
+  "fiat": [
+   "fio, fieri, factus sum"
+  ],
+  "ficus": [
+   "ficus, ficus, f."
+  ],
+  "fiet": [
+   "fio, fieri, factus sum"
+  ],
+  "filias": [
+   "filia, filiæ, f."
+  ],
+  "filii": [
+   "filius, filii, m."
+  ],
+  "filiorum": [
+   "filius, filii, m."
+  ],
+  "filios": [
+   "filius, filii, m."
+  ],
+  "filium": [
+   "filius, filii, m."
+  ],
+  "filius": [
+   "filius, filii, m."
+  ],
+  "finis": [
+   "finis, finis, m."
+  ],
+  "firmamento": [
+   "firmamentum, firmamenti, n."
+  ],
+  "firmamentum": [
+   "firmamentum, firmamenti, n."
+  ],
+  "flammeum": [
+   "flammeus, flammea, flammeum"
+  ],
+  "fluminis": [
+   "flumen, fluminis, n."
+  ],
+  "fluvii": [
+   "fluvius, fluvii, m."
+  ],
+  "fluvius": [
+   "fluvius, fluvii, m."
+  ],
+  "folia": [
+   "folium, folii, n."
+  ],
+  "fons": [
+   "fons, fontis, m."
+  ],
+  "foras": [
+   "foras"
+  ],
+  "foribus": [
+   "foris, foris, f."
+  ],
+  "formatis": [
+   "formo, formare, formavi, formatus"
+  ],
+  "formaverat": [
+   "formo, formare, formavi, formatus"
+  ],
+  "formavit": [
+   "formo, formare, formavi, formatus"
+  ],
+  "forte": [
+   "forte"
+  ],
+  "frater": [
+   "frater, fratris, m."
+  ],
+  "fratrem": [
+   "frater, fratris, m."
+  ],
+  "fratris": [
+   "frater, fratris, m."
+  ],
+  "fructibus": [
+   "fructus, fructus, m."
+  ],
+  "fructu": [
+   "fructus, fructus, m."
+  ],
+  "fructum": [
+   "fructus, fructus, m."
+  ],
+  "fructus": [
+   "fructus, fructus, m."
+  ],
+  "fuit": [
+   "sum, esse, fui"
+  ],
+  "fœdus": [
+   "fœdus, fœderis, n."
+  ],
+  "gehon": [
+   "Gehon"
+  ],
+  "generationes": [
+   "generatio, generationis, f."
+  ],
+  "generationibus": [
+   "generatio, generationis, f."
+  ],
+  "generationis": [
+   "generatio, generationis, f."
+  ],
+  "genere": [
+   "genus, generis, n."
+  ],
+  "generis": [
+   "genus, generis, n."
+  ],
+  "genuerunt": [
+   "gigno, gignere, genui, genitus"
+  ],
+  "genuit": [
+   "gigno, gignere, genui, genitus"
+  ],
+  "genuitque": [
+   "gigno, gignere, genui, genitus"
+  ],
+  "genus": [
+   "genus, generis, n."
+  ],
+  "germinabit": [
+   "germino, germinare, germinavi, germinatus"
+  ],
+  "germinaret": [
+   "germino, germinare, germinavi, germinatus"
+  ],
+  "germinet": [
+   "germino, germinare, germinavi, germinatus"
+  ],
+  "gigantes": [
+   "gigas, gigantis, m."
+  ],
+  "gladium": [
+   "gladius, gladii, m."
+  ],
+  "gradieris": [
+   "gradior, gradi, gressus sum"
+  ],
+  "grandia": [
+   "grandis, grande"
+  ],
+  "gratiam": [
+   "gratia, gratiæ, f."
+  ],
+  "gregis": [
+   "grex, gregis, m."
+  ],
+  "habeant": [
+   "habeo, habere, habui, habitus"
+  ],
+  "habens": [
+   "habeo, habere, habui, habitus"
+  ],
+  "habent": [
+   "habeo, habere, habui, habitus"
+  ],
+  "habitantium": [
+   "habito, habitare, habitavi, habitatus"
+  ],
+  "habitavit": [
+   "habito, habitare, habitavi, habitatus"
+  ],
+  "henoch": [
+   "Henoch"
+  ],
+  "herbam": [
+   "herba, herbæ, f."
+  ],
+  "heva": [
+   "Heva"
+  ],
+  "hevam": [
+   "Heva, Hevæ, f."
+  ],
+  "hevilath": [
+   "Hevilath"
+  ],
+  "hic": [
+   "hic, hæc, hoc"
+  ],
+  "his": [
+   "hic, hæc, hoc"
+  ],
+  "hoc": [
+   "hic, hæc, hoc"
+  ],
+  "hodie": [
+   "hodie"
+  ],
+  "homine": [
+   "homo, hominis, m."
+  ],
+  "hominem": [
+   "homo, hominis, m."
+  ],
+  "homines": [
+   "homo, hominis, m."
+  ],
+  "hominum": [
+   "homo, hominis, m."
+  ],
+  "homo": [
+   "homo, hominis, m."
+  ],
+  "humo": [
+   "humus, humi, f."
+  ],
+  "hæ": [
+   "hic, hæc, hoc"
+  ],
+  "hæc": [
+   "hic, hæc, hoc"
+  ],
+  "ibi": [
+   "ibi"
+  ],
+  "igitur": [
+   "igitur"
+  ],
+  "illi": [
+   "ille, illa, illud"
+  ],
+  "illis": [
+   "ille, illa, illud"
+  ],
+  "illius": [
+   "ille, illa, illud"
+  ],
+  "illud": [
+   "ille, illa, illud"
+  ],
+  "illum": [
+   "ille, illa, illud"
+  ],
+  "illuminent": [
+   "illumino, illuminare, illuminavi, illuminatus"
+  ],
+  "illæque": [
+   "ille, illa, illud"
+  ],
+  "imaginem": [
+   "imago, imaginis, f."
+  ],
+  "immisit": [
+   "immitto, immittere, immisi, immissus"
+  ],
+  "in": [
+   "in"
+  ],
+  "inanis": [
+   "inanis, inane"
+  ],
+  "inde": [
+   "inde"
+  ],
+  "indicavit": [
+   "indico, indicare, indicavi, indicatus"
+  ],
+  "induces": [
+   "induco, inducere, induxi, inductus"
+  ],
+  "induit": [
+   "induo, induere, indui, indutus"
+  ],
+  "ingredientur": [
+   "ingredior, ingredi, ingressus sum"
+  ],
+  "ingredieris": [
+   "ingredior, ingredi, ingressus sum"
+  ],
+  "ingressi sunt": [
+   "ingredior, ingredi, ingressus sum"
+  ],
+  "inimicitias": [
+   "inimicitia, inimicitiæ, f."
+  ],
+  "iniquitas": [
+   "iniquitas, iniquitatis, f."
+  ],
+  "iniquitate": [
+   "iniquitas, iniquitatis, f."
+  ],
+  "inquit": [
+   "inquam"
+  ],
+  "insidiaberis": [
+   "insidior, insidiari, insidiatus sum"
+  ],
+  "inspiravit": [
+   "inspiro, inspirare, inspiravi, inspiratus"
+  ],
+  "intenta": [
+   "intendo, intendere, intendi, intentus"
+  ],
+  "inter": [
+   "inter"
+  ],
+  "interfecit": [
+   "interficio, interficere, interfeci, interfectus"
+  ],
+  "interficeret": [
+   "interficio, interficere, interfeci, interfectus"
+  ],
+  "interficiam": [
+   "interficio, interficere, interfeci, interfectus"
+  ],
+  "intrinsecus": [
+   "intrinsecus"
+  ],
+  "invenerit": [
+   "invenio, invenire, inveni, inventus"
+  ],
+  "inveniebatur": [
+   "invenio, invenire, inveni, inventus"
+  ],
+  "invenisset": [
+   "invenio, invenire, inveni, inventus"
+  ],
+  "invenit": [
+   "invenio, invenire, inveni, inventus"
+  ],
+  "invenitur": [
+   "invenio, invenire, inveni, inventus"
+  ],
+  "invocare": [
+   "invoco, invocare, invocavi, invocatus"
+  ],
+  "ipsa": [
+   "ipse, ipsa, ipsum"
+  ],
+  "ipse": [
+   "ipse, ipsa, ipsum"
+  ],
+  "ipso": [
+   "ipse, ipsa, ipsum"
+  ],
+  "ipsum": [
+   "ipse, ipsa, ipsum"
+  ],
+  "irad": [
+   "Irad"
+  ],
+  "iratus es": [
+   "irascor, irasci, iratus sum"
+  ],
+  "iratusque est": [
+   "irascor, irasci, iratus sum"
+  ],
+  "irrigandum": [
+   "irrigo, irrigare, irrigavi, irrigatus"
+  ],
+  "irrigans": [
+   "irrigo, irrigare, irrigavi, irrigatus"
+  ],
+  "iste": [
+   "iste, ista, istud"
+  ],
+  "isti": [
+   "iste, ista, istud"
+  ],
+  "istæ": [
+   "iste, ista, istud"
+  ],
+  "ita": [
+   "ita"
+  ],
+  "jabel": [
+   "Jabel"
+  ],
+  "japheth": [
+   "Japheth"
+  ],
+  "jared": [
+   "Jared"
+  ],
+  "jubal": [
+   "Jubal"
+  ],
+  "jumenta": [
+   "jumentum, jumenti, n."
+  ],
+  "jumentis": [
+   "jumentum, jumenti, n."
+  ],
+  "justus": [
+   "justus, justa, justum"
+  ],
+  "juxta": [
+   "juxta"
+  ],
+  "laboribus": [
+   "labor, laboris, m."
+  ],
+  "lamech": [
+   "Lamech"
+  ],
+  "lapis": [
+   "lapis, lapidis, m."
+  ],
+  "latere": [
+   "latus, lateris, n."
+  ],
+  "latitudo": [
+   "latitudo, latitudinis, f."
+  ],
+  "liber": [
+   "liber, libri, m."
+  ],
+  "ligna": [
+   "lignum, ligni, n."
+  ],
+  "ligni": [
+   "lignum, ligni, n."
+  ],
+  "lignis": [
+   "lignum, ligni, n."
+  ],
+  "ligno": [
+   "lignum, ligni, n."
+  ],
+  "lignorum": [
+   "lignum, ligni, n."
+  ],
+  "lignum": [
+   "lignum, ligni, n."
+  ],
+  "lignumque": [
+   "lignum, ligni, n."
+  ],
+  "limo": [
+   "limus, limi, m."
+  ],
+  "linies": [
+   "linio, linire, linivi, linitus"
+  ],
+  "livorem": [
+   "livor, livoris, m."
+  ],
+  "loco": [
+   "locus, loci, m."
+  ],
+  "locum": [
+   "locus, loci, m."
+  ],
+  "longitudo": [
+   "longitudo, longitudinis, f."
+  ],
+  "luceant": [
+   "luceo, lucere, luxi"
+  ],
+  "lucem": [
+   "lux, lucis, f."
+  ],
+  "lucerent": [
+   "luceo, lucere, luxi"
+  ],
+  "luminare": [
+   "luminare, luminaris, n."
+  ],
+  "luminaria": [
+   "luminare, luminaris, n."
+  ],
+  "lux": [
+   "lux, lucis, f."
+  ],
+  "lævigatis": [
+   "lævigo, lævigare, lævigavi, lævigatus"
+  ],
+  "magna": [
+   "magnus, magna, magnum"
+  ],
+  "major": [
+   "major, majus"
+  ],
+  "majus": [
+   "major, majus"
+  ],
+  "malaleel": [
+   "Malaleel"
+  ],
+  "male": [
+   "male"
+  ],
+  "maledicta": [
+   "maledico, maledicere, maledixi, maledictus"
+  ],
+  "maledictus eris": [
+   "maledico, maledicere, maledixi, maledictus"
+  ],
+  "maledictus es": [
+   "maledico, maledicere, maledixi, maledictus"
+  ],
+  "maledixit": [
+   "maledico, maledicere, maledixi, maledictus"
+  ],
+  "mali": [
+   "malus, mala, malum"
+  ],
+  "malitia": [
+   "malitia, malitiæ, f."
+  ],
+  "malleator": [
+   "malleator, malleatoris, m."
+  ],
+  "malum": [
+   "malus, mala, malum"
+  ],
+  "mandi": [
+   "mando, mandere, mandi, mansus"
+  ],
+  "mane": [
+   "mane"
+  ],
+  "mansiunculas": [
+   "mansiuncula, mansiunculæ, f."
+  ],
+  "manu": [
+   "manus, manus, f."
+  ],
+  "manum": [
+   "manus, manus, f."
+  ],
+  "manuum": [
+   "manus, manus, f."
+  ],
+  "maria": [
+   "mare, maris, n."
+  ],
+  "maris": [
+   "mare, maris, n."
+  ],
+  "masculini": [
+   "masculinus, masculina, masculinum"
+  ],
+  "masculum": [
+   "masculus, masculi, m."
+  ],
+  "mater": [
+   "mater, matris, f."
+  ],
+  "mathusala": [
+   "Mathusala, Mathusalæ, m."
+  ],
+  "mathusalam": [
+   "Mathusala, Mathusalæ, m."
+  ],
+  "mathusaël": [
+   "Mathusaël"
+  ],
+  "matrem": [
+   "mater, matris, f."
+  ],
+  "maviaël": [
+   "Maviaël"
+  ],
+  "me": [
+   "ego"
+  ],
+  "mea": [
+   "meus, mea, meum"
+  ],
+  "meam": [
+   "meus, mea, meum"
+  ],
+  "medio": [
+   "medium, medii, n."
+  ],
+  "mei": [
+   "meus, mea, meum"
+  ],
+  "meis": [
+   "meus, mea, meum"
+  ],
+  "merear": [
+   "mereor, mereri, meritus sum"
+  ],
+  "meridiem": [
+   "meridies, meridiei, m."
+  ],
+  "meum": [
+   "meus, mea, meum"
+  ],
+  "meus": [
+   "meus, mea, meum"
+  ],
+  "mihi": [
+   "ego"
+  ],
+  "minus": [
+   "minor, minus"
+  ],
+  "mittat": [
+   "mitto, mittere, misi, missus"
+  ],
+  "moriamur": [
+   "morior, mori, mortuus sum"
+  ],
+  "moriemini": [
+   "morior, mori, mortuus sum"
+  ],
+  "morieris": [
+   "morior, mori, mortuus sum"
+  ],
+  "morte": [
+   "mors, mortis, f."
+  ],
+  "mortuus est": [
+   "morior, mori, mortuus sum"
+  ],
+  "motabilem": [
+   "motabilis, motabile"
+  ],
+  "moventur": [
+   "moveo, movere, movi, motus"
+  ],
+  "movetur": [
+   "moveo, movere, movi, motus"
+  ],
+  "mulier": [
+   "mulier, mulieris, f."
+  ],
+  "mulierem": [
+   "mulier, mulieris, f."
+  ],
+  "mulieri": [
+   "mulier, mulieris, f."
+  ],
+  "multa": [
+   "multus, multa, multum"
+  ],
+  "multiplicabo": [
+   "multiplico, multiplicare, multiplicavi, multiplicatus"
+  ],
+  "multiplicamini": [
+   "multiplico, multiplicare, multiplicavi, multiplicatus"
+  ],
+  "multiplicari": [
+   "multiplico, multiplicare, multiplicavi, multiplicatus"
+  ],
+  "multiplicentur": [
+   "multiplico, multiplicare, multiplicavi, multiplicatus"
+  ],
+  "multos": [
+   "multus, multa, multum"
+  ],
+  "munera": [
+   "munus, muneris, n."
+  ],
+  "nascitur": [
+   "nascor, nasci, natus sum"
+  ],
+  "natus est": [
+   "nascor, nasci, natus sum"
+  ],
+  "ne": [
+   "ne"
+  ],
+  "nequaquam": [
+   "nequaquam"
+  ],
+  "nescio": [
+   "nescio, nescire, nescivi, nescitus"
+  ],
+  "nisi": [
+   "nisi"
+  ],
+  "nobis": [
+   "ego"
+  ],
+  "noctem": [
+   "nox, noctis, f."
+  ],
+  "nocti": [
+   "nox, noctis, f."
+  ],
+  "nomen": [
+   "nomen, nominis, n."
+  ],
+  "nomine": [
+   "nomen, nominis, n."
+  ],
+  "nominibus": [
+   "nomen, nominis, n."
+  ],
+  "non": [
+   "non"
+  ],
+  "nonaginta": [
+   "nonaginta"
+  ],
+  "nongenti": [
+   "nongenti, nongentæ, nongenta"
+  ],
+  "nongentorum": [
+   "nongenti, nongentæ, nongenta"
+  ],
+  "nonne": [
+   "nonne"
+  ],
+  "nos": [
+   "ego"
+  ],
+  "nostram": [
+   "noster, nostra, nostrum"
+  ],
+  "nostrarum": [
+   "noster, nostra, nostrum"
+  ],
+  "novem": [
+   "novem"
+  ],
+  "noë": [
+   "Noë"
+  ],
+  "noëma": [
+   "Noëma"
+  ],
+  "nudos": [
+   "nudus, nuda, nudum"
+  ],
+  "nudus": [
+   "nudus, nuda, nudum"
+  ],
+  "num": [
+   "num"
+  ],
+  "nunc": [
+   "nunc"
+  ],
+  "ob": [
+   "ob"
+  ],
+  "obdormisset": [
+   "obdormio, obdormire, obdormivi"
+  ],
+  "obtulit": [
+   "offero, offerre, obtuli, oblatus"
+  ],
+  "occiderit": [
+   "occido, occidere, occidi, occisus"
+  ],
+  "occidet": [
+   "occido, occidere, occidi, occisus"
+  ],
+  "occidi": [
+   "occido, occidere, occidi, occisus"
+  ],
+  "occidit": [
+   "occido, occidere, occidi, occisus"
+  ],
+  "octingenti": [
+   "octingenti, octingentæ, octingenta"
+  ],
+  "octingentis": [
+   "octingenti, octingentæ, octingenta"
+  ],
+  "octoginta": [
+   "octoginta"
+  ],
+  "oculi": [
+   "oculus, oculi, m."
+  ],
+  "oculis": [
+   "oculus, oculi, m."
+  ],
+  "offerret": [
+   "offero, offerre, obtuli, oblatus"
+  ],
+  "omne": [
+   "omnis, omne"
+  ],
+  "omnem": [
+   "omnis, omne"
+  ],
+  "omnemque": [
+   "omnis, omne"
+  ],
+  "omnes": [
+   "omnis, omne"
+  ],
+  "omni": [
+   "omnis, omne"
+  ],
+  "omnia": [
+   "omnis, omne"
+  ],
+  "omnibus": [
+   "omnis, omne"
+  ],
+  "omnique": [
+   "omnis, omne"
+  ],
+  "omnis": [
+   "omnis, omne"
+  ],
+  "onychinus": [
+   "onychinus, onychina, onychinum"
+  ],
+  "opera": [
+   "opus, operis, n."
+  ],
+  "operaretur": [
+   "operor, operari, operatus sum"
+  ],
+  "operatus fueris": [
+   "operor, operari, operatus sum"
+  ],
+  "opere": [
+   "opus, operis, n."
+  ],
+  "operibus": [
+   "opus, operis, n."
+  ],
+  "optimum": [
+   "optimus, optima, optimum"
+  ],
+  "opus": [
+   "opus, operis, n."
+  ],
+  "organo": [
+   "organum, organi, n."
+  ],
+  "orientalem": [
+   "orientalis, orientale"
+  ],
+  "oriretur": [
+   "orior, oriri, ortus sum"
+  ],
+  "ornatus": [
+   "ornatus, ornatus, m."
+  ],
+  "ortum": [
+   "ortus, ortus, m."
+  ],
+  "os": [
+   "os, ossis, n.",
+   "os, oris, n."
+  ],
+  "ossibus": [
+   "os, ossis, n."
+  ],
+  "ostium": [
+   "ostium, ostii, n."
+  ],
+  "ovium": [
+   "ovis, ovis, f."
+  ],
+  "pane": [
+   "panis, panis, m."
+  ],
+  "paradisi": [
+   "paradisus, paradisi, m."
+  ],
+  "paradiso": [
+   "paradisus, paradisi, m."
+  ],
+  "paradisum": [
+   "paradisus, paradisi, m."
+  ],
+  "paries": [
+   "pario, parere, peperi, partus"
+  ],
+  "pastor": [
+   "pastor, pastoris, m."
+  ],
+  "pastorum": [
+   "pastor, pastoris, m."
+  ],
+  "pater": [
+   "pater, patris, m."
+  ],
+  "patrarat": [
+   "patro, patrare, patravi, patratus"
+  ],
+  "patrem": [
+   "pater, patris, m."
+  ],
+  "peccatum": [
+   "peccatum, peccati, n."
+  ],
+  "pectus": [
+   "pectus, pectoris, n."
+  ],
+  "pelliceas": [
+   "pelliceus, pellicea, pelliceum"
+  ],
+  "peperit": [
+   "pario, parere, peperi, partus"
+  ],
+  "per": [
+   "per"
+  ],
+  "perfecti sunt": [
+   "perficio, perficere, perfeci, perfectus"
+  ],
+  "perfectus": [
+   "perficio, perficere, perfeci, perfectus"
+  ],
+  "perizomata": [
+   "perizoma, perizomatis, n."
+  ],
+  "permanebit": [
+   "permaneo, permanere, permansi, permansus"
+  ],
+  "phison": [
+   "Phison"
+  ],
+  "piscibus": [
+   "piscis, piscis, m."
+  ],
+  "plagam": [
+   "plaga, plagæ, f."
+  ],
+  "plantaverat": [
+   "planto, plantare, plantavi, plantatus"
+  ],
+  "pluerat": [
+   "pluo, pluere, plui"
+  ],
+  "pomiferum": [
+   "pomifer, pomifera, pomiferum"
+  ],
+  "ponam": [
+   "pono, ponere, posui, positus"
+  ],
+  "ponamque": [
+   "pono, ponere, posui, positus"
+  ],
+  "pones": [
+   "pono, ponere, posui, positus"
+  ],
+  "porro": [
+   "porro"
+  ],
+  "possedi": [
+   "possideo, possidere, possedi, possessus"
+  ],
+  "possint": [
+   "possum, posse, potui"
+  ],
+  "possunt": [
+   "possum, posse, potui"
+  ],
+  "post": [
+   "post"
+  ],
+  "postquam": [
+   "postquam"
+  ],
+  "posuit": [
+   "pono, ponere, posui, positus"
+  ],
+  "posuitque": [
+   "pono, ponere, posui, positus"
+  ],
+  "potentes": [
+   "potens, potentis"
+  ],
+  "potestate": [
+   "potestas, potestatis, f."
+  ],
+  "primogenitis": [
+   "primogenitus, primogenita, primogenitum"
+  ],
+  "principio": [
+   "principium, principii, n."
+  ],
+  "priusquam": [
+   "priusquam"
+  ],
+  "pro": [
+   "pro"
+  ],
+  "procreassent": [
+   "procreo, procreare, procreavi, procreatus"
+  ],
+  "producant": [
+   "produco, producere, produxi, productus"
+  ],
+  "producat": [
+   "produco, producere, produxi, productus"
+  ],
+  "produxerant": [
+   "produco, producere, produxi, productus"
+  ],
+  "produxitque": [
+   "produco, producere, produxi, productus"
+  ],
+  "profugus": [
+   "profugus, profuga, profugum"
+  ],
+  "protulit": [
+   "profero, proferre, protuli, prolatus"
+  ],
+  "præceperam": [
+   "præcipio, præcipere, præcepi, præceptus"
+  ],
+  "præceperat": [
+   "præcipio, præcipere, præcepi, præceptus"
+  ],
+  "præcepit": [
+   "præcipio, præcipere, præcepi, præceptus"
+  ],
+  "præcepitque": [
+   "præcipio, præcipere, præcepi, præceptus"
+  ],
+  "præessent": [
+   "præsum, præesse, præfui"
+  ],
+  "præesset": [
+   "præsum, præesse, præfui"
+  ],
+  "præsit": [
+   "præsum, præesse, præfui"
+  ],
+  "pulchrum": [
+   "pulcher, pulchra, pulchrum"
+  ],
+  "pulchræ": [
+   "pulcher, pulchra, pulchrum"
+  ],
+  "pulverem": [
+   "pulvis, pulveris, m."
+  ],
+  "pulvis": [
+   "pulvis, pulveris, m."
+  ],
+  "punietur": [
+   "punio, punire, punivi, punitus"
+  ],
+  "pœnitet": [
+   "pœnitet, pœnitere, pœnituit"
+  ],
+  "pœnituit": [
+   "pœnitet, pœnitere, pœnituit"
+  ],
+  "qua": [
+   "qui, quæ, quod"
+  ],
+  "quadraginta": [
+   "quadraginta"
+  ],
+  "quam": [
+   "qui, quæ, quod"
+  ],
+  "quando": [
+   "quando"
+  ],
+  "quare": [
+   "quare"
+  ],
+  "quartus": [
+   "quartus, quarta, quartum"
+  ],
+  "quas": [
+   "qui, quæ, quod"
+  ],
+  "quasi": [
+   "quasi"
+  ],
+  "quatuor": [
+   "quatuor"
+  ],
+  "quem": [
+   "qui, quæ, quod"
+  ],
+  "qui": [
+   "qui, quæ, quod"
+  ],
+  "quia": [
+   "quia"
+  ],
+  "quibus": [
+   "qui, quæ, quod"
+  ],
+  "quid": [
+   "quis, quid"
+  ],
+  "quindecim": [
+   "quindecim"
+  ],
+  "quingentis": [
+   "quingenti, quingentæ, quingenta"
+  ],
+  "quingentorum": [
+   "quingenti, quingentæ, quingenta"
+  ],
+  "quinquaginta": [
+   "quinquaginta"
+  ],
+  "quinque": [
+   "quinque"
+  ],
+  "quintus": [
+   "quintus, quinta, quintum"
+  ],
+  "quippe": [
+   "quippe"
+  ],
+  "quis": [
+   "quis, quid"
+  ],
+  "quo": [
+   "qui, quæ, quod"
+  ],
+  "quocumque": [
+   "quicumque, quæcumque, quodcumque"
+  ],
+  "quod": [
+   "qui, quæ, quod"
+  ],
+  "quoniam": [
+   "quoniam"
+  ],
+  "quoque": [
+   "quoque"
+  ],
+  "quæ": [
+   "qui, quæ, quod"
+  ],
+  "recipies": [
+   "recipio, recipere, recepi, receptus"
+  ],
+  "regionis": [
+   "regio, regionis, f."
+  ],
+  "relinquet": [
+   "relinquo, relinquere, reliqui, relictus"
+  ],
+  "rem": [
+   "res, rei, f."
+  ],
+  "repleta est": [
+   "repleo, replere, replevi, repletus"
+  ],
+  "replete": [
+   "repleo, replere, replevi, repletus"
+  ],
+  "replevit": [
+   "repleo, replere, replevi, repletus"
+  ],
+  "reptile": [
+   "reptile, reptilis, n."
+  ],
+  "reptili": [
+   "reptile, reptilis, n."
+  ],
+  "reptilia": [
+   "reptile, reptilis, n."
+  ],
+  "requievit": [
+   "requiesco, requiescere, requievi, requietus"
+  ],
+  "respexit": [
+   "respicio, respicere, respexi, respectus"
+  ],
+  "respondit": [
+   "respondeo, respondere, respondi, responsus"
+  ],
+  "revertaris": [
+   "revertor, reverti, reversus sum"
+  ],
+  "reverteris": [
+   "revertor, reverti, reversus sum"
+  ],
+  "rursumque": [
+   "rursum"
+  ],
+  "sanctificavit": [
+   "sanctifico, sanctificare, sanctificavi, sanctificatus"
+  ],
+  "sanguinem": [
+   "sanguis, sanguinis, m."
+  ],
+  "sanguinis": [
+   "sanguis, sanguinis, m."
+  ],
+  "sciens": [
+   "scio, scire, scivi, scitus"
+  ],
+  "scientes": [
+   "scio, scire, scivi, scitus"
+  ],
+  "scientiæ": [
+   "scientia, scientiæ, f."
+  ],
+  "scilicet": [
+   "scilicet"
+  ],
+  "scit": [
+   "scio, scire, scivi, scitus"
+  ],
+  "se": [
+   "sui, sibi, se"
+  ],
+  "secundi": [
+   "secundus, secunda, secundum"
+  ],
+  "secundum": [
+   "secundum"
+  ],
+  "secundus": [
+   "secundus, secunda, secundum"
+  ],
+  "sed": [
+   "sed"
+  ],
+  "sella": [
+   "Sella"
+  ],
+  "sellæ": [
+   "Sella"
+  ],
+  "sem": [
+   "Sem"
+  ],
+  "semen": [
+   "semen, seminis, n."
+  ],
+  "sementem": [
+   "sementis, sementis, f."
+  ],
+  "semetipsis": [
+   "semetipse"
+  ],
+  "semetipso": [
+   "semetipse"
+  ],
+  "septem": [
+   "septem"
+  ],
+  "septies": [
+   "septies"
+  ],
+  "septimo": [
+   "septimus, septima, septimum"
+  ],
+  "septingenti": [
+   "septingenti, septingentæ, septingenta"
+  ],
+  "septingentis": [
+   "septingenti, septingentæ, septingenta"
+  ],
+  "septuagies": [
+   "septuagies"
+  ],
+  "septuaginta": [
+   "septuaginta"
+  ],
+  "septuplum": [
+   "septuplus, septupla, septuplum"
+  ],
+  "sermonem": [
+   "sermo, sermonis, m."
+  ],
+  "serpens": [
+   "serpens, serpentis, m."
+  ],
+  "serpentem": [
+   "serpens, serpentis, m."
+  ],
+  "seth": [
+   "Seth"
+  ],
+  "sexaginta": [
+   "sexaginta"
+  ],
+  "sextus": [
+   "sextus, sexta, sextum"
+  ],
+  "sexus": [
+   "sexus, sexus, m."
+  ],
+  "si": [
+   "si"
+  ],
+  "sibi": [
+   "sui, sibi, se"
+  ],
+  "sic": [
+   "sic"
+  ],
+  "sicut": [
+   "sicut"
+  ],
+  "signa": [
+   "signum, signi, n."
+  ],
+  "signum": [
+   "signum, signi, n."
+  ],
+  "simile": [
+   "similis, simile"
+  ],
+  "similis": [
+   "similis, simile"
+  ],
+  "similitudinem": [
+   "similitudo, similitudinis, f."
+  ],
+  "sin": [
+   "sin"
+  ],
+  "sint": [
+   "sum, esse, fui"
+  ],
+  "sit": [
+   "sum, esse, fui"
+  ],
+  "sociam": [
+   "socia, sociæ, f."
+  ],
+  "solum": [
+   "solus, sola, solum"
+  ],
+  "soporem": [
+   "sopor, soporis, m."
+  ],
+  "soror": [
+   "soror, sororis, f."
+  ],
+  "speciem": [
+   "species, speciei, f."
+  ],
+  "species": [
+   "species, speciei, f."
+  ],
+  "spinas": [
+   "spina, spinæ, f."
+  ],
+  "spiraculum": [
+   "spiraculum, spiraculi, n."
+  ],
+  "spiritus": [
+   "spiritus, spiritus, m."
+  ],
+  "statim": [
+   "statim"
+  ],
+  "stellas": [
+   "stella, stellæ, f."
+  ],
+  "suam": [
+   "suus, sua, suum"
+  ],
+  "suas": [
+   "suus, sua, suum"
+  ],
+  "suave": [
+   "suavis, suave"
+  ],
+  "sub": [
+   "sub"
+  ],
+  "subjicite": [
+   "subjicio, subjicere, subjeci, subjectus"
+  ],
+  "subter": [
+   "subter"
+  ],
+  "sudore": [
+   "sudor, sudoris, m."
+  ],
+  "sui": [
+   "suus, sua, suum"
+  ],
+  "suis": [
+   "suus, sua, suum"
+  ],
+  "sum": [
+   "sum, esse, fui"
+  ],
+  "sumat": [
+   "sumo, sumere, sumpsi, sumptus"
+  ],
+  "summitatem": [
+   "summitas, summitatis, f."
+  ],
+  "sumpta est": [
+   "sumo, sumere, sumpsi, sumptus"
+  ],
+  "sumptus es": [
+   "sumo, sumere, sumpsi, sumptus"
+  ],
+  "sumptus est": [
+   "sumo, sumere, sumpsi, sumptus"
+  ],
+  "sunt": [
+   "sum, esse, fui"
+  ],
+  "suo": [
+   "suus, sua, suum"
+  ],
+  "suos": [
+   "suus, sua, suum"
+  ],
+  "super": [
+   "super"
+  ],
+  "superficiem": [
+   "superficies, superficiei, f."
+  ],
+  "suscepit": [
+   "suscipio, suscipere, suscepi, susceptus"
+  ],
+  "suum": [
+   "suus, sua, suum"
+  ],
+  "suæ": [
+   "suus, sua, suum"
+  ],
+  "sæculo": [
+   "sæculum, sæculi, n."
+  ],
+  "tactus": [
+   "tango, tangere, tetigi, tactus"
+  ],
+  "tam": [
+   "tam"
+  ],
+  "tangeremus": [
+   "tango, tangere, tetigi, tactus"
+  ],
+  "te": [
+   "tu"
+  ],
+  "tecum": [
+   "tu"
+  ],
+  "tempora": [
+   "tempus, temporis, n."
+  ],
+  "tempore": [
+   "tempus, temporis, n."
+  ],
+  "tempus": [
+   "tempus, temporis, n."
+  ],
+  "tenebras": [
+   "tenebræ, tenebrarum, f."
+  ],
+  "tenebris": [
+   "tenebræ, tenebrarum, f."
+  ],
+  "tenebræ": [
+   "tenebræ, tenebrarum, f."
+  ],
+  "tentoriis": [
+   "tentorium, tentorii, n."
+  ],
+  "terra": [
+   "terra, terræ, f."
+  ],
+  "terram": [
+   "terra, terræ, f."
+  ],
+  "terræ": [
+   "terra, terræ, f."
+  ],
+  "tertii": [
+   "tertius, tertia, tertium"
+  ],
+  "tertius": [
+   "tertius, tertia, tertium"
+  ],
+  "tibi": [
+   "tu"
+  ],
+  "tigris": [
+   "Tigris"
+  ],
+  "timui": [
+   "timeo, timere, timui"
+  ],
+  "tolles": [
+   "tollo, tollere, sustuli, sublatus"
+  ],
+  "trecenti": [
+   "trecenti, trecentæ, trecenta"
+  ],
+  "trecentis": [
+   "trecenti, trecentæ, trecenta"
+  ],
+  "trecentorum": [
+   "trecenti, trecentæ, trecenta"
+  ],
+  "tres": [
+   "tres, tria"
+  ],
+  "tribulos": [
+   "tribulus, tribuli, m."
+  ],
+  "triginta": [
+   "triginta"
+  ],
+  "tristega": [
+   "tristegum, tristegi, n."
+  ],
+  "tu": [
+   "tu"
+  ],
+  "tua": [
+   "tuus, tua, tuum"
+  ],
+  "tuam": [
+   "tuus, tua, tuum"
+  ],
+  "tuas": [
+   "tuus, tua, tuum"
+  ],
+  "tubalcain": [
+   "Tubalcain"
+  ],
+  "tui": [
+   "tuus, tua, tuum"
+  ],
+  "tulerat": [
+   "fero, ferre, tuli, latus"
+  ],
+  "tulit": [
+   "fero, ferre, tuli, latus"
+  ],
+  "tunicas": [
+   "tunica, tunicæ, f."
+  ],
+  "tuo": [
+   "tuus, tua, tuum"
+  ],
+  "tuorum": [
+   "tuus, tua, tuum"
+  ],
+  "tuos": [
+   "tuus, tua, tuum"
+  ],
+  "tuum": [
+   "tuus, tua, tuum"
+  ],
+  "tuus": [
+   "tuus, tua, tuum"
+  ],
+  "tuæ": [
+   "tuus, tua, tuum"
+  ],
+  "ubi": [
+   "ubi"
+  ],
+  "ultio": [
+   "ultio, ultionis, f."
+  ],
+  "una": [
+   "unus, una, unum"
+  ],
+  "unam": [
+   "unus, una, unum"
+  ],
+  "uni": [
+   "unus, una, unum"
+  ],
+  "universa": [
+   "universus, universa, universum"
+  ],
+  "universam": [
+   "universus, universa, universum"
+  ],
+  "universis": [
+   "universus, universa, universum"
+  ],
+  "universo": [
+   "universus, universa, universum"
+  ],
+  "universæ": [
+   "universus, universa, universum"
+  ],
+  "universæque": [
+   "universus, universa, universum"
+  ],
+  "unum": [
+   "unus, una, unum"
+  ],
+  "unumquodque": [
+   "unusquisque, unaquæque, unumquodque"
+  ],
+  "unus": [
+   "unus, una, unum"
+  ],
+  "usque": [
+   "usque"
+  ],
+  "ut": [
+   "ut"
+  ],
+  "uterque": [
+   "uterque, utraque, utrumque"
+  ],
+  "uxor": [
+   "uxor, uxoris, f."
+  ],
+  "uxorem": [
+   "uxor, uxoris, f."
+  ],
+  "uxores": [
+   "uxor, uxoris, f."
+  ],
+  "uxori": [
+   "uxor, uxoris, f."
+  ],
+  "uxoribus": [
+   "uxor, uxoris, f."
+  ],
+  "uxoris": [
+   "uxor, uxoris, f."
+  ],
+  "vacua": [
+   "vacuus, vacua, vacuum"
+  ],
+  "vadit": [
+   "vado, vadere"
+  ],
+  "vagus": [
+   "vagus, vaga, vagum"
+  ],
+  "valde": [
+   "valde"
+  ],
+  "vehementer": [
+   "vehementer"
+  ],
+  "veniam": [
+   "venia, veniæ, f."
+  ],
+  "venit": [
+   "venio, venire, veni, ventus"
+  ],
+  "vero": [
+   "vero"
+  ],
+  "versatilem": [
+   "versatilis, versatile"
+  ],
+  "vescendum": [
+   "vescor, vesci"
+  ],
+  "vesceris": [
+   "vescor, vesci"
+  ],
+  "vescimur": [
+   "vescor, vesci"
+  ],
+  "vespere": [
+   "vesper, vesperis, m."
+  ],
+  "vestri": [
+   "vester, vestra, vestrum"
+  ],
+  "viam": [
+   "via, viæ, f."
+  ],
+  "videns": [
+   "video, videre, vidi, visus"
+  ],
+  "videntes": [
+   "video, videre, vidi, visus"
+  ],
+  "videret": [
+   "video, videre, vidi, visus"
+  ],
+  "vidisset": [
+   "video, videre, vidi, visus"
+  ],
+  "vidit": [
+   "video, videre, vidi, visus"
+  ],
+  "viditque": [
+   "video, videre, vidi, visus"
+  ],
+  "viginti": [
+   "viginti"
+  ],
+  "vir": [
+   "vir, viri, m."
+  ],
+  "virago": [
+   "virago, viraginis, f."
+  ],
+  "virentem": [
+   "vireo, virere, virui"
+  ],
+  "virgultum": [
+   "virgultum, virgulti, n."
+  ],
+  "viri": [
+   "vir, viri, m."
+  ],
+  "viro": [
+   "vir, viri, m."
+  ],
+  "virum": [
+   "vir, viri, m."
+  ],
+  "visu": [
+   "video, videre, vidi, visus"
+  ],
+  "vitæ": [
+   "vita, vitæ, f."
+  ],
+  "vivant": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "vivat": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "vivens": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "viventem": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "viventis": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "viventium": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "vivere": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "vixit": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "vixitque": [
+   "vivo, vivere, vixi, victus"
+  ],
+  "vobis": [
+   "tu"
+  ],
+  "vocabitur": [
+   "voco, vocare, vocavi, vocatus"
+  ],
+  "vocaret": [
+   "voco, vocare, vocavi, vocatus"
+  ],
+  "vocavit": [
+   "voco, vocare, vocavi, vocatus"
+  ],
+  "vocavitque": [
+   "voco, vocare, vocavi, vocatus"
+  ],
+  "vocem": [
+   "vox, vocis, f."
+  ],
+  "volatile": [
+   "volatilis, volatile"
+  ],
+  "volatilia": [
+   "volatilis, volatile"
+  ],
+  "volatilibus": [
+   "volatilis, volatile"
+  ],
+  "volucres": [
+   "volucris, volucris, f."
+  ],
+  "volucri": [
+   "volucris, volucris, f."
+  ],
+  "volucribus": [
+   "volucris, volucris, f."
+  ],
+  "voluptatis": [
+   "voluptas, voluptatis, f."
+  ],
+  "vox": [
+   "vox, vocis, f."
+  ],
+  "vulnus": [
+   "vulnus, vulneris, n."
+  ],
+  "vultus": [
+   "vultus, vultus, m."
+  ],
+  "ædificavit": [
+   "ædifico, ædificare, ædificavi, ædificatus"
+  ],
+  "æris": [
+   "æs, æris, n."
+  ],
+  "ærumnas": [
+   "ærumna, ærumnæ, f."
+  ],
+  "æternum": [
+   "æternus, æterna, æternum"
+  ],
+  "æthiopiæ": [
+   "Æthiopia, Æthiopiæ, f."
+  ]
+ },
+ "lemmas": {
+  "Abel": {
+   "c": "indeclinable",
+   "d": "Abel, the second son of Adam",
+   "src": "genesis 4"
+  },
+  "Ada": {
+   "c": "indeclinable",
+   "d": "Ada, a wife of Lamech",
+   "src": "genesis 4"
+  },
+  "Adam": {
+   "c": "indeclinable",
+   "d": "Adam, the first man",
+   "src": "genesis 2"
+  },
+  "Assyrius, Assyrii, m.": {
+   "c": "masculine · II declension",
+   "d": "an Assyrian",
+   "src": "genesis 2"
+  },
+  "Cain": {
+   "c": "indeclinable",
+   "d": "Cain, the first son of Adam",
+   "src": "genesis 4"
+  },
+  "Cainan": {
+   "c": "indeclinable",
+   "d": "Cainan, a son of Enos",
+   "src": "genesis 5"
+  },
+  "Cham": {
+   "c": "indeclinable",
+   "d": "Cham, a son of Noë",
+   "src": "genesis 5"
+  },
+  "Deus, Dei, m.": {
+   "c": "masculine · II declension",
+   "d": "God",
+   "src": "genesis 1"
+  },
+  "Dominus, Domini, m.": {
+   "c": "masculine · II declension",
+   "d": "Lord, master",
+   "src": "genesis 2"
+  },
+  "Eden": {
+   "c": "indeclinable",
+   "d": "Eden, the garden of God",
+   "src": "genesis 4"
+  },
+  "Enos": {
+   "c": "indeclinable",
+   "d": "Enos, a son of Seth",
+   "src": "genesis 4"
+  },
+  "Euphrates": {
+   "c": "indeclinable",
+   "d": "the Euphrates, a river",
+   "src": "genesis 2"
+  },
+  "Gehon": {
+   "c": "indeclinable",
+   "d": "the Gehon, a river of Eden",
+   "src": "genesis 2"
+  },
+  "Henoch": {
+   "c": "indeclinable",
+   "d": "Henoch, a son of Cain; also the son of Jared who walked with God",
+   "src": "genesis 4"
+  },
+  "Heva": {
+   "c": "indeclinable",
+   "d": "Eve, the first woman",
+   "src": "genesis 3"
+  },
+  "Heva, Hevæ, f.": {
+   "c": "feminine · I declension",
+   "d": "Eve, the first woman",
+   "src": "genesis 4"
+  },
+  "Hevilath": {
+   "c": "indeclinable",
+   "d": "Hevilath, a land of Eden",
+   "src": "genesis 2"
+  },
+  "Irad": {
+   "c": "indeclinable",
+   "d": "Irad, a descendant of Cain",
+   "src": "genesis 4"
+  },
+  "Jabel": {
+   "c": "indeclinable",
+   "d": "Jabel, a son of Lamech",
+   "src": "genesis 4"
+  },
+  "Japheth": {
+   "c": "indeclinable",
+   "d": "Japheth, a son of Noë",
+   "src": "genesis 5"
+  },
+  "Jared": {
+   "c": "indeclinable",
+   "d": "Jared, a son of Malaleel",
+   "src": "genesis 5"
+  },
+  "Jubal": {
+   "c": "indeclinable",
+   "d": "Jubal, a son of Lamech",
+   "src": "genesis 4"
+  },
+  "Lamech": {
+   "c": "indeclinable",
+   "d": "Lamech, a descendant of Cain; also the father of Noë",
+   "src": "genesis 4"
+  },
+  "Malaleel": {
+   "c": "indeclinable",
+   "d": "Malaleel, a son of Cainan",
+   "src": "genesis 5"
+  },
+  "Mathusala, Mathusalæ, m.": {
+   "c": "masculine · I declension",
+   "d": "Mathusala, a son of Henoch",
+   "src": "genesis 5"
+  },
+  "Mathusaël": {
+   "c": "indeclinable",
+   "d": "Mathusaël, a descendant of Cain",
+   "src": "genesis 4"
+  },
+  "Maviaël": {
+   "c": "indeclinable",
+   "d": "Maviaël, a descendant of Cain",
+   "src": "genesis 4"
+  },
+  "Noë": {
+   "c": "indeclinable",
+   "d": "Noë, the builder of the ark",
+   "src": "genesis 5"
+  },
+  "Noëma": {
+   "c": "indeclinable",
+   "d": "Noëma, the sister of Tubalcain",
+   "src": "genesis 4"
+  },
+  "Phison": {
+   "c": "indeclinable",
+   "d": "the Phison, a river of Eden",
+   "src": "genesis 2"
+  },
+  "Sella": {
+   "c": "indeclinable",
+   "d": "Sella, a wife of Lamech",
+   "src": "genesis 4"
+  },
+  "Sem": {
+   "c": "indeclinable",
+   "d": "Sem, a son of Noë",
+   "src": "genesis 5"
+  },
+  "Seth": {
+   "c": "indeclinable",
+   "d": "Seth, a son of Adam",
+   "src": "genesis 4"
+  },
+  "Tigris": {
+   "c": "indeclinable",
+   "d": "the Tigris, a river",
+   "src": "genesis 2"
+  },
+  "Tubalcain": {
+   "c": "indeclinable",
+   "d": "Tubalcain, a son of Lamech",
+   "src": "genesis 4"
+  },
+  "a, ab": {
+   "c": "preposition",
+   "d": "from, away from",
+   "src": "genesis 1"
+  },
+  "abscondo, abscondere, abscondi, absconditus": {
+   "c": "III conjugation",
+   "d": "to hide, to conceal",
+   "src": "genesis 3"
+  },
+  "abyssus, abyssi, f.": {
+   "c": "feminine · II declension",
+   "d": "abyss, the deep",
+   "src": "genesis 1"
+  },
+  "ac": {
+   "c": "conjunction",
+   "d": "and, and also",
+   "src": "genesis 1"
+  },
+  "accipio, accipere, accepi, acceptus": {
+   "c": "III conjugation",
+   "d": "to receive, to accept",
+   "src": "genesis 4"
+  },
+  "ad": {
+   "c": "preposition",
+   "d": "to, toward",
+   "src": "genesis 1"
+  },
+  "adduco, adducere, adduxi, adductus": {
+   "c": "III conjugation",
+   "d": "to lead to, to bring",
+   "src": "genesis 2"
+  },
+  "adeps, adipis, m.": {
+   "c": "masculine · III declension",
+   "d": "fat, grease",
+   "src": "genesis 4"
+  },
+  "adhuc": {
+   "c": "adverb",
+   "d": "still, thus far",
+   "src": "genesis 4"
+  },
+  "adhæreo, adhærere, adhæsi, adhæsus": {
+   "c": "II conjugation",
+   "d": "to cling to, to adhere",
+   "src": "genesis 2"
+  },
+  "adjutor, adjutoris, m.": {
+   "c": "masculine · III declension",
+   "d": "helper",
+   "src": "genesis 2"
+  },
+  "adjutorium, adjutorii, n.": {
+   "c": "neuter · II declension",
+   "d": "help, support",
+   "src": "genesis 2"
+  },
+  "adolescentulus, adolescentuli, m.": {
+   "c": "masculine · II declension",
+   "d": "a young man, youth",
+   "src": "genesis 4"
+  },
+  "adsum, adesse, adfui": {
+   "c": "irregular",
+   "d": "to be present, to be at hand",
+   "src": "genesis 4"
+  },
+  "adversus": {
+   "c": "preposition",
+   "d": "against, opposite",
+   "src": "genesis 4"
+  },
+  "affero, afferre, attuli, allatus": {
+   "c": "irregular",
+   "d": "to bring, to bear",
+   "src": "genesis 1"
+  },
+  "ager, agri, m.": {
+   "c": "masculine · II declension",
+   "d": "field, farmland",
+   "src": "genesis 2"
+  },
+  "ago, agere, egi, actus": {
+   "c": "III conjugation",
+   "d": "to do, to drive",
+   "src": "genesis 4"
+  },
+  "agricola, agricolæ, m.": {
+   "c": "masculine · I declension",
+   "d": "farmer, husbandman",
+   "src": "genesis 4"
+  },
+  "aio": {
+   "c": "defective",
+   "d": "to say, to affirm",
+   "src": "genesis 1"
+  },
+  "alius, alia, aliud": {
+   "c": "I-II declension",
+   "d": "other, another",
+   "src": "genesis 4"
+  },
+  "alter, altera, alterum": {
+   "c": "I-II declension",
+   "d": "the other, the second",
+   "src": "genesis 4"
+  },
+  "altitudo, altitudinis, f.": {
+   "c": "feminine · III declension",
+   "d": "height, depth",
+   "src": "genesis 6"
+  },
+  "ambo, ambæ, ambo": {
+   "c": "numeral",
+   "d": "both, the two together",
+   "src": "genesis 3"
+  },
+  "ambulo, ambulare, ambulavi, ambulatus": {
+   "c": "I conjugation",
+   "d": "to walk",
+   "src": "genesis 5"
+  },
+  "anima, animæ, f.": {
+   "c": "feminine · I declension",
+   "d": "soul, life, breath",
+   "src": "genesis 1"
+  },
+  "animans, animantis": {
+   "c": "common gender · III declension",
+   "d": "living creature",
+   "src": "genesis 1"
+  },
+  "annus, anni, m.": {
+   "c": "masculine · II declension",
+   "d": "year",
+   "src": "genesis 1"
+  },
+  "ante": {
+   "c": "preposition",
+   "d": "before, in front of",
+   "src": "genesis 3"
+  },
+  "antequam": {
+   "c": "conjunction",
+   "d": "before",
+   "src": "genesis 2"
+  },
+  "aperio, aperire, aperui, apertus": {
+   "c": "IV conjugation",
+   "d": "to open, to uncover",
+   "src": "genesis 3"
+  },
+  "appareo, apparere, apparui": {
+   "c": "II conjugation",
+   "d": "to appear",
+   "src": "genesis 1"
+  },
+  "appello, appellare, appellavi, appellatus": {
+   "c": "I conjugation",
+   "d": "to call, to name",
+   "src": "genesis 1"
+  },
+  "appetitus, appetitus, m.": {
+   "c": "masculine · IV declension",
+   "d": "desire, appetite",
+   "src": "genesis 4"
+  },
+  "apud": {
+   "c": "preposition",
+   "d": "at, near, with",
+   "src": "genesis 6"
+  },
+  "aqua, aquæ, f.": {
+   "c": "feminine · I declension",
+   "d": "water",
+   "src": "genesis 1"
+  },
+  "arca, arcæ, f.": {
+   "c": "feminine · I declension",
+   "d": "chest, ark",
+   "src": "genesis 6"
+  },
+  "aridus, arida, aridum": {
+   "c": "I-II declension",
+   "d": "dry; the dry land",
+   "src": "genesis 1"
+  },
+  "ascendo, ascendere, ascendi, ascensus": {
+   "c": "III conjugation",
+   "d": "to climb, to ascend",
+   "src": "genesis 2"
+  },
+  "aspectus, aspectus, m.": {
+   "c": "masculine · IV declension",
+   "d": "look, appearance",
+   "src": "genesis 3"
+  },
+  "atque": {
+   "c": "conjunction",
+   "d": "and, and also",
+   "src": "genesis 1"
+  },
+  "audio, audire, audivi, auditus": {
+   "c": "IV conjugation",
+   "d": "to hear, to listen to",
+   "src": "genesis 3"
+  },
+  "aura, auræ, f.": {
+   "c": "feminine · I declension",
+   "d": "breeze, air",
+   "src": "genesis 3"
+  },
+  "aurum, auri, n.": {
+   "c": "neuter · II declension",
+   "d": "gold",
+   "src": "genesis 2"
+  },
+  "ausculto, auscultare, auscultavi, auscultatus": {
+   "c": "I conjugation",
+   "d": "to listen to, to heed",
+   "src": "genesis 4"
+  },
+  "autem": {
+   "c": "conjunction",
+   "d": "but, moreover",
+   "src": "genesis 1"
+  },
+  "avis, avis, f.": {
+   "c": "feminine · III declension",
+   "d": "bird",
+   "src": "genesis 1"
+  },
+  "bdellium, bdellii, n.": {
+   "c": "neuter · II declension",
+   "d": "bdellium, an aromatic gum",
+   "src": "genesis 2"
+  },
+  "bene": {
+   "c": "adverb",
+   "d": "well, rightly",
+   "src": "genesis 4"
+  },
+  "benedico, benedicere, benedixi, benedictus": {
+   "c": "III conjugation",
+   "d": "to bless",
+   "src": "genesis 1"
+  },
+  "bestia, bestiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "beast, wild animal",
+   "src": "genesis 1"
+  },
+  "bini, binæ, bina": {
+   "c": "numeral",
+   "d": "two each, a pair",
+   "src": "genesis 6"
+  },
+  "bitumen, bituminis, n.": {
+   "c": "neuter · III declension",
+   "d": "bitumen, pitch",
+   "src": "genesis 6"
+  },
+  "bonus, bona, bonum": {
+   "c": "I-II declension",
+   "d": "good",
+   "src": "genesis 1"
+  },
+  "calcaneum, calcanei, n.": {
+   "c": "neuter · II declension",
+   "d": "heel",
+   "src": "genesis 3"
+  },
+  "callidior, callidius": {
+   "c": "comparative",
+   "d": "more crafty, more cunning",
+   "src": "genesis 3"
+  },
+  "cano, canere, cecini, cantus": {
+   "c": "III conjugation",
+   "d": "to sing, to play",
+   "src": "genesis 4"
+  },
+  "caput, capitis, n.": {
+   "c": "neuter · III declension",
+   "d": "head, source",
+   "src": "genesis 2"
+  },
+  "caro, carnis, f.": {
+   "c": "feminine · III declension",
+   "d": "flesh, meat",
+   "src": "genesis 2"
+  },
+  "centum": {
+   "c": "numeral",
+   "d": "a hundred",
+   "src": "genesis 5"
+  },
+  "cesso, cessare, cessavi, cessatus": {
+   "c": "I conjugation",
+   "d": "to cease, to stop",
+   "src": "genesis 2"
+  },
+  "cetus, ceti, m.": {
+   "c": "masculine · II declension",
+   "d": "whale, great sea creature",
+   "src": "genesis 1"
+  },
+  "cherubim": {
+   "c": "indeclinable",
+   "d": "the Cherubim, an order of angels",
+   "src": "genesis 3"
+  },
+  "cibus, cibi, m.": {
+   "c": "masculine · II declension",
+   "d": "food",
+   "src": "genesis 6"
+  },
+  "circumeo, circumire, circumivi, circumitus": {
+   "c": "irregular",
+   "d": "to go around, to encircle",
+   "src": "genesis 2"
+  },
+  "cithara, citharæ, f.": {
+   "c": "feminine · I declension",
+   "d": "harp, lyre",
+   "src": "genesis 4"
+  },
+  "civitas, civitatis, f.": {
+   "c": "feminine · III declension",
+   "d": "city, community",
+   "src": "genesis 4"
+  },
+  "clamo, clamare, clamavi, clamatus": {
+   "c": "I conjugation",
+   "d": "to cry out, to shout",
+   "src": "genesis 4"
+  },
+  "cogitatio, cogitationis, f.": {
+   "c": "feminine · III declension",
+   "d": "thought, reflection",
+   "src": "genesis 6"
+  },
+  "cognosco, cognoscere, cognovi, cognitus": {
+   "c": "III conjugation",
+   "d": "to learn, to recognize",
+   "src": "genesis 3"
+  },
+  "colloco, collocare, collocavi, collocatus": {
+   "c": "I conjugation",
+   "d": "to place, to station",
+   "src": "genesis 3"
+  },
+  "comedo, comedere, comedi, comesus": {
+   "c": "III conjugation",
+   "d": "to eat, to consume",
+   "src": "genesis 2"
+  },
+  "compleo, complere, complevi, completus": {
+   "c": "II conjugation",
+   "d": "to fill up, to complete",
+   "src": "genesis 2"
+  },
+  "comporto, comportare, comportavi, comportatus": {
+   "c": "I conjugation",
+   "d": "to carry together, to gather",
+   "src": "genesis 6"
+  },
+  "conceptus, conceptus, m.": {
+   "c": "masculine · IV declension",
+   "d": "conception, pregnancy",
+   "src": "genesis 3"
+  },
+  "concido, concidere, concidi": {
+   "c": "III conjugation",
+   "d": "to fall down, to collapse",
+   "src": "genesis 4"
+  },
+  "concipio, concipere, concepi, conceptus": {
+   "c": "III conjugation",
+   "d": "to conceive, to take in",
+   "src": "genesis 4"
+  },
+  "congregatio, congregationis, f.": {
+   "c": "feminine · III declension",
+   "d": "gathering, assembly",
+   "src": "genesis 1"
+  },
+  "congrego, congregare, congregavi, congregatus": {
+   "c": "I conjugation",
+   "d": "to gather together",
+   "src": "genesis 1"
+  },
+  "consolor, consolari, consolatus sum": {
+   "c": "I conjugation · deponent",
+   "d": "to console, to comfort",
+   "src": "genesis 5"
+  },
+  "consummo, consummare, consummavi, consummatus": {
+   "c": "I conjugation",
+   "d": "to complete, to finish",
+   "src": "genesis 6"
+  },
+  "consumo, consumere, consumpsi, consumptus": {
+   "c": "III conjugation",
+   "d": "to consume, to use up",
+   "src": "genesis 6"
+  },
+  "consuo, consuere, consui, consutus": {
+   "c": "III conjugation",
+   "d": "to sew together, to stitch",
+   "src": "genesis 3"
+  },
+  "consurgo, consurgere, consurrexi, consurrectus": {
+   "c": "III conjugation",
+   "d": "to rise up, to stand up",
+   "src": "genesis 4"
+  },
+  "contero, conterere, contrivi, contritus": {
+   "c": "III conjugation",
+   "d": "to crush, to grind down",
+   "src": "genesis 3"
+  },
+  "contra": {
+   "c": "preposition",
+   "d": "against, opposite",
+   "src": "genesis 2"
+  },
+  "cor, cordis, n.": {
+   "c": "neuter · III declension",
+   "d": "heart",
+   "src": "genesis 6"
+  },
+  "coram": {
+   "c": "preposition",
+   "d": "before, in the presence of",
+   "src": "genesis 6"
+  },
+  "corrumpo, corrumpere, corrupi, corruptus": {
+   "c": "III conjugation",
+   "d": "to corrupt, to spoil",
+   "src": "genesis 6"
+  },
+  "costa, costæ, f.": {
+   "c": "feminine · I declension",
+   "d": "rib, side",
+   "src": "genesis 2"
+  },
+  "creo, creare, creavi, creatus": {
+   "c": "I conjugation",
+   "d": "to create",
+   "src": "genesis 1"
+  },
+  "cresco, crescere, crevi, cretus": {
+   "c": "III conjugation",
+   "d": "to grow, to increase",
+   "src": "genesis 1"
+  },
+  "cubitus, cubiti, m.": {
+   "c": "masculine · II declension",
+   "d": "cubit, forearm",
+   "src": "genesis 6"
+  },
+  "cum": {
+   "c": "conjunction",
+   "d": "when, since, although",
+   "src": "genesis 2"
+  },
+  "cum (preposition)": {
+   "c": "preposition",
+   "d": "with, together with",
+   "src": "genesis 5"
+  },
+  "cunctus, cuncta, cunctum": {
+   "c": "I-II declension",
+   "d": "all, the whole",
+   "src": "genesis 1"
+  },
+  "cur": {
+   "c": "adverb",
+   "d": "why, for what reason",
+   "src": "genesis 3"
+  },
+  "custodio, custodire, custodivi, custoditus": {
+   "c": "IV conjugation",
+   "d": "to guard, to keep",
+   "src": "genesis 2"
+  },
+  "custos, custodis, m.": {
+   "c": "masculine · III declension",
+   "d": "guard, keeper",
+   "src": "genesis 4"
+  },
+  "cælum, cæli, n.": {
+   "c": "neuter · II declension",
+   "d": "heaven, sky",
+   "src": "genesis 1"
+  },
+  "cœnaculum, cœnaculi, n.": {
+   "c": "neuter · II declension",
+   "d": "an upper room",
+   "src": "genesis 6"
+  },
+  "cœpi, cœpisse": {
+   "c": "defective",
+   "d": "to begin",
+   "src": "genesis 4"
+  },
+  "de": {
+   "c": "preposition",
+   "d": "from, down from, about",
+   "src": "genesis 2"
+  },
+  "deambulo, deambulare, deambulavi, deambulatus": {
+   "c": "I conjugation",
+   "d": "to walk about, to stroll",
+   "src": "genesis 3"
+  },
+  "decem": {
+   "c": "numeral",
+   "d": "ten",
+   "src": "genesis 5"
+  },
+  "decipio, decipere, decepi, deceptus": {
+   "c": "III conjugation",
+   "d": "to deceive, to cheat",
+   "src": "genesis 3"
+  },
+  "delectabilis, delectabile": {
+   "c": "III declension",
+   "d": "delightful, pleasing",
+   "src": "genesis 3"
+  },
+  "deleo, delere, delevi, deletus": {
+   "c": "II conjugation",
+   "d": "to destroy, to blot out",
+   "src": "genesis 6"
+  },
+  "deorsum": {
+   "c": "adverb",
+   "d": "downward, below",
+   "src": "genesis 6"
+  },
+  "dico, dicere, dixi, dictus": {
+   "c": "III conjugation",
+   "d": "to say, to speak",
+   "src": "genesis 1"
+  },
+  "dies, diei, m.": {
+   "c": "masculine · V declension",
+   "d": "day",
+   "src": "genesis 1"
+  },
+  "diluvium, diluvii, n.": {
+   "c": "neuter · II declension",
+   "d": "flood, deluge",
+   "src": "genesis 6"
+  },
+  "disperdo, disperdere, disperdidi, disperditus": {
+   "c": "III conjugation",
+   "d": "to destroy utterly",
+   "src": "genesis 6"
+  },
+  "divido, dividere, divisi, divisus": {
+   "c": "III conjugation",
+   "d": "to divide, to separate",
+   "src": "genesis 1"
+  },
+  "do, dare, dedi, datus": {
+   "c": "I conjugation · irregular",
+   "d": "to give",
+   "src": "genesis 1"
+  },
+  "dolor, doloris, m.": {
+   "c": "masculine · III declension",
+   "d": "pain, grief",
+   "src": "genesis 3"
+  },
+  "dominor, dominari, dominatus sum": {
+   "c": "I conjugation · deponent",
+   "d": "to rule, to have dominion",
+   "src": "genesis 1"
+  },
+  "donec": {
+   "c": "conjunction",
+   "d": "until, as long as",
+   "src": "genesis 3"
+  },
+  "duo, duæ, duo": {
+   "c": "numeral",
+   "d": "two",
+   "src": "genesis 1"
+  },
+  "duodecim": {
+   "c": "numeral",
+   "d": "twelve",
+   "src": "genesis 5"
+  },
+  "e, ex": {
+   "c": "preposition",
+   "d": "out of, from",
+   "src": "genesis 2"
+  },
+  "ecce": {
+   "c": "interjection",
+   "d": "behold, see",
+   "src": "genesis 1"
+  },
+  "ego": {
+   "c": "personal",
+   "d": "I, we",
+   "src": "genesis 3"
+  },
+  "egredior, egredi, egressus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to go out, to go forth",
+   "src": "genesis 2"
+  },
+  "ejicio, ejicere, ejeci, ejectus": {
+   "c": "III conjugation",
+   "d": "to cast out, to expel",
+   "src": "genesis 3"
+  },
+  "eligo, eligere, elegi, electus": {
+   "c": "III conjugation",
+   "d": "to choose, to pick out",
+   "src": "genesis 6"
+  },
+  "emitto, emittere, emisi, emissus": {
+   "c": "III conjugation",
+   "d": "to send out, to send away",
+   "src": "genesis 3"
+  },
+  "enim": {
+   "c": "conjunction",
+   "d": "for, indeed",
+   "src": "genesis 2"
+  },
+  "ergo": {
+   "c": "conjunction",
+   "d": "therefore, then",
+   "src": "genesis 2"
+  },
+  "erubesco, erubescere, erubui": {
+   "c": "III conjugation",
+   "d": "to blush, to be ashamed",
+   "src": "genesis 2"
+  },
+  "esca, escæ, f.": {
+   "c": "feminine · I declension",
+   "d": "food",
+   "src": "genesis 1"
+  },
+  "et": {
+   "c": "conjunction",
+   "d": "and, also",
+   "src": "genesis 1"
+  },
+  "etiam": {
+   "c": "adverb",
+   "d": "also, even",
+   "src": "genesis 1"
+  },
+  "extrinsecus": {
+   "c": "adverb",
+   "d": "on the outside, outwardly",
+   "src": "genesis 6"
+  },
+  "faber, fabri, m.": {
+   "c": "masculine · II declension",
+   "d": "craftsman, smith",
+   "src": "genesis 4"
+  },
+  "facies, faciei, f.": {
+   "c": "feminine · V declension",
+   "d": "face, surface",
+   "src": "genesis 1"
+  },
+  "facio, facere, feci, factus": {
+   "c": "III conjugation",
+   "d": "to make, to do",
+   "src": "genesis 1"
+  },
+  "famosus, famosa, famosum": {
+   "c": "I-II declension",
+   "d": "famous, renowned",
+   "src": "genesis 6"
+  },
+  "femina, feminæ, f.": {
+   "c": "feminine · I declension",
+   "d": "woman, female",
+   "src": "genesis 1"
+  },
+  "femininus, feminina, femininum": {
+   "c": "I-II declension",
+   "d": "female",
+   "src": "genesis 6"
+  },
+  "fenestra, fenestræ, f.": {
+   "c": "feminine · I declension",
+   "d": "window, opening",
+   "src": "genesis 6"
+  },
+  "fero, ferre, tuli, latus": {
+   "c": "irregular",
+   "d": "to carry, to bear",
+   "src": "genesis 1"
+  },
+  "ferrum, ferri, n.": {
+   "c": "neuter · II declension",
+   "d": "iron",
+   "src": "genesis 4"
+  },
+  "ficus, ficus, f.": {
+   "c": "feminine · IV declension",
+   "d": "fig, fig tree",
+   "src": "genesis 3"
+  },
+  "filia, filiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "daughter",
+   "src": "genesis 5"
+  },
+  "filius, filii, m.": {
+   "c": "masculine · II declension",
+   "d": "son",
+   "src": "genesis 3"
+  },
+  "finis, finis, m.": {
+   "c": "masculine · III declension",
+   "d": "end, limit",
+   "src": "genesis 6"
+  },
+  "fio, fieri, factus sum": {
+   "c": "irregular",
+   "d": "to become, to be made",
+   "src": "genesis 1"
+  },
+  "firmamentum, firmamenti, n.": {
+   "c": "neuter · II declension",
+   "d": "firmament, support",
+   "src": "genesis 1"
+  },
+  "flammeus, flammea, flammeum": {
+   "c": "I-II declension",
+   "d": "flaming, fiery",
+   "src": "genesis 3"
+  },
+  "flumen, fluminis, n.": {
+   "c": "neuter · III declension",
+   "d": "river, stream",
+   "src": "genesis 2"
+  },
+  "fluvius, fluvii, m.": {
+   "c": "masculine · II declension",
+   "d": "river, stream",
+   "src": "genesis 2"
+  },
+  "folium, folii, n.": {
+   "c": "neuter · II declension",
+   "d": "leaf",
+   "src": "genesis 3"
+  },
+  "fons, fontis, m.": {
+   "c": "masculine · III declension",
+   "d": "spring, fountain",
+   "src": "genesis 2"
+  },
+  "foras": {
+   "c": "adverb",
+   "d": "outdoors, out of doors",
+   "src": "genesis 4"
+  },
+  "foris, foris, f.": {
+   "c": "feminine · III declension",
+   "d": "door, entrance",
+   "src": "genesis 4"
+  },
+  "formo, formare, formavi, formatus": {
+   "c": "I conjugation",
+   "d": "to form, to shape",
+   "src": "genesis 2"
+  },
+  "forte": {
+   "c": "adverb",
+   "d": "perhaps, by chance",
+   "src": "genesis 3"
+  },
+  "frater, fratris, m.": {
+   "c": "masculine · III declension",
+   "d": "brother",
+   "src": "genesis 4"
+  },
+  "fructus, fructus, m.": {
+   "c": "masculine · IV declension",
+   "d": "fruit, produce",
+   "src": "genesis 1"
+  },
+  "fœdus, fœderis, n.": {
+   "c": "neuter · III declension",
+   "d": "treaty, covenant",
+   "src": "genesis 6"
+  },
+  "generatio, generationis, f.": {
+   "c": "feminine · III declension",
+   "d": "generation, origin",
+   "src": "genesis 2"
+  },
+  "genus, generis, n.": {
+   "c": "neuter · III declension",
+   "d": "kind, type, birth",
+   "src": "genesis 1"
+  },
+  "germino, germinare, germinavi, germinatus": {
+   "c": "I conjugation",
+   "d": "to sprout, to spring forth",
+   "src": "genesis 1"
+  },
+  "gigas, gigantis, m.": {
+   "c": "masculine · III declension",
+   "d": "giant",
+   "src": "genesis 6"
+  },
+  "gigno, gignere, genui, genitus": {
+   "c": "III conjugation",
+   "d": "to beget, to bring forth",
+   "src": "genesis 4"
+  },
+  "gladius, gladii, m.": {
+   "c": "masculine · II declension",
+   "d": "sword",
+   "src": "genesis 3"
+  },
+  "gradior, gradi, gressus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to step, to walk",
+   "src": "genesis 3"
+  },
+  "grandis, grande": {
+   "c": "III declension",
+   "d": "great, large",
+   "src": "genesis 1"
+  },
+  "gratia, gratiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "grace, favor",
+   "src": "genesis 6"
+  },
+  "grex, gregis, m.": {
+   "c": "masculine · III declension",
+   "d": "flock, herd",
+   "src": "genesis 4"
+  },
+  "habeo, habere, habui, habitus": {
+   "c": "II conjugation",
+   "d": "to have, to hold",
+   "src": "genesis 1"
+  },
+  "habito, habitare, habitavi, habitatus": {
+   "c": "I conjugation",
+   "d": "to dwell, to live",
+   "src": "genesis 4"
+  },
+  "herba, herbæ, f.": {
+   "c": "feminine · I declension",
+   "d": "plant, grass, herb",
+   "src": "genesis 1"
+  },
+  "hic, hæc, hoc": {
+   "c": "pronoun",
+   "d": "this",
+   "src": "genesis 1"
+  },
+  "hodie": {
+   "c": "adverb",
+   "d": "today",
+   "src": "genesis 4"
+  },
+  "homo, hominis, m.": {
+   "c": "masculine · III declension",
+   "d": "man, human being",
+   "src": "genesis 1"
+  },
+  "humus, humi, f.": {
+   "c": "feminine · II declension",
+   "d": "ground, soil",
+   "src": "genesis 2"
+  },
+  "ibi": {
+   "c": "adverb",
+   "d": "there, in that place",
+   "src": "genesis 2"
+  },
+  "igitur": {
+   "c": "conjunction",
+   "d": "therefore, and so",
+   "src": "genesis 2"
+  },
+  "ille, illa, illud": {
+   "c": "pronoun",
+   "d": "that one; he, she, it",
+   "src": "genesis 1"
+  },
+  "illumino, illuminare, illuminavi, illuminatus": {
+   "c": "I conjugation",
+   "d": "to light up, to illuminate",
+   "src": "genesis 1"
+  },
+  "imago, imaginis, f.": {
+   "c": "feminine · III declension",
+   "d": "image, likeness",
+   "src": "genesis 1"
+  },
+  "immitto, immittere, immisi, immissus": {
+   "c": "III conjugation",
+   "d": "to send in, to send upon",
+   "src": "genesis 2"
+  },
+  "in": {
+   "c": "preposition",
+   "d": "in, into, on",
+   "src": "genesis 1"
+  },
+  "inanis, inane": {
+   "c": "III declension",
+   "d": "empty, void",
+   "src": "genesis 1"
+  },
+  "inde": {
+   "c": "adverb",
+   "d": "thence, from there",
+   "src": "genesis 2"
+  },
+  "indico, indicare, indicavi, indicatus": {
+   "c": "I conjugation",
+   "d": "to point out, to make known",
+   "src": "genesis 3"
+  },
+  "induco, inducere, induxi, inductus": {
+   "c": "III conjugation",
+   "d": "to lead in, to bring in",
+   "src": "genesis 6"
+  },
+  "induo, induere, indui, indutus": {
+   "c": "III conjugation",
+   "d": "to put on, to clothe",
+   "src": "genesis 3"
+  },
+  "ingredior, ingredi, ingressus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to go in, to enter",
+   "src": "genesis 6"
+  },
+  "inimicitia, inimicitiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "enmity, hostility",
+   "src": "genesis 3"
+  },
+  "iniquitas, iniquitatis, f.": {
+   "c": "feminine · III declension",
+   "d": "iniquity, injustice",
+   "src": "genesis 4"
+  },
+  "inquam": {
+   "c": "defective",
+   "d": "to say",
+   "src": "genesis 6"
+  },
+  "insidior, insidiari, insidiatus sum": {
+   "c": "I conjugation · deponent",
+   "d": "to lie in wait for, to plot against",
+   "src": "genesis 3"
+  },
+  "inspiro, inspirare, inspiravi, inspiratus": {
+   "c": "I conjugation",
+   "d": "to breathe into",
+   "src": "genesis 2"
+  },
+  "intendo, intendere, intendi, intentus": {
+   "c": "III conjugation",
+   "d": "to stretch out, to direct",
+   "src": "genesis 6"
+  },
+  "inter": {
+   "c": "preposition",
+   "d": "among, between",
+   "src": "genesis 3"
+  },
+  "interficio, interficere, interfeci, interfectus": {
+   "c": "III conjugation",
+   "d": "to kill, to destroy",
+   "src": "genesis 4"
+  },
+  "intrinsecus": {
+   "c": "adverb",
+   "d": "on the inside, inwardly",
+   "src": "genesis 6"
+  },
+  "invenio, invenire, inveni, inventus": {
+   "c": "IV conjugation",
+   "d": "to find, to discover",
+   "src": "genesis 2"
+  },
+  "invoco, invocare, invocavi, invocatus": {
+   "c": "I conjugation",
+   "d": "to call upon, to invoke",
+   "src": "genesis 4"
+  },
+  "ipse, ipsa, ipsum": {
+   "c": "pronoun",
+   "d": "himself, herself, itself; the very one",
+   "src": "genesis 2"
+  },
+  "irascor, irasci, iratus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to be angry, to grow angry",
+   "src": "genesis 4"
+  },
+  "irrigo, irrigare, irrigavi, irrigatus": {
+   "c": "I conjugation",
+   "d": "to irrigate, to water",
+   "src": "genesis 2"
+  },
+  "is, ea, id": {
+   "c": "pronoun",
+   "d": "he, she, it",
+   "src": "genesis 1"
+  },
+  "iste, ista, istud": {
+   "c": "pronoun",
+   "d": "that, this one",
+   "src": "genesis 2"
+  },
+  "ita": {
+   "c": "adverb",
+   "d": "so, thus",
+   "src": "genesis 1"
+  },
+  "jumentum, jumenti, n.": {
+   "c": "neuter · II declension",
+   "d": "beast of burden, cattle",
+   "src": "genesis 1"
+  },
+  "justus, justa, justum": {
+   "c": "I-II declension",
+   "d": "just, righteous",
+   "src": "genesis 6"
+  },
+  "juxta": {
+   "c": "preposition",
+   "d": "beside, according to",
+   "src": "genesis 1"
+  },
+  "labor, laboris, m.": {
+   "c": "masculine · III declension",
+   "d": "labor, hardship",
+   "src": "genesis 3"
+  },
+  "lapis, lapidis, m.": {
+   "c": "masculine · III declension",
+   "d": "stone",
+   "src": "genesis 2"
+  },
+  "latitudo, latitudinis, f.": {
+   "c": "feminine · III declension",
+   "d": "breadth, width",
+   "src": "genesis 6"
+  },
+  "latus, lateris, n.": {
+   "c": "neuter · III declension",
+   "d": "side, flank",
+   "src": "genesis 6"
+  },
+  "liber, libri, m.": {
+   "c": "masculine · II declension",
+   "d": "book, record",
+   "src": "genesis 5"
+  },
+  "lignum, ligni, n.": {
+   "c": "neuter · II declension",
+   "d": "wood, tree",
+   "src": "genesis 1"
+  },
+  "limus, limi, m.": {
+   "c": "masculine · II declension",
+   "d": "mud, clay",
+   "src": "genesis 2"
+  },
+  "linio, linire, linivi, linitus": {
+   "c": "IV conjugation",
+   "d": "to smear, to coat",
+   "src": "genesis 6"
+  },
+  "livor, livoris, m.": {
+   "c": "masculine · III declension",
+   "d": "bruise, livid mark",
+   "src": "genesis 4"
+  },
+  "locus, loci, m.": {
+   "c": "masculine · II declension",
+   "d": "place",
+   "src": "genesis 1"
+  },
+  "longitudo, longitudinis, f.": {
+   "c": "feminine · III declension",
+   "d": "length",
+   "src": "genesis 6"
+  },
+  "luceo, lucere, luxi": {
+   "c": "II conjugation",
+   "d": "to shine",
+   "src": "genesis 1"
+  },
+  "luminare, luminaris, n.": {
+   "c": "neuter · III declension",
+   "d": "light, lamp, luminary",
+   "src": "genesis 1"
+  },
+  "lux, lucis, f.": {
+   "c": "feminine · III declension",
+   "d": "light",
+   "src": "genesis 1"
+  },
+  "lævigo, lævigare, lævigavi, lævigatus": {
+   "c": "I conjugation",
+   "d": "to smooth, to plane",
+   "src": "genesis 6"
+  },
+  "magnus, magna, magnum": {
+   "c": "I-II declension",
+   "d": "great, large",
+   "src": "genesis 1"
+  },
+  "major, majus": {
+   "c": "comparative",
+   "d": "greater, larger",
+   "src": "genesis 1"
+  },
+  "male": {
+   "c": "adverb",
+   "d": "badly, wrongly",
+   "src": "genesis 4"
+  },
+  "maledico, maledicere, maledixi, maledictus": {
+   "c": "III conjugation",
+   "d": "to curse, to speak ill of",
+   "src": "genesis 3"
+  },
+  "malitia, malitiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "wickedness, malice",
+   "src": "genesis 6"
+  },
+  "malleator, malleatoris, m.": {
+   "c": "masculine · III declension",
+   "d": "hammerer, smith",
+   "src": "genesis 4"
+  },
+  "malus, mala, malum": {
+   "c": "I-II declension",
+   "d": "bad, evil",
+   "src": "genesis 2"
+  },
+  "mando, mandere, mandi, mansus": {
+   "c": "III conjugation",
+   "d": "to chew, to eat",
+   "src": "genesis 6"
+  },
+  "mane": {
+   "c": "indeclinable",
+   "d": "morning",
+   "src": "genesis 1"
+  },
+  "mansiuncula, mansiunculæ, f.": {
+   "c": "feminine · I declension",
+   "d": "a small dwelling, compartment",
+   "src": "genesis 6"
+  },
+  "manus, manus, f.": {
+   "c": "feminine · IV declension",
+   "d": "hand",
+   "src": "genesis 3"
+  },
+  "mare, maris, n.": {
+   "c": "neuter · III declension",
+   "d": "sea",
+   "src": "genesis 1"
+  },
+  "masculinus, masculina, masculinum": {
+   "c": "I-II declension",
+   "d": "male",
+   "src": "genesis 6"
+  },
+  "masculus, masculi, m.": {
+   "c": "masculine · II declension",
+   "d": "male",
+   "src": "genesis 1"
+  },
+  "mater, matris, f.": {
+   "c": "feminine · III declension",
+   "d": "mother",
+   "src": "genesis 2"
+  },
+  "medium, medii, n.": {
+   "c": "neuter · II declension",
+   "d": "middle, midst",
+   "src": "genesis 1"
+  },
+  "mereor, mereri, meritus sum": {
+   "c": "II conjugation · deponent",
+   "d": "to deserve, to merit",
+   "src": "genesis 4"
+  },
+  "meridies, meridiei, m.": {
+   "c": "masculine · V declension",
+   "d": "midday, noon",
+   "src": "genesis 3"
+  },
+  "meus, mea, meum": {
+   "c": "possessive",
+   "d": "my",
+   "src": "genesis 2"
+  },
+  "minor, minus": {
+   "c": "comparative",
+   "d": "lesser, smaller",
+   "src": "genesis 1"
+  },
+  "mitto, mittere, misi, missus": {
+   "c": "III conjugation",
+   "d": "to send, to put forth",
+   "src": "genesis 3"
+  },
+  "morior, mori, mortuus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to die",
+   "src": "genesis 2"
+  },
+  "mors, mortis, f.": {
+   "c": "feminine · III declension",
+   "d": "death",
+   "src": "genesis 2"
+  },
+  "motabilis, motabile": {
+   "c": "III declension",
+   "d": "movable, able to move",
+   "src": "genesis 1"
+  },
+  "moveo, movere, movi, motus": {
+   "c": "II conjugation",
+   "d": "to move",
+   "src": "genesis 1"
+  },
+  "mulier, mulieris, f.": {
+   "c": "feminine · III declension",
+   "d": "woman, wife",
+   "src": "genesis 2"
+  },
+  "multiplico, multiplicare, multiplicavi, multiplicatus": {
+   "c": "I conjugation",
+   "d": "to multiply, to increase",
+   "src": "genesis 1"
+  },
+  "multus, multa, multum": {
+   "c": "I-II declension",
+   "d": "much, many",
+   "src": "genesis 4"
+  },
+  "munus, muneris, n.": {
+   "c": "neuter · III declension",
+   "d": "gift, offering",
+   "src": "genesis 4"
+  },
+  "nascor, nasci, natus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to be born, to arise",
+   "src": "genesis 2"
+  },
+  "ne": {
+   "c": "conjunction",
+   "d": "not, lest",
+   "src": "genesis 2"
+  },
+  "nequaquam": {
+   "c": "adverb",
+   "d": "by no means, not at all",
+   "src": "genesis 3"
+  },
+  "nescio, nescire, nescivi, nescitus": {
+   "c": "IV conjugation",
+   "d": "not to know, to be ignorant of",
+   "src": "genesis 4"
+  },
+  "nisi": {
+   "c": "conjunction",
+   "d": "unless, except",
+   "src": "genesis 3"
+  },
+  "nomen, nominis, n.": {
+   "c": "neuter · III declension",
+   "d": "name",
+   "src": "genesis 2"
+  },
+  "non": {
+   "c": "adverb",
+   "d": "not",
+   "src": "genesis 2"
+  },
+  "nonaginta": {
+   "c": "numeral",
+   "d": "ninety",
+   "src": "genesis 5"
+  },
+  "nongenti, nongentæ, nongenta": {
+   "c": "numeral",
+   "d": "nine hundred",
+   "src": "genesis 5"
+  },
+  "nonne": {
+   "c": "adverb",
+   "d": "is it not? surely?",
+   "src": "genesis 4"
+  },
+  "noster, nostra, nostrum": {
+   "c": "possessive",
+   "d": "our",
+   "src": "genesis 1"
+  },
+  "novem": {
+   "c": "numeral",
+   "d": "nine",
+   "src": "genesis 5"
+  },
+  "nox, noctis, f.": {
+   "c": "feminine · III declension",
+   "d": "night",
+   "src": "genesis 1"
+  },
+  "nudus, nuda, nudum": {
+   "c": "I-II declension",
+   "d": "naked, bare",
+   "src": "genesis 2"
+  },
+  "num": {
+   "c": "adverb",
+   "d": "surely not?",
+   "src": "genesis 4"
+  },
+  "nunc": {
+   "c": "adverb",
+   "d": "now",
+   "src": "genesis 2"
+  },
+  "ob": {
+   "c": "preposition",
+   "d": "on account of, because of",
+   "src": "genesis 2"
+  },
+  "obdormio, obdormire, obdormivi": {
+   "c": "IV conjugation",
+   "d": "to fall asleep",
+   "src": "genesis 2"
+  },
+  "occido, occidere, occidi, occisus": {
+   "c": "III conjugation",
+   "d": "to kill, to strike down",
+   "src": "genesis 4"
+  },
+  "octingenti, octingentæ, octingenta": {
+   "c": "numeral",
+   "d": "eight hundred",
+   "src": "genesis 5"
+  },
+  "octoginta": {
+   "c": "numeral",
+   "d": "eighty",
+   "src": "genesis 5"
+  },
+  "oculus, oculi, m.": {
+   "c": "masculine · II declension",
+   "d": "eye",
+   "src": "genesis 3"
+  },
+  "offero, offerre, obtuli, oblatus": {
+   "c": "irregular",
+   "d": "to offer, to present",
+   "src": "genesis 4"
+  },
+  "omnis, omne": {
+   "c": "III declension",
+   "d": "all, every",
+   "src": "genesis 1"
+  },
+  "onychinus, onychina, onychinum": {
+   "c": "I-II declension",
+   "d": "of onyx",
+   "src": "genesis 2"
+  },
+  "operor, operari, operatus sum": {
+   "c": "I conjugation · deponent",
+   "d": "to work, to labor",
+   "src": "genesis 2"
+  },
+  "optimus, optima, optimum": {
+   "c": "I-II declension",
+   "d": "best, finest",
+   "src": "genesis 2"
+  },
+  "opus, operis, n.": {
+   "c": "neuter · III declension",
+   "d": "work, labor",
+   "src": "genesis 2"
+  },
+  "organum, organi, n.": {
+   "c": "neuter · II declension",
+   "d": "instrument, organ",
+   "src": "genesis 4"
+  },
+  "orientalis, orientale": {
+   "c": "III declension",
+   "d": "eastern",
+   "src": "genesis 4"
+  },
+  "orior, oriri, ortus sum": {
+   "c": "IV conjugation · deponent",
+   "d": "to rise, to spring up",
+   "src": "genesis 2"
+  },
+  "ornatus, ornatus, m.": {
+   "c": "masculine · IV declension",
+   "d": "adornment, furnishing",
+   "src": "genesis 2"
+  },
+  "ortus, ortus, m.": {
+   "c": "masculine · IV declension",
+   "d": "rising, birth",
+   "src": "genesis 5"
+  },
+  "os, oris, n.": {
+   "c": "neuter · III declension",
+   "d": "mouth, opening",
+   "src": "genesis 4"
+  },
+  "os, ossis, n.": {
+   "c": "neuter · III declension",
+   "d": "bone",
+   "src": "genesis 2"
+  },
+  "ostium, ostii, n.": {
+   "c": "neuter · II declension",
+   "d": "door, entrance",
+   "src": "genesis 6"
+  },
+  "ovis, ovis, f.": {
+   "c": "feminine · III declension",
+   "d": "sheep",
+   "src": "genesis 4"
+  },
+  "panis, panis, m.": {
+   "c": "masculine · III declension",
+   "d": "bread, loaf",
+   "src": "genesis 3"
+  },
+  "paradisus, paradisi, m.": {
+   "c": "masculine · II declension",
+   "d": "garden, paradise",
+   "src": "genesis 2"
+  },
+  "pario, parere, peperi, partus": {
+   "c": "III conjugation",
+   "d": "to bring forth, to give birth to",
+   "src": "genesis 3"
+  },
+  "pastor, pastoris, m.": {
+   "c": "masculine · III declension",
+   "d": "shepherd, herdsman",
+   "src": "genesis 4"
+  },
+  "pater, patris, m.": {
+   "c": "masculine · III declension",
+   "d": "father",
+   "src": "genesis 2"
+  },
+  "patro, patrare, patravi, patratus": {
+   "c": "I conjugation",
+   "d": "to accomplish, to perform",
+   "src": "genesis 2"
+  },
+  "peccatum, peccati, n.": {
+   "c": "neuter · II declension",
+   "d": "sin, fault",
+   "src": "genesis 4"
+  },
+  "pectus, pectoris, n.": {
+   "c": "neuter · III declension",
+   "d": "breast, chest",
+   "src": "genesis 3"
+  },
+  "pelliceus, pellicea, pelliceum": {
+   "c": "I-II declension",
+   "d": "made of skins",
+   "src": "genesis 3"
+  },
+  "per": {
+   "c": "preposition",
+   "d": "through, by means of",
+   "src": "genesis 4"
+  },
+  "perficio, perficere, perfeci, perfectus": {
+   "c": "III conjugation",
+   "d": "to complete, to finish",
+   "src": "genesis 2"
+  },
+  "perizoma, perizomatis, n.": {
+   "c": "neuter · III declension",
+   "d": "a covering for the loins",
+   "src": "genesis 3"
+  },
+  "permaneo, permanere, permansi, permansus": {
+   "c": "II conjugation",
+   "d": "to remain, to endure",
+   "src": "genesis 6"
+  },
+  "piscis, piscis, m.": {
+   "c": "masculine · III declension",
+   "d": "fish",
+   "src": "genesis 1"
+  },
+  "plaga, plagæ, f.": {
+   "c": "feminine · I declension",
+   "d": "region, district",
+   "src": "genesis 4"
+  },
+  "planto, plantare, plantavi, plantatus": {
+   "c": "I conjugation",
+   "d": "to plant",
+   "src": "genesis 2"
+  },
+  "pluo, pluere, plui": {
+   "c": "III conjugation",
+   "d": "to rain",
+   "src": "genesis 2"
+  },
+  "pomifer, pomifera, pomiferum": {
+   "c": "I-II declension",
+   "d": "fruit-bearing",
+   "src": "genesis 1"
+  },
+  "pono, ponere, posui, positus": {
+   "c": "III conjugation",
+   "d": "to put, to place",
+   "src": "genesis 1"
+  },
+  "porro": {
+   "c": "adverb",
+   "d": "furthermore, moreover",
+   "src": "genesis 4"
+  },
+  "possideo, possidere, possedi, possessus": {
+   "c": "II conjugation",
+   "d": "to possess, to obtain",
+   "src": "genesis 4"
+  },
+  "possum, posse, potui": {
+   "c": "irregular",
+   "d": "to be able, to be capable",
+   "src": "genesis 6"
+  },
+  "post": {
+   "c": "preposition",
+   "d": "after, behind",
+   "src": "genesis 3"
+  },
+  "postquam": {
+   "c": "conjunction",
+   "d": "after, when",
+   "src": "genesis 5"
+  },
+  "potens, potentis": {
+   "c": "III declension",
+   "d": "powerful, mighty",
+   "src": "genesis 6"
+  },
+  "potestas, potestatis, f.": {
+   "c": "feminine · III declension",
+   "d": "power, authority",
+   "src": "genesis 3"
+  },
+  "primogenitus, primogenita, primogenitum": {
+   "c": "I-II declension",
+   "d": "firstborn",
+   "src": "genesis 4"
+  },
+  "principium, principii, n.": {
+   "c": "neuter · II declension",
+   "d": "beginning, origin",
+   "src": "genesis 1"
+  },
+  "priusquam": {
+   "c": "conjunction",
+   "d": "before",
+   "src": "genesis 2"
+  },
+  "pro": {
+   "c": "preposition",
+   "d": "for, in place of",
+   "src": "genesis 2"
+  },
+  "procreo, procreare, procreavi, procreatus": {
+   "c": "I conjugation",
+   "d": "to beget, to bring forth",
+   "src": "genesis 6"
+  },
+  "produco, producere, produxi, productus": {
+   "c": "III conjugation",
+   "d": "to bring forth, to produce",
+   "src": "genesis 1"
+  },
+  "profero, proferre, protuli, prolatus": {
+   "c": "irregular",
+   "d": "to bring forth",
+   "src": "genesis 1"
+  },
+  "profugus, profuga, profugum": {
+   "c": "I-II declension",
+   "d": "fugitive, exiled",
+   "src": "genesis 4"
+  },
+  "præcipio, præcipere, præcepi, præceptus": {
+   "c": "III conjugation",
+   "d": "to instruct, to command",
+   "src": "genesis 2"
+  },
+  "præsum, præesse, præfui": {
+   "c": "irregular",
+   "d": "to be over, to rule",
+   "src": "genesis 1"
+  },
+  "pulcher, pulchra, pulchrum": {
+   "c": "I-II declension",
+   "d": "beautiful, fair",
+   "src": "genesis 2"
+  },
+  "pulvis, pulveris, m.": {
+   "c": "masculine · III declension",
+   "d": "dust",
+   "src": "genesis 3"
+  },
+  "punio, punire, punivi, punitus": {
+   "c": "IV conjugation",
+   "d": "to punish",
+   "src": "genesis 4"
+  },
+  "pœnitet, pœnitere, pœnituit": {
+   "c": "impersonal",
+   "d": "it repents, it causes regret",
+   "src": "genesis 6"
+  },
+  "quadraginta": {
+   "c": "numeral",
+   "d": "forty",
+   "src": "genesis 5"
+  },
+  "quando": {
+   "c": "conjunction",
+   "d": "when",
+   "src": "genesis 2"
+  },
+  "quare": {
+   "c": "adverb",
+   "d": "why, for what reason",
+   "src": "genesis 3"
+  },
+  "quartus, quarta, quartum": {
+   "c": "ordinal",
+   "d": "fourth",
+   "src": "genesis 1"
+  },
+  "quasi": {
+   "c": "adverb",
+   "d": "as if, as though, like",
+   "src": "genesis 3"
+  },
+  "quatuor": {
+   "c": "numeral",
+   "d": "four",
+   "src": "genesis 2"
+  },
+  "qui, quæ, quod": {
+   "c": "relative",
+   "d": "who, which",
+   "src": "genesis 1"
+  },
+  "quia": {
+   "c": "conjunction",
+   "d": "because, since",
+   "src": "genesis 2"
+  },
+  "quicumque, quæcumque, quodcumque": {
+   "c": "relative",
+   "d": "whoever, whatever",
+   "src": "genesis 2"
+  },
+  "quindecim": {
+   "c": "numeral",
+   "d": "fifteen",
+   "src": "genesis 5"
+  },
+  "quingenti, quingentæ, quingenta": {
+   "c": "numeral",
+   "d": "five hundred",
+   "src": "genesis 5"
+  },
+  "quinquaginta": {
+   "c": "numeral",
+   "d": "fifty",
+   "src": "genesis 6"
+  },
+  "quinque": {
+   "c": "numeral",
+   "d": "five",
+   "src": "genesis 5"
+  },
+  "quintus, quinta, quintum": {
+   "c": "ordinal",
+   "d": "fifth",
+   "src": "genesis 1"
+  },
+  "quippe": {
+   "c": "adverb",
+   "d": "indeed, of course",
+   "src": "genesis 6"
+  },
+  "quis, quid": {
+   "c": "interrogative",
+   "d": "who? what?",
+   "src": "genesis 2"
+  },
+  "quoniam": {
+   "c": "conjunction",
+   "d": "because, since",
+   "src": "genesis 2"
+  },
+  "quoque": {
+   "c": "adverb",
+   "d": "also, too",
+   "src": "genesis 1"
+  },
+  "recipio, recipere, recepi, receptus": {
+   "c": "III conjugation",
+   "d": "to receive, to take back",
+   "src": "genesis 4"
+  },
+  "regio, regionis, f.": {
+   "c": "feminine · III declension",
+   "d": "region, district",
+   "src": "genesis 2"
+  },
+  "relinquo, relinquere, reliqui, relictus": {
+   "c": "III conjugation",
+   "d": "to leave, to leave behind",
+   "src": "genesis 2"
+  },
+  "repleo, replere, replevi, repletus": {
+   "c": "II conjugation",
+   "d": "to fill, to fill up",
+   "src": "genesis 1"
+  },
+  "reptile, reptilis, n.": {
+   "c": "neuter · III declension",
+   "d": "creeping thing, crawling animal",
+   "src": "genesis 1"
+  },
+  "requiesco, requiescere, requievi, requietus": {
+   "c": "III conjugation",
+   "d": "to rest",
+   "src": "genesis 2"
+  },
+  "res, rei, f.": {
+   "c": "feminine · V declension",
+   "d": "thing, matter",
+   "src": "genesis 2"
+  },
+  "respicio, respicere, respexi, respectus": {
+   "c": "III conjugation",
+   "d": "to look back at, to regard",
+   "src": "genesis 4"
+  },
+  "respondeo, respondere, respondi, responsus": {
+   "c": "II conjugation",
+   "d": "to answer, to reply",
+   "src": "genesis 3"
+  },
+  "revertor, reverti, reversus sum": {
+   "c": "III conjugation · deponent",
+   "d": "to turn back, to return",
+   "src": "genesis 3"
+  },
+  "rursum": {
+   "c": "adverb",
+   "d": "again, back",
+   "src": "genesis 4"
+  },
+  "sanctifico, sanctificare, sanctificavi, sanctificatus": {
+   "c": "I conjugation",
+   "d": "to sanctify, to make holy",
+   "src": "genesis 2"
+  },
+  "sanguis, sanguinis, m.": {
+   "c": "masculine · III declension",
+   "d": "blood",
+   "src": "genesis 4"
+  },
+  "scientia, scientiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "knowledge",
+   "src": "genesis 2"
+  },
+  "scilicet": {
+   "c": "adverb",
+   "d": "namely, of course",
+   "src": "genesis 2"
+  },
+  "scio, scire, scivi, scitus": {
+   "c": "IV conjugation",
+   "d": "to know",
+   "src": "genesis 3"
+  },
+  "secundum": {
+   "c": "preposition",
+   "d": "according to, following",
+   "src": "genesis 1"
+  },
+  "secundus, secunda, secundum": {
+   "c": "ordinal",
+   "d": "second",
+   "src": "genesis 1"
+  },
+  "sed": {
+   "c": "conjunction",
+   "d": "but",
+   "src": "genesis 2"
+  },
+  "semen, seminis, n.": {
+   "c": "neuter · III declension",
+   "d": "seed, offspring",
+   "src": "genesis 1"
+  },
+  "sementis, sementis, f.": {
+   "c": "feminine · III declension",
+   "d": "sowing, seed",
+   "src": "genesis 1"
+  },
+  "semetipse": {
+   "c": "reflexive",
+   "d": "oneself",
+   "src": "genesis 1"
+  },
+  "septem": {
+   "c": "numeral",
+   "d": "seven",
+   "src": "genesis 5"
+  },
+  "septies": {
+   "c": "adverb",
+   "d": "seven times",
+   "src": "genesis 4"
+  },
+  "septimus, septima, septimum": {
+   "c": "ordinal",
+   "d": "seventh",
+   "src": "genesis 2"
+  },
+  "septingenti, septingentæ, septingenta": {
+   "c": "numeral",
+   "d": "seven hundred",
+   "src": "genesis 5"
+  },
+  "septuagies": {
+   "c": "adverb",
+   "d": "seventy times",
+   "src": "genesis 4"
+  },
+  "septuaginta": {
+   "c": "numeral",
+   "d": "seventy",
+   "src": "genesis 5"
+  },
+  "septuplus, septupla, septuplum": {
+   "c": "I-II declension",
+   "d": "sevenfold",
+   "src": "genesis 4"
+  },
+  "sermo, sermonis, m.": {
+   "c": "masculine · III declension",
+   "d": "speech, discourse",
+   "src": "genesis 4"
+  },
+  "serpens, serpentis, m.": {
+   "c": "masculine · III declension",
+   "d": "serpent, snake",
+   "src": "genesis 3"
+  },
+  "sexaginta": {
+   "c": "numeral",
+   "d": "sixty",
+   "src": "genesis 5"
+  },
+  "sextus, sexta, sextum": {
+   "c": "ordinal",
+   "d": "sixth",
+   "src": "genesis 1"
+  },
+  "sexus, sexus, m.": {
+   "c": "masculine · IV declension",
+   "d": "sex, gender",
+   "src": "genesis 6"
+  },
+  "si": {
+   "c": "conjunction",
+   "d": "if",
+   "src": "genesis 4"
+  },
+  "sic": {
+   "c": "adverb",
+   "d": "so, thus",
+   "src": "genesis 6"
+  },
+  "sicut": {
+   "c": "conjunction",
+   "d": "as, just as",
+   "src": "genesis 3"
+  },
+  "signum, signi, n.": {
+   "c": "neuter · II declension",
+   "d": "sign",
+   "src": "genesis 1"
+  },
+  "similis, simile": {
+   "c": "III declension",
+   "d": "like, similar",
+   "src": "genesis 2"
+  },
+  "similitudo, similitudinis, f.": {
+   "c": "feminine · III declension",
+   "d": "likeness",
+   "src": "genesis 1"
+  },
+  "sin": {
+   "c": "conjunction",
+   "d": "but if",
+   "src": "genesis 4"
+  },
+  "socia, sociæ, f.": {
+   "c": "feminine · I declension",
+   "d": "companion, partner",
+   "src": "genesis 3"
+  },
+  "solus, sola, solum": {
+   "c": "I-II declension",
+   "d": "alone, only",
+   "src": "genesis 2"
+  },
+  "sopor, soporis, m.": {
+   "c": "masculine · III declension",
+   "d": "deep sleep",
+   "src": "genesis 2"
+  },
+  "soror, sororis, f.": {
+   "c": "feminine · III declension",
+   "d": "sister",
+   "src": "genesis 4"
+  },
+  "species, speciei, f.": {
+   "c": "feminine · V declension",
+   "d": "appearance, kind, species",
+   "src": "genesis 1"
+  },
+  "spina, spinæ, f.": {
+   "c": "feminine · I declension",
+   "d": "thorn, spine",
+   "src": "genesis 3"
+  },
+  "spiraculum, spiraculi, n.": {
+   "c": "neuter · II declension",
+   "d": "breath, breath of life",
+   "src": "genesis 2"
+  },
+  "spiritus, spiritus, m.": {
+   "c": "masculine · IV declension",
+   "d": "spirit, breath",
+   "src": "genesis 1"
+  },
+  "statim": {
+   "c": "adverb",
+   "d": "immediately, at once",
+   "src": "genesis 4"
+  },
+  "stella, stellæ, f.": {
+   "c": "feminine · I declension",
+   "d": "star",
+   "src": "genesis 1"
+  },
+  "suavis, suave": {
+   "c": "III declension",
+   "d": "sweet, pleasant",
+   "src": "genesis 2"
+  },
+  "sub": {
+   "c": "preposition",
+   "d": "under, beneath",
+   "src": "genesis 1"
+  },
+  "subjicio, subjicere, subjeci, subjectus": {
+   "c": "III conjugation",
+   "d": "to subject, to subdue",
+   "src": "genesis 1"
+  },
+  "subter": {
+   "c": "preposition",
+   "d": "beneath, under",
+   "src": "genesis 6"
+  },
+  "sudor, sudoris, m.": {
+   "c": "masculine · III declension",
+   "d": "sweat",
+   "src": "genesis 3"
+  },
+  "sui, sibi, se": {
+   "c": "reflexive",
+   "d": "himself, herself, itself",
+   "src": "genesis 2"
+  },
+  "sum, esse, fui": {
+   "c": "irregular",
+   "d": "to be",
+   "src": "genesis 1"
+  },
+  "summitas, summitatis, f.": {
+   "c": "feminine · III declension",
+   "d": "top, summit",
+   "src": "genesis 6"
+  },
+  "sumo, sumere, sumpsi, sumptus": {
+   "c": "III conjugation",
+   "d": "to take, to take up",
+   "src": "genesis 2"
+  },
+  "super": {
+   "c": "preposition",
+   "d": "over, above, upon",
+   "src": "genesis 1"
+  },
+  "superficies, superficiei, f.": {
+   "c": "feminine · V declension",
+   "d": "surface, top",
+   "src": "genesis 2"
+  },
+  "suscipio, suscipere, suscepi, susceptus": {
+   "c": "III conjugation",
+   "d": "to take up, to receive",
+   "src": "genesis 4"
+  },
+  "suus, sua, suum": {
+   "c": "possessive",
+   "d": "his own, her own, its own",
+   "src": "genesis 1"
+  },
+  "sæculum, sæculi, n.": {
+   "c": "neuter · II declension",
+   "d": "age, generation",
+   "src": "genesis 6"
+  },
+  "tam": {
+   "c": "adverb",
+   "d": "so, so much",
+   "src": "genesis 6"
+  },
+  "tango, tangere, tetigi, tactus": {
+   "c": "III conjugation",
+   "d": "to touch",
+   "src": "genesis 3"
+  },
+  "tempus, temporis, n.": {
+   "c": "neuter · III declension",
+   "d": "time, season",
+   "src": "genesis 1"
+  },
+  "tenebræ, tenebrarum, f.": {
+   "c": "feminine · I declension · plural only",
+   "d": "darkness (plural in form)",
+   "src": "genesis 1"
+  },
+  "tentorium, tentorii, n.": {
+   "c": "neuter · II declension",
+   "d": "tent",
+   "src": "genesis 4"
+  },
+  "terra, terræ, f.": {
+   "c": "feminine · I declension",
+   "d": "earth, land",
+   "src": "genesis 1"
+  },
+  "tertius, tertia, tertium": {
+   "c": "ordinal",
+   "d": "third",
+   "src": "genesis 1"
+  },
+  "timeo, timere, timui": {
+   "c": "II conjugation",
+   "d": "to fear, to be afraid",
+   "src": "genesis 3"
+  },
+  "tollo, tollere, sustuli, sublatus": {
+   "c": "III conjugation",
+   "d": "to lift up, to take away",
+   "src": "genesis 6"
+  },
+  "trecenti, trecentæ, trecenta": {
+   "c": "numeral",
+   "d": "three hundred",
+   "src": "genesis 5"
+  },
+  "tres, tria": {
+   "c": "numeral",
+   "d": "three",
+   "src": "genesis 6"
+  },
+  "tribulus, tribuli, m.": {
+   "c": "masculine · II declension",
+   "d": "thistle, caltrop",
+   "src": "genesis 3"
+  },
+  "triginta": {
+   "c": "numeral",
+   "d": "thirty",
+   "src": "genesis 5"
+  },
+  "tristegum, tristegi, n.": {
+   "c": "neuter · II declension",
+   "d": "a third storey",
+   "src": "genesis 6"
+  },
+  "tu": {
+   "c": "personal",
+   "d": "you",
+   "src": "genesis 1"
+  },
+  "tunica, tunicæ, f.": {
+   "c": "feminine · I declension",
+   "d": "tunic, garment",
+   "src": "genesis 3"
+  },
+  "tuus, tua, tuum": {
+   "c": "possessive",
+   "d": "your",
+   "src": "genesis 3"
+  },
+  "ubi": {
+   "c": "adverb",
+   "d": "where, when",
+   "src": "genesis 2"
+  },
+  "ultio, ultionis, f.": {
+   "c": "feminine · III declension",
+   "d": "vengeance, retribution",
+   "src": "genesis 4"
+  },
+  "universus, universa, universum": {
+   "c": "I-II declension",
+   "d": "all, entire",
+   "src": "genesis 1"
+  },
+  "unus, una, unum": {
+   "c": "numeral",
+   "d": "one",
+   "src": "genesis 1"
+  },
+  "unusquisque, unaquæque, unumquodque": {
+   "c": "pronoun",
+   "d": "each one, every one",
+   "src": "genesis 1"
+  },
+  "usque": {
+   "c": "adverb",
+   "d": "all the way, even",
+   "src": "genesis 6"
+  },
+  "ut": {
+   "c": "conjunction",
+   "d": "so that, in order to",
+   "src": "genesis 1"
+  },
+  "uterque, utraque, utrumque": {
+   "c": "pronoun",
+   "d": "each of two, both",
+   "src": "genesis 2"
+  },
+  "uxor, uxoris, f.": {
+   "c": "feminine · III declension",
+   "d": "wife",
+   "src": "genesis 2"
+  },
+  "vacuus, vacua, vacuum": {
+   "c": "I-II declension",
+   "d": "empty, unoccupied",
+   "src": "genesis 1"
+  },
+  "vado, vadere": {
+   "c": "III conjugation",
+   "d": "to go, to advance",
+   "src": "genesis 2"
+  },
+  "vagus, vaga, vagum": {
+   "c": "I-II declension",
+   "d": "wandering, roaming",
+   "src": "genesis 4"
+  },
+  "valde": {
+   "c": "adverb",
+   "d": "very, exceedingly",
+   "src": "genesis 1"
+  },
+  "vehementer": {
+   "c": "adverb",
+   "d": "vehemently, strongly",
+   "src": "genesis 4"
+  },
+  "venia, veniæ, f.": {
+   "c": "feminine · I declension",
+   "d": "pardon, favor",
+   "src": "genesis 4"
+  },
+  "venio, venire, veni, ventus": {
+   "c": "IV conjugation",
+   "d": "to come",
+   "src": "genesis 6"
+  },
+  "vero": {
+   "c": "adverb",
+   "d": "truly, indeed",
+   "src": "genesis 1"
+  },
+  "versatilis, versatile": {
+   "c": "III declension",
+   "d": "turning, revolving",
+   "src": "genesis 3"
+  },
+  "vescor, vesci": {
+   "c": "III conjugation · deponent",
+   "d": "to feed, to eat",
+   "src": "genesis 1"
+  },
+  "vesper, vesperis, m.": {
+   "c": "masculine · III declension",
+   "d": "evening",
+   "src": "genesis 1"
+  },
+  "vester, vestra, vestrum": {
+   "c": "possessive",
+   "d": "your",
+   "src": "genesis 3"
+  },
+  "via, viæ, f.": {
+   "c": "feminine · I declension",
+   "d": "way, road",
+   "src": "genesis 3"
+  },
+  "video, videre, vidi, visus": {
+   "c": "II conjugation",
+   "d": "to see",
+   "src": "genesis 1"
+  },
+  "viginti": {
+   "c": "numeral",
+   "d": "twenty",
+   "src": "genesis 6"
+  },
+  "vir, viri, m.": {
+   "c": "masculine · II declension",
+   "d": "man, husband",
+   "src": "genesis 2"
+  },
+  "virago, viraginis, f.": {
+   "c": "feminine · III declension",
+   "d": "a woman taken from man",
+   "src": "genesis 2"
+  },
+  "vireo, virere, virui": {
+   "c": "II conjugation",
+   "d": "to be green, to flourish",
+   "src": "genesis 1"
+  },
+  "virgultum, virgulti, n.": {
+   "c": "neuter · II declension",
+   "d": "shrub, sapling",
+   "src": "genesis 2"
+  },
+  "vita, vitæ, f.": {
+   "c": "feminine · I declension",
+   "d": "life",
+   "src": "genesis 2"
+  },
+  "vivo, vivere, vixi, victus": {
+   "c": "III conjugation",
+   "d": "to live",
+   "src": "genesis 1"
+  },
+  "voco, vocare, vocavi, vocatus": {
+   "c": "I conjugation",
+   "d": "to call",
+   "src": "genesis 1"
+  },
+  "volatilis, volatile": {
+   "c": "III declension",
+   "d": "flying; a flying creature",
+   "src": "genesis 1"
+  },
+  "volucris, volucris, f.": {
+   "c": "feminine · III declension",
+   "d": "bird, flying creature",
+   "src": "genesis 1"
+  },
+  "voluptas, voluptatis, f.": {
+   "c": "feminine · III declension",
+   "d": "pleasure, delight",
+   "src": "genesis 2"
+  },
+  "vox, vocis, f.": {
+   "c": "feminine · III declension",
+   "d": "voice, sound",
+   "src": "genesis 3"
+  },
+  "vulnus, vulneris, n.": {
+   "c": "neuter · III declension",
+   "d": "wound",
+   "src": "genesis 4"
+  },
+  "vultus, vultus, m.": {
+   "c": "masculine · IV declension",
+   "d": "face, countenance",
+   "src": "genesis 3"
+  },
+  "Æthiopia, Æthiopiæ, f.": {
+   "c": "feminine · I declension",
+   "d": "Ethiopia",
+   "src": "genesis 2"
+  },
+  "ædifico, ædificare, ædificavi, ædificatus": {
+   "c": "I conjugation",
+   "d": "to build",
+   "src": "genesis 2"
+  },
+  "ærumna, ærumnæ, f.": {
+   "c": "feminine · I declension",
+   "d": "hardship, toil",
+   "src": "genesis 3"
+  },
+  "æs, æris, n.": {
+   "c": "neuter · III declension",
+   "d": "bronze, brass",
+   "src": "genesis 4"
+  },
+  "æternus, æterna, æternum": {
+   "c": "I-II declension",
+   "d": "eternal, everlasting",
+   "src": "genesis 3"
+  }
+ }
+}
