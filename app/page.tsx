@@ -25,7 +25,7 @@ export default function Home() {
           PER ACTUM
         </span>
         <span className="block text-[0.6rem] tracking-[0.14em] text-muted-foreground">
-          SACRED LATIN
+          THROUGH ACTION
         </span>
       </div>
     </main>

@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { BOOKS, GROUP_LABELS, type BookGroup, type BookMeta } from "@/lib/bible";
-import { getReadChapters } from "@/lib/storage";
 import { cn } from "@/lib/utils";
 import {
   Dialog,
@@ -123,7 +122,6 @@ function PickerBody({
   const [expanded, setExpanded] = useState<string | null>(
     mode === "chapters" ? currentBook : null
   );
-  const [read, setRead] = useState<Set<string>>(new Set());
   const listRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -131,7 +129,6 @@ function PickerBody({
     if (!open) return;
     setQuery("");
     setExpanded(mode === "chapters" ? currentBook : null);
-    setRead(getReadChapters());
   }, [open, mode, currentBook]);
 
   // Scroll the current chapter (or book) into view when the sheet opens.
@@ -251,7 +248,6 @@ function PickerBody({
                           {book.chapters.map((_, i) => {
                             const ch = i + 1;
                             const isNow = isCurrent && ch === currentChapter;
-                            const isRead = read.has(`${book.slug}/${ch}`);
                             return (
                               <button
                                 key={ch}
@@ -260,8 +256,7 @@ function PickerBody({
                                 className={cn(
                                   "rounded-md border py-2.5 text-center text-[0.8rem] tabular-nums hover:bg-muted md:py-1.5 md:text-xs",
                                   isNow &&
-                                    "border-brand bg-brand font-bold text-primary-foreground hover:bg-brand",
-                                  !isNow && isRead && "bg-muted text-muted-foreground"
+                                    "border-brand bg-brand font-bold text-primary-foreground hover:bg-brand"
                                 )}
                               >
                                 {ch}

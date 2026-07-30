@@ -1,7 +1,6 @@
 // localStorage helpers. All access is guarded so SSR/prerender never touches it.
 
 const POS = "peractum:pos";
-const READ = "peractum:read";
 
 function get(key: string): string | null {
   if (typeof window === "undefined") return null;
@@ -35,9 +34,6 @@ export function getLastPosition(): { book: string; chapter: number } | null {
 export function savePosition(book: string, chapter: number) {
   set(POS, `${book}/${chapter}`);
   set(`${POS}:${book}`, String(chapter));
-  const read = getReadChapters();
-  read.add(`${book}/${chapter}`);
-  set(READ, JSON.stringify([...read]));
 }
 
 /** Last-read chapter within a given book (1 if never opened). */
@@ -46,18 +42,32 @@ export function getBookPosition(book: string): number {
   return Number.isInteger(n) && n >= 1 ? n : 1;
 }
 
-/** Set of "book/chapter" strings the user has opened. */
-export function getReadChapters(): Set<string> {
-  try {
-    const raw = get(READ);
-    return new Set(raw ? (JSON.parse(raw) as string[]) : []);
-  } catch {
-    return new Set();
-  }
-}
-
 export type FontSize = "s" | "m" | "l";
 export type Theme = "light" | "dark" | "system";
+
+/**
+ * Reading granularity: "verses" shows whole Latin verses, "words" adds a
+ * gloss under each word. English verse translations are orthogonal in both
+ * modes: hidden until expanded (tap a verse, or the expand-all button).
+ */
+export type ReadingMode = "verses" | "words";
+
+export function getReadingMode(): ReadingMode {
+  return get("peractum:mode") === "words" ? "words" : "verses";
+}
+
+export function saveReadingMode(mode: ReadingMode) {
+  set("peractum:mode", mode);
+}
+
+/** One-time "tap any word" hint. */
+export function wordHintSeen(): boolean {
+  return get("peractum:hint-word") === "1";
+}
+
+export function markWordHintSeen() {
+  set("peractum:hint-word", "1");
+}
 
 export function getFontSize(): FontSize {
   const v = get("peractum:fs");

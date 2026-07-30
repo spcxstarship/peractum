@@ -42,3 +42,9 @@ next-env.d.ts
 
 # data pipeline cache (raw source texts)
 .cache/
+
+# Python bytecode from scripts/
+__pycache__/
+
+# local Claude Code permissions
+.claude/settings.local.json

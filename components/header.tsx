@@ -2,11 +2,25 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ChevronDown, Eclipse, Maximize2, Menu, Minimize2 } from "lucide-react";
+import {
+  Check,
+  ChevronDown,
+  Eclipse,
+  Languages,
+  Maximize2,
+  Menu,
+  Minimize2,
+} from "lucide-react";
 import type { BookMeta } from "@/lib/bible";
-import { applyTheme, syncThemeColor } from "@/lib/storage";
+import { applyTheme, syncThemeColor, type ReadingMode } from "@/lib/storage";
 import { cn } from "@/lib/utils";
 import { Picker } from "@/components/picker";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import {
   Sheet,
   SheetContent,
@@ -22,9 +36,18 @@ interface HeaderProps {
   chapter: number;
   allOpen: boolean;
   onToggleAll: () => void;
+  mode: ReadingMode;
+  onModeChange: (mode: ReadingMode) => void;
 }
 
-export function Header({ book, chapter, allOpen, onToggleAll }: HeaderProps) {
+export function Header({
+  book,
+  chapter,
+  allOpen,
+  onToggleAll,
+  mode,
+  onModeChange,
+}: HeaderProps) {
   const [pickerOpen, setPickerOpen] = useState(false);
 
   return (
@@ -42,6 +65,7 @@ export function Header({ book, chapter, allOpen, onToggleAll }: HeaderProps) {
             <ChevronDown className="size-4 text-muted-foreground" />
           </button>
           <div className="ml-auto flex items-center gap-1.5">
+            <ModeMenu mode={mode} onModeChange={onModeChange} />
             <ExpandAllButton allOpen={allOpen} onToggleAll={onToggleAll} />
             <ThemeToggle />
           </div>
@@ -68,7 +92,7 @@ export function TopBar({ active }: { active: Section }) {
             PER ACTUM
           </span>
           <span className="block text-[0.6rem] tracking-[0.14em] text-muted-foreground">
-            SACRED LATIN
+            THROUGH ACTION
           </span>
         </Link>
         <nav className="ml-auto flex items-center gap-5 text-sm">
@@ -132,7 +156,7 @@ export function MobileMenu({ active }: { active: Section }) {
               PER ACTUM
             </span>
             <span className="block text-[0.6rem] font-normal tracking-[0.14em] text-muted-foreground">
-              SACRED LATIN
+              THROUGH ACTION
             </span>
           </SheetTitle>
         </SheetHeader>
@@ -193,6 +217,54 @@ function MenuItem({
       </span>
       <span className="block text-xs text-muted-foreground">{english}</span>
     </Link>
+  );
+}
+
+const MODES: { value: ReadingMode; label: string; hint: string }[] = [
+  { value: "verses", label: "Verse by verse", hint: "Expand for the English" },
+  { value: "words", label: "Word by word", hint: "A gloss under each word" },
+];
+
+export function ModeMenu({
+  mode,
+  onModeChange,
+}: {
+  mode: ReadingMode;
+  onModeChange: (mode: ReadingMode) => void;
+}) {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        title="Modus legendi"
+        aria-label="Reading mode"
+        className="rounded-md p-1.5 text-muted-foreground outline-none hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+      >
+        <Languages className="size-4" />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-56">
+        {MODES.map((item) => (
+          <DropdownMenuItem
+            key={item.value}
+            onClick={() => onModeChange(item.value)}
+          >
+            <span className="flex-1">
+              <span
+                className={cn(
+                  "block text-sm",
+                  mode === item.value && "font-semibold"
+                )}
+              >
+                {item.label}
+              </span>
+              <span className="block text-xs text-muted-foreground">
+                {item.hint}
+              </span>
+            </span>
+            {mode === item.value && <Check className="size-4 text-brand" />}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
 
