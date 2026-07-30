@@ -295,8 +295,6 @@ export function Reader({ verses, expanded, mode, gloss, dict }: ReaderProps) {
     });
   }
 
-  const relatedKeys = pop && pop.related.length ? new Set(pop.related) : null;
-
   return (
     <div
       ref={containerRef}
@@ -319,7 +317,6 @@ export function Reader({ verses, expanded, mode, gloss, dict }: ReaderProps) {
           mode={mode}
           expanded={expanded}
           activeKey={pop?.key ?? null}
-          relatedKeys={relatedKeys}
           onWord={showWord}
           onDictWord={showDictWord}
         />
@@ -651,7 +648,6 @@ function VerseItem({
   mode,
   expanded,
   activeKey,
-  relatedKeys,
   onWord,
   onDictWord,
 }: {
@@ -661,7 +657,6 @@ function VerseItem({
   mode: ReadingMode;
   expanded: boolean;
   activeKey: string | null;
-  relatedKeys: Set<string> | null;
   onWord: (btn: HTMLElement, key: string, token: GlossToken) => void;
   onDictWord: (btn: HTMLElement, key: string, display: string) => void;
 }) {
@@ -691,13 +686,7 @@ function VerseItem({
                     className={cn(
                       "rounded-xs text-left outline-none focus-visible:ring-2 focus-visible:ring-ring/50 active:bg-brand/10",
                       showGloss && "mb-1.5 inline-flex flex-col items-start align-top",
-                      activeKey === key && "bg-brand/10",
-                      // Faint glow on words grammatically linked to the
-                      // tapped one: connection on the page, meaning in the
-                      // card. One hue, two intensities, never more.
-                      activeKey !== key &&
-                        relatedKeys?.has(key) &&
-                        "bg-brand/5"
+                      activeKey === key && "bg-brand/10"
                     )}
                   >
                     <span
